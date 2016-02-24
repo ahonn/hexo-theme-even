@@ -398,12 +398,18 @@ header .nav-list-item a {
     margin: 1em 0
 }
 
-.post-content h2,
+.post-content h2 {
+    font-size: 20px;
+}
+
 .post-content h3 {
     font-size: 18px
 }
 
-.post-content h4,
+.post-content h4 {
+    font-size: 16px
+}
+
 .post-content h5,
 .post-content h6 {
     font-size: 14px
