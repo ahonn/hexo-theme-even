@@ -1,7 +1,7 @@
 extends partial/layout
 
 block site_title
-    != page.title + " · " + config.title
+    != "About · " + config.title
 
 block description
     - desc = page.desc || page.title + ' - ' + config.author;
