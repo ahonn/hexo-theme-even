@@ -1,0 +1,8 @@
+a.title.logo-link(href=config.url)
+    = config.title
+
+ul.nav.nav-list
+    each value, key in theme.menu
+        li.nav-list-item
+            a.nav-list-link(href=value target="_self")
+                != key

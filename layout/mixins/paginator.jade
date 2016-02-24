@@ -1,0 +1,30 @@
+mixin home()
+    - var prev = page.prev_link
+    - var next = page.next_link
+    if page.prev
+        .paginator.left
+            a.prev(href=url_for(prev)) 
+                i.fa.fa-chevron-left
+                span 
+                    != __('prev')
+    if page.next
+        .paginator.right
+            a.next(href=url_for(next)) 
+                span
+                    != __('next')
+                i.fa.fa-chevron-right
+
+mixin post()
+    - var prev = page.prev ? page.prev.path : false;
+    - var next = page.next ? page.next.path : false;
+    .paginator
+        if prev
+            a.prev(href=url_for(prev))
+                i.fa.fa-chevron-left
+                span 
+                    != __('prev')
+        if next
+            a.next(href=url_for(next))
+                span
+                    != __('next')
+                i.fa.fa-chevron-right

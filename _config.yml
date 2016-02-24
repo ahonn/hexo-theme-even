@@ -1,0 +1,9 @@
+menu:
+  Home: /
+  Archives: /archives/
+  # Tags: /tags/
+  About: /about/
+
+favicon: /favicon.ico
+
+startyear: 2015

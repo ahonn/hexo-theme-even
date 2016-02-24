@@ -1,0 +1,9 @@
+extends partial/layout
+
+block container
+    include mixins/post
+    +posts()
+
+block pagination
+    include mixins/paginator
+    +home()
