@@ -1,7 +1,7 @@
 extends partial/layout
 
 block site_title
-    != "About · " + config.title
+    != __('About') + " · " + config.title
 
 block description
     - desc = page.desc || page.title + ' - ' + config.author;
@@ -10,7 +10,3 @@ block description
 block container
     include mixins/about
     +about(page)
-
-block comment
-    include mixins/comment
-    +comment(page)

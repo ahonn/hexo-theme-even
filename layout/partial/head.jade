@@ -16,3 +16,13 @@ link(rel="stylesheet", href="/css/style.css")
 // fonts
 link(rel="stylesheet", href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css")
 link(rel="stylesheet", href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type='text/css')
+
+if theme.baidu_analytics
+    // baidu analytics
+    include ../mixins/analytics
+    +baidu_analytics()
+
+if theme.google_analytics
+    // google analytics
+    include ../mixins/analytics
+    +google_analytics()

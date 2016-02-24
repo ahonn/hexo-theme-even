@@ -1,6 +1,19 @@
 //- Comment 
 mixin comment(item)
-    if theme.duoshuo_shortname 
+    if theme.disqus_shortname
+        section#comments
+            div#disqus_thread
+        script(type="text/javascript").
+            (function() { 
+            var d = document, s = d.createElement('script');
+
+            s.src = '//#{theme.disqus_shortname}.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+
+    else if theme.duoshuo_shortname 
         section#comments
             .ds-thread(data-thread-key=url data-title=item.title data-url=url)
 

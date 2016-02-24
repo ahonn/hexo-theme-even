@@ -11,6 +11,14 @@ favicon: /favicon.ico
 # copyright 
 startyear: 2015
 
-# comment
-## duoshuo
+# Baidu Analytics ID
+# baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
+
+# Google Analytics ID
+google_analytics: UA-74273646-1
+
+# Duoshuo ShortName
 duoshuo_shortname: ahonn
+
+# Disqus
+disqus_shortname: ahonn
