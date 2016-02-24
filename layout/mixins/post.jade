@@ -48,3 +48,5 @@ mixin post(item)
                 != full_date(item.date, 'll')
             .post-content
                 != item.content
+    if theme.short_name
+        .ds-thread(data-thread-key=url data-title=item.title data-url=url)

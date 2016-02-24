@@ -1,9 +1,16 @@
+# navbar
 menu:
   Home: /
   Archives: /archives/
   # Tags: /tags/
   About: /about/
 
+# site icon
 favicon: /favicon.ico
 
+# copyright 
 startyear: 2015
+
+# comment
+## duoshuo
+duoshuo_shortname: ahonn
