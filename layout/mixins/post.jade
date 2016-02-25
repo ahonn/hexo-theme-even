@@ -50,3 +50,10 @@ mixin post(item)
                 != item.content
     if theme.short_name
         .ds-thread(data-thread-key=url data-title=item.title data-url=url)
+
+//- About Page
+mixin about(item)
+    .post
+        article.post-block
+            .post-content
+                != item.content

@@ -1,0 +1,9 @@
+mixin social_icon()
+    if theme.social
+        div.social-icon
+            if theme.social.github
+                a.fa.fa-github(href=url_for(theme.social.github))
+            if theme.social.twitter
+                a.fa.fa-twitter(href=url_for(theme.social.twitter))
+            if theme.social.weibo
+                a.fa.fa-weibo(href=url_for(theme.social.weibo))

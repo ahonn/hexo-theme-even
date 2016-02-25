@@ -240,6 +240,17 @@ ul {
     margin: 1rem 0
 }
 
+div.social-icon {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+div a.fa {
+    margin: 0 5px;
+}
+
 a,
 a:active {
     color: #2c3e50;
@@ -248,7 +259,8 @@ a:active {
 
 a.title {
     font-size: 2.4em;
-    font-family:"Comic Sans MS", cursive, LiSu, sans-serif;
+    /*font-family:"Comic Sans MS", cursive, LiSu, sans-serif;*/
+    font-family: cursive, LiSu, sans-serif;
 }
 
 a.nav-list-link.active,
@@ -755,7 +767,7 @@ section.container {
 }
 
 .copyright {
-    margin: 4em 0;
+    margin: 0;
     /*border-top: 1px solid #ddd;*/
     text-align: center
 }
