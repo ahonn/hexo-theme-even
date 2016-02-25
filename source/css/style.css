@@ -71,6 +71,10 @@ h1 {
     margin: 0.67em 0
 }
 
+i {
+    margin: 0 5px;
+}
+
 mark {
     background: #ff0;
     color: #000
@@ -94,10 +98,6 @@ sup {
 
 sub {
     bottom: -0.25em
-}
-
-span {
-    margin: 0 5px;
 }
 
 img {
@@ -226,7 +226,7 @@ body {
     color: #34495e;
     font-size: 15px;
     line-height: 1.6;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
+    font-family: 'PT Serif', 'STZhongsong', 'Microsoft Yahei', serif
 }
 
 ul.nav,
@@ -317,7 +317,7 @@ header .logo-link {
 }
 
 header .nav {
-    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+    font-family: 'PT Serif', 'STZhongsong', 'Microsoft Yahei', serif;
     float: right;
     left: 80px
 }
@@ -381,7 +381,7 @@ header .nav-list-item a {
 
 .archive .post-time {
     display: inline-block;
-    width: 100px;
+    width: 65px;
     color: #7f8c8d
 }
 
@@ -393,7 +393,6 @@ header .nav-list-item a {
     margin: 0;
     color: #2c3e50;
     font-size: 22px;
-    /*text-align: center;*/
 }
 
 .post-block .post-time {
@@ -478,7 +477,7 @@ code,
 pre {
     font-size: 0.8em;
     background-color: #f8f8f8;
-    font-family: 'Roboto Mono', Monaco, courier, monospace
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
 }
 
 .highlight {
@@ -695,17 +694,12 @@ pre .xml .cdata {
     opacity: 0.5
 }
 
-.paginator.right  {
-    text-align: right;
-}
-
-.paginator.left  {
-    text-align: left;
-}
-
 .paginator  {
-    margin: 4em 0;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    padding: 1em 0;
     text-align: center;
+    display: block;
 }
 
 .paginator .prev,
@@ -718,6 +712,14 @@ pre .xml .cdata {
 
 .paginator a span {
     margin: 0 5px;
+}
+
+a.prev {
+    float: left;
+}
+
+a.next {
+    float: right;
 }
 
 .ds-thread,
