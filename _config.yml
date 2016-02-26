@@ -8,13 +8,13 @@ menu:
 # site icon
 favicon: /favicon.ico
 
-# Baidu Analytics ID
+# Baidu Analytics
 # baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
 
-# Google Analytics ID
+# Google Analytics
 google_analytics: UA-74273646-1
 
-# Duoshuo ShortName
+# Duoshuo
 duoshuo_shortname: ahonn
 
 # Disqus
