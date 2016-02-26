@@ -1,8 +1,8 @@
 ## hexo-theme-even
 
-修改自 [apollo](https://github.com/pinggod/hexo-theme-apollo), 并添加了评论(多说，Disqus)和统计分析(baidu analytics，google analytics)，计划添加标签云。
+![even](http://7xqvel.com1.z0.glb.clouddn.com/hexo-theme-even.png?imageView/3/w/600)
 
-![even](http://7xqvel.com1.z0.glb.clouddn.com/QQ20160227-0%402x.png?imageView/3/w/600/q/100))
+修改自 [apollo](https://github.com/pinggod/hexo-theme-apollo)
 
 ### 安装
 ```
