@@ -2,8 +2,6 @@
 
 ![even](http://7xqvel.com1.z0.glb.clouddn.com/hexo-theme-even.png?imageView/3/w/600)
 
-修改自 [apollo](https://github.com/pinggod/hexo-theme-apollo)
-
 ### 安装
 ```
 $ hexo init blog
@@ -19,10 +17,14 @@ $ git clone https://github.com/ahonn/hexo-theme-even
 #### 启用主题
 修改 `_config.yml` 中的 `theme` 配置项为 `even`
 
-#### 首页文章数
+#### 首页
+- 设置首页显示文章数：
+
 修改 `_config.yml` 中的 `per_page` 配置项为你想要的首页文章数量
 
-#### 归档页文章数
+#### 归档
+- 设置归档每页显示文章数
+
 在 `_config.yml` 中添加：
 ```
 # Generator-archive  需要 hexo-generator-archive
@@ -46,7 +48,7 @@ disqus_shortname: your disqus shortname
 ```
 当两个 ID 都存在时，默认启用 Disqus
 
-#### 统计分析
+#### 统计
 在 `theme/even/_config.yml` 中：
 ```
 # Baidu Analytics
@@ -57,7 +59,7 @@ google_analytics: your google analytics
 
 ```
 
-#### 页尾社交 iocn
+#### 社交
 在 `theme/even/_config.yml` 中：
 ```
 # Social links
