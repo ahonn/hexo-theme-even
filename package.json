@@ -1,0 +1,24 @@
+{
+  "name": "even",
+  "version": "1.0.0",
+  "description": "A hexo theme ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahonn/hexo-theme-even.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "even"
+  ],
+  "author": "ahonn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahonn/hexo-theme-even/issues"
+  },
+  "homepage": "https://github.com/ahonn/hexo-theme-even#readme"
+}
