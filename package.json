@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/ahonn/hexo-theme-even/issues"
   },
-  "homepage": "https://github.com/ahonn/hexo-theme-even#readme"
+  "homepage": "https://github.com/ahonn/hexo-theme-even#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.4"
+  }
 }
