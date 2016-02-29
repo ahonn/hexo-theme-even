@@ -5,8 +5,6 @@ mixin posts()
             li.post-list-item
                 article.post-block
                     h2.post-title
-                        span
-                            i.fa.fa-link
                         a.post-title-link(href=url_for(item.path))
                             != item.title
                     .post-time
@@ -41,8 +39,6 @@ mixin post(item)
     .post
         article.post-block
             h1.post-title
-                span
-                    i.fa.fa-link
                 != item.title
             .post-time
                 != full_date(item.date, 'll')
