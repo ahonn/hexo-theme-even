@@ -1,0 +1,44 @@
+#comments {
+    #ds-thread #ds-reset {
+        .ds-sort {
+            a {
+                &.ds-current, &:active {
+                    color: @color-theme;
+                }
+            }
+        }
+
+        li.ds-tab {
+            a.ds-current {
+                border: none;
+                background-color: #fff;
+            }
+        }
+        
+        .ds-service-link {
+            background: #fff;
+            padding: 0px 0px;
+            &.ds-weixin {
+                color: #348903;
+            }
+            &.ds-weibo {
+                color: #fa7d3c;
+            }
+            &.ds-qq {
+                color: #12b7f5;
+            }
+            &.ds-renren {
+                display:none;
+            }
+        }
+
+        .ds-login-buttons {
+            .ds-service-list li {
+                width: auto;
+            }
+            .ds-more-services {
+                display:none;
+            }
+        }
+    }
+}

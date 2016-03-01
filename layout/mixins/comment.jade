@@ -1,10 +1,10 @@
-//- Comment 
-mixin comment(item)
+//- Comment
+mixin comment()
     if theme.disqus_shortname
         section#comments
             div#disqus_thread
         script(type="text/javascript").
-            (function() { 
+            (function() {
             var d = document, s = d.createElement('script');
 
             s.src = '//#{theme.disqus_shortname}.disqus.com/embed.js';
@@ -13,9 +13,9 @@ mixin comment(item)
             (d.head || d.body).appendChild(s);
             })();
 
-    else if theme.duoshuo_shortname 
+    else if theme.duoshuo_shortname
         section#comments
-            .ds-thread(data-thread-key=url data-title=item.title data-url=url)
+            .ds-thread(data-thread-key=url data-title=page.title data-url=url)
 
             script(type="text/javascript").
                 var duoshuoQuery = {short_name: "#{theme.duoshuo_shortname}" };

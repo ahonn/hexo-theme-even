@@ -35,21 +35,21 @@ mixin postList()
         - })
 
 //- Post Page
-mixin post(item)
+mixin post()
     .post
         article.post-block
             h1.post-title
-                != item.title
+                != page.title
             .post-time
-                != full_date(item.date, 'll')
+                != full_date(page.date, 'll')
             .post-content
-                != item.content
+                != page.content
     if theme.short_name
-        .ds-thread(data-thread-key=url data-title=item.title data-url=url)
+        .ds-thread(data-thread-key=url data-title=page.title data-url=url)
 
 //- About Page
-mixin about(item)
+mixin about()
     .post
         article.post-block
             .post-content
-                != item.content
+                != page.content

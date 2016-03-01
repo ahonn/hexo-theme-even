@@ -9,7 +9,11 @@ block description
 
 block container
     include mixins/post
-    +post(page)
+    +post()
+
+block tags
+    include mixins/tags
+    +tags()
 
 block pagination
     include mixins/paginator
@@ -17,4 +21,4 @@ block pagination
 
 block comment
     include mixins/comment
-    +comment(page)
+    +comment()
