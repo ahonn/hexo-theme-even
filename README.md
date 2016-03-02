@@ -8,7 +8,7 @@ $ hexo init blog
 $ cd blog
 $ npm install
 $ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-$ cd theme
+$ cd themes/
 $ git clone https://github.com/ahonn/hexo-theme-even
 ```
 
@@ -34,6 +34,31 @@ archive_generator:
   monthly: false
   daily: false
 
+```
+
+#### 标签
+在 `theme/even/_config.yml` 中启用 `menu` 的 `Tags` 项：
+```
+# navbar
+menu:
+  Home: /
+  Archives: /archives/
+  Tags: /tags/    # 启用 Tags
+  About: /about/
+```
+
+并在 `source` 下创建 `tags` 文件夹，并在该目录下创建 `index.md`:
+```
+layout: tags
+---
+```
+
+### 关于
+在 `source` 下创建 `about` 文件夹，并在该目录下创建 `index.md`, 该 md 文件中的内容将在 about 页显示:
+```
+layout: about
+---
+# about you 
 ```
 
 #### 评论
