@@ -47,6 +47,18 @@ mixin post()
     if theme.short_name
         .ds-thread(data-thread-key=url data-title=page.title data-url=url)
 
+//- Tag Page
+mixin tagList()
+    .archive
+        h2.archive-tag
+            = page.tag
+        each item in page.posts.toArray()
+            .post-item
+                .post-time
+                    != full_date(item.date, 'll')
+                a.post-title-link(href=url_for(item.path))
+                    != item.title
+
 //- About Page
 mixin about()
     .post

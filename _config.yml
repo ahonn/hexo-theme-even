@@ -2,7 +2,7 @@
 menu:
   Home: /
   Archives: /archives/
-  # Tags: /tags/
+  Tags: /tags/
   About: /about/
 
 # site icon
@@ -15,10 +15,10 @@ favicon: /favicon.ico
 google_analytics: UA-74273646-1
 
 # Duoshuo
-duoshuo_shortname: ahonn
+# duoshuo_shortname: ahonn
 
 # Disqus
-# disqus_shortname: ahonn
+disqus_shortname: ahonn
 
 # Social links
 social:

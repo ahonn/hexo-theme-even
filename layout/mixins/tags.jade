@@ -4,3 +4,7 @@ mixin tags()
         for tag in page.tags.toArray()
             a(href=url_for(tag.path))
                 = tag.name
+
+mixin tagcloud()
+    .tagcloud
+      != tagcloud({min_font: 13, max_font: 26, amount: 100, orderby: 'count'})

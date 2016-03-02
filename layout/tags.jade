@@ -1,0 +1,12 @@
+extends partial/layout
+
+block site_title
+    != __('Tags') + " · " + config.title
+
+block description
+    - desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
+
+block container
+    include mixins/tags
+    +tagcloud()

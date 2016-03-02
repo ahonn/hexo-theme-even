@@ -1,8 +1,12 @@
 extends partial/layout
 
+
 block container
     include mixins/post
-    +postList()
+    if page.tag
+        +tagList()
+    if page.archive
+        +postList()
 
 block pagination
     include mixins/paginator
