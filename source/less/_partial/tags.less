@@ -13,9 +13,19 @@
 }
 
 .tagcloud {
-    margin: 5em auto;
+    margin: 5em 1em;
+    text-align: center;
+    color: @color-theme;
+
+    .tags-total p {
+        width: 90px;
+        margin: auto;
+        border-bottom: @link-border;
+    }
     a {
         margin: 5px;
+        word-wrap: break-word;
+        display: inline-block;
         &:hover {
             color: @color-theme;
         }

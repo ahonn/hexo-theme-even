@@ -1,5 +1,13 @@
 extends partial/layout
 
+block site_title
+    != config.title
+
+block description
+    if config.description
+        - desc = config.description;
+        meta(name="description", content=desc)
+
 block container
     include mixins/post
     +posts()

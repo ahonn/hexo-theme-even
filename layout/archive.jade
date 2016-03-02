@@ -1,5 +1,14 @@
 extends partial/layout
 
+block site_title
+    if page.archive
+        != __('Archive') + " · " + config.title
+    if page.tag
+        != page.tag + " · " + config.title
+
+block description
+    - desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
 block container
     include mixins/post
