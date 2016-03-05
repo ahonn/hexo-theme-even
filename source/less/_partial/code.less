@@ -1,7 +1,7 @@
 code,
 pre {
     font-size: 0.8em;
-    background-color: @color-code-background;
+    background-color: rgba(0,0,0,0.04);
     font-family: @font-code;
 }
 
@@ -25,9 +25,23 @@ pre {
     }
 
     .code pre {
-        padding: 1.2em 1.4em;
+        padding: 30px 14px 14px;
         line-height: 1.5em;
+        background-color: rgba(0,0,0,0);
         margin: 0;
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 3px 7px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #c2c0bc;
+        background-color: #f1ede4;
+        content: "Code";
     }
 }
 
