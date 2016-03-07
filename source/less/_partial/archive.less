@@ -2,7 +2,11 @@
     max-width: 500px;
     margin: 5em auto;
     .post-item {
-        padding: 2px 0 0 20px;
+        padding: 2px 0 0 10px;
+        border-left: @small-border;
+        &:hover {
+          border-left: @link-border2;
+        }
     }
     .post-time {
         display: inline-block;
@@ -15,6 +19,9 @@
     }
     .post-title-link {
         color: @color-theme;
+        &:hover {
+          border-bottom: none;
+        }
     }
     .post-item, .post-title-link {
         font-size: 1rem;
