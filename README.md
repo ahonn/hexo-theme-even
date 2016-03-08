@@ -1,6 +1,6 @@
 ## hexo-theme-even
 
-![even](http://7xqvel.com1.z0.glb.clouddn.com/hexo-theme-even.png?imageView/3/w/600)
+![even](http://7xqvel.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-07%20%E4%B8%8A%E5%8D%8810.07.04.png?imageView/3/w/600)
 
 ### 安装
 ```
@@ -58,7 +58,7 @@ layout: tags
 ```
 layout: about
 ---
-# about you 
+# about you
 ```
 
 #### 评论
