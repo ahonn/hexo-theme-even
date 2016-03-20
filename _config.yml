@@ -9,7 +9,7 @@ menu:
 favicon: /favicon.ico
 
 # Baidu Analytics
-# baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
+baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
 
 # Google Analytics
 google_analytics: UA-74273646-1
