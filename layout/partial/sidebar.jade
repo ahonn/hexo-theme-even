@@ -1,0 +1,17 @@
+input(type="checkbox", id="sidebar-toggle")
+aside
+  .author
+    img.author-img(src=url_for("img/author.png"))
+    h2.author-name!= config.author
+  if is_post()
+    .post-toc
+      span.toc-title
+        != __('Directory')
+      != toc(page.content, {list_number: false})
+  else
+    .friends
+      span.title Friends Link
+      ul.links
+        each link, name in config.friends
+          li.link-item
+            a(href="#{link}")!= name
