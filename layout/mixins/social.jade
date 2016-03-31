@@ -1,9 +1,15 @@
 mixin social_icon()
-    if theme.social
-        div.social-icon
-            if theme.social.github
-                a.fa.fa-github(href=url_for(theme.social.github))
-            if theme.social.twitter
-                a.fa.fa-twitter(href=url_for(theme.social.twitter))
-            if theme.social.weibo
-                a.fa.fa-weibo(href=url_for(theme.social.weibo))
+  if theme.social
+    div.social-icon
+      if theme.social.email
+        a.icon.icon-email(href=url_for(theme.social.email))
+      if theme.social.github
+        a.icon.icon-github(href=url_for(theme.social.github))
+      if theme.social.twitter
+        a.icon.icon-twitter(href=url_for(theme.social.twitter))
+      if theme.social.facebook
+        a.icon.icon-facebook(href=url_for(theme.social.facebook))
+      if theme.social.weibo
+        a.icon.icon-weibo(href=url_for(theme.social.weibo))
+      if theme.social.zhihu
+        a.icon.icon-zhihu(href=url_for(theme.social.zhihu))
