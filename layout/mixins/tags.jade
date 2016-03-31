@@ -1,9 +1,10 @@
 //- Page Tags
 mixin tags()
-    .tags
-        for tag in page.tags.toArray()
-            a(href=url_for(tag.path))
-                = tag.name
+    if page.tags
+      .tags
+          for tag in page.tags.toArray()
+              a(href=url_for(tag.path))
+                  = tag.name
 
 mixin tagcloud()
     .tagcloud
