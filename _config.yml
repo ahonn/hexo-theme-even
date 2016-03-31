@@ -9,7 +9,7 @@ menu:
 favicon: /favicon.ico
 
 # sidebar
-sidebar: false
+sidebar: true
 
 # Baidu Analytics
 baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8

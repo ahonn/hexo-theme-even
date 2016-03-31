@@ -23,6 +23,7 @@ aside {
   transition: 0.2s ease-out;
   background-color: @color-sidebar;
   border-left: 1px solid #ddd;
+  font-family: @font-serif;
   .author {
     padding-top: 50px;
     padding-bottom: 10px;
@@ -53,9 +54,8 @@ aside {
       display: block;
       margin: 15px 0px;
       &::before {
-        content: "> ";
-        position: relative;
-        top: -2px;
+        content: "#";
+        margin: 0px 5px;
         color: @color-theme;
         font-weight: bold;
       }
@@ -68,32 +68,36 @@ aside {
       }
     }
   }
-  .friends, .social {
+  .social {
     &::before {
       content: "";
       display: block;
       width: 84%;
-      border-bottom: 1px solid #bbb;
+      border-bottom: @small-border;
       position: relative;
       left: 8%;
     }
+  }
+  .friends, .social {
     .title {
       font-size: 16px;
       display: block;
       margin: 15px 24px;
       &::before {
-        content: "> ";
-        position: relative;
-        top: -2px;
+        content: "#";
         color: @color-theme;
         font-weight: bold;
+        margin: 0px 5px;
       }
     }
     .links {
       padding-left: 60px;
-      font-size: 14px;
-      .link-item a:hover {
-        color: @color-theme;
+      font-size: 15px;
+      .link-item a {
+        text-transform:capitalize;
+        &:hover {
+          color: @color-theme;
+        }
       }
     }
   }
