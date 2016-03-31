@@ -26,6 +26,15 @@
     h4, h5, h6 {
         font-size: 16px;
     }
+    .headerlink {
+      &:hover {
+        border-bottom: none;
+      }
+      &::before {
+        content: "#";
+        margin: 0px 5px;
+      }
+    }
     a {
         color: @color-theme;
         &:hover {
