@@ -10,3 +10,8 @@ block description
 block container
     include mixins/post
     +about()
+
+if page.comments
+  block comment
+      include mixins/comment
+      +comment()

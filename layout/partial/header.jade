@@ -1,8 +1,9 @@
-a.logo-link(href=url_for('.'))
-    = config.title
+div#top
+  a.logo-link(href=url_for('.'))
+      = config.title
 
-ul.nav.nav-list
-    each value, key in theme.menu
-        li.nav-list-item
-            a.nav-list-link(href=value target="_self")
-                = __(key)
+  ul.nav.nav-list
+      each value, key in theme.menu
+          li.nav-list-item
+              a.nav-list-link(href=value target="_self")
+                  = __(key)
