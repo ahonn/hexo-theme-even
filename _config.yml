@@ -8,9 +8,6 @@ menu:
 # site icon
 favicon: /favicon.ico
 
-# sidebar
-sidebar: false
-
 # Baidu Analytics
 baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
 
@@ -22,6 +19,9 @@ duoshuo_shortname: ahonn
 
 # Disqus
 # disqus_shortname: ahonn
+
+# sidebar
+sidebar: true
 
 # Social links
 social:
@@ -36,3 +36,4 @@ social:
 friends:
   Yzzting: http:// www.yzzting.cn
   XenK0u: http://henbukexue.science
+  Leyar: https://www.ileyar.com
