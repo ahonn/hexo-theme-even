@@ -1,7 +1,8 @@
 .copyright
         - var currentDate = new Date();
         - var year = currentDate.getFullYear()
-        - year = year == config.since ? year : config.since + ' -  ' + year
+        if config.since
+          - year = year == config.since ? year : config.since + ' -  ' + year
 
         p © #{year}
             span.heart
