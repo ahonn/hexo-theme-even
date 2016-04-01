@@ -42,11 +42,13 @@ archive_generator:
 
 #### 标签页
 - 新建页面
+
 在博客根目录下：
 ```
 hexo new page tags
 ```
 - 设置页面模版
+
 在新建的 source/tags/index.md 中添加：
 ```
 ---
@@ -56,6 +58,7 @@ layout: tags   # 添加使用 tags 模版
 ---
 ```
 - 修改菜单
+
 修改主题配置文件中的 Menu 项：
 ```
 menu:
@@ -66,11 +69,13 @@ menu:
 
 #### 关于页
 - 新建页面
+
 在博客根目录下：
 ```
 hexo new page about
 ```
 - 设置页面模版
+
 在新建的 source/about/index.md 中添加：
 ```
 ---
@@ -80,6 +85,7 @@ layout: about   # 添加使用 about 模版
 ---
 ```
 - 修改菜单
+
 修改主题配置文件中的 Menu 项：
 ```
 menu:
@@ -131,8 +137,11 @@ social:
 ### 第三方服务
 #### 统计分析
 - 开启百度统计
+
 修改主题配置文件中的 baidu_analytics 项为你的 ID
+
 - 开启谷歌分析
+
 修改主题配置文件中的 google_analytics 项为你的 ID
 ```
 # Baidu Analytics
