@@ -143,8 +143,11 @@ google_analytics: UA-74273646-1
 
 #### 评论
 - 使用多说评论
+
 修改主题配置文件中的 duoshuo_shortname 项为你的 ID
+
 - 使用 Disqus 评论
+
 修改主题配置文件中的 disqus_shortname 项为你的 ID
 ```
 # Duoshuo
