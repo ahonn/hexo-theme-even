@@ -2,8 +2,8 @@
 menu:
   Home: /
   Archives: /archives/
-  # Tags: /tags/
-  # About: /about/
+  Tags: /tags/
+  About: /about/
 
 # site icon
 favicon: /favicon.ico
