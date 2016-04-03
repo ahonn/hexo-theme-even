@@ -30,7 +30,7 @@ pagination_dir: page
 ```
 
 #### 归档页文章数
-在主题配置文件下添加：
+在站点配置文件下添加：
 ```
 # Generator-archive  需要 hexo-generator-archive
 archive_generator:
