@@ -6,6 +6,7 @@ section.container {
     body .main {
         width: 800px;
         margin: 0 auto;
+        position: relative;
     }
     header {
         padding: 20px 100px;
@@ -61,11 +62,11 @@ section.container {
     #sidebar-toggle{
       &:checked + aside {
         right: -260px;
+        transition: 0.2s right ease-in;
       }
 
       &:checked ~ .main {
-        right: 0px;
-        transition: 0.3s;
+        animation: 0.2s move forwards reverse steps(20);
       }
     }
     .sidebar-menu {
