@@ -22,7 +22,6 @@ aside {
   transition: 0.2s right ease-out;
   background-color: @color-sidebar;
   border-left: 1px solid #ddd;
-  font-family: @font-serif;
   .author {
     padding-top: 50px;
     padding-bottom: 10px;
@@ -33,41 +32,19 @@ aside {
       margin: 0 auto;
       background-color: #fff;
       border: 1px solid #bbb;
+      border-radius: 100%;
+      &:hover {
+        animation: 1.5s rotate infinite steps(20);
+      }
     }
     .author-name {
       font-size: 20px;
       text-align: center;
       margin: 10px 0px;
+      font-family: @font-serif;
     }
   }
   .post-toc {
-    margin-left: 15px;
-    &::before {
-      content: "";
-      display: block;
-      width: 230px;
-      border-bottom: 1px solid #bbb;
-    }
-    .toc-title {
-      font-size: 16px;
-      display: block;
-      margin: 15px 0px;
-      &::before {
-        content: "#";
-        margin: 0px 5px;
-        color: @color-theme;
-        font-weight: bold;
-      }
-    }
-    ol {
-      font-size: 14px;
-      list-style: disc;
-      a:hover {
-        color: @color-theme;
-      }
-    }
-  }
-  .social {
     &::before {
       content: "";
       display: block;
@@ -76,10 +53,43 @@ aside {
       position: relative;
       left: 8%;
     }
+    .toc-title {
+      font-size: 18px;
+      display: block;
+      margin: 15px 24px;
+      font-family: @font-serif;
+      &::before {
+        content: "#";
+        margin: 0px 5px;
+        color: @color-theme;
+        font-weight: bold;
+      }
+    }
+    ol {
+      font-size: 15px;
+      list-style: disc;
+      padding-left: 20px;
+      &.toc {
+        padding-left: 60px;
+      }
+      a:hover {
+        color: @color-theme;
+      }
+    }
   }
+
   .friends, .social {
+    font-family: @font-serif;
+    &::before {
+      content: "";
+      display: block;
+      width: 84%;
+      border-bottom: @small-border;
+      position: relative;
+      left: 8%;
+    }
     .title {
-      font-size: 16px;
+      font-size: 18px;
       display: block;
       margin: 15px 24px;
       &::before {
