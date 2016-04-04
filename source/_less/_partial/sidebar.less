@@ -2,11 +2,10 @@
   display: none;
   &:checked + aside {
     right: 0px;
+    transition: 0.2s right ease-out;
   }
   &:checked ~ .main {
-    position: relative;
-    right: 130px;
-    transition: 0.3s;
+    animation: 0.2s move forwards steps(20);
   }
   &:checked ~ .sidebar-menu>.menu {
     background: url("../img/close.png");
@@ -20,7 +19,7 @@ aside {
   bottom: 0px;
   right: -260px;
   width: 260px;
-  transition: 0.2s ease-out;
+  transition: 0.2s right ease-out;
   background-color: @color-sidebar;
   border-left: 1px solid #ddd;
   font-family: @font-serif;
