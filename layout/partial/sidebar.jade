@@ -1,7 +1,8 @@
 input(type="checkbox", id="sidebar-toggle")
 aside
   .author
-    img.author-img(src=url_for("img/author.png"))
+    a(href=url_for('.'))
+      img.author-img(src=url_for("img/author.png"))
     h2.author-name!= config.author
   if is_post()
     .post-toc
