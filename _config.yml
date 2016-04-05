@@ -24,9 +24,9 @@ google_analytics: UA-74273646-1
 
 # Comments
 ## Duoshuo
-duoshuo_shortname: ahonn
+# duoshuo_shortname: ahonn
 ## Disqus
-# disqus_shortname: ahonn
+disqus_shortname: ahonn
 
 # Social links
 social:
