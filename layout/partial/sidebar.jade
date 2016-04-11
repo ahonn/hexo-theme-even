@@ -16,11 +16,15 @@ aside
         ul.links
           each link, name in theme.social
             li.link-item
-              a(href="#{link}")!= name
+              a(href="#{link}")
+                div(class="icon icon-#{name}")
+                != name
     if theme.friends
       .friends
         span.title Friends Link
         ul.links
           each link, name in theme.friends
             li.link-item
-              a(href="#{link}")!= name
+              i(class="fa fa-link")
+              a(href="#{link}")
+                != name

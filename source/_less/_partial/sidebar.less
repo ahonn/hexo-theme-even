@@ -1,12 +1,15 @@
 #sidebar-toggle {
   display: none;
+
   &:checked + aside {
     right: 0px;
     transition: 0.2s right ease-out;
   }
+
   &:checked ~ .main {
     animation: 0.2s move forwards steps(20);
   }
+
   &:checked ~ .sidebar-menu>.menu {
     background: url("../img/close.png");
     background-size: 100%;
@@ -22,9 +25,11 @@ aside {
   transition: 0.2s right ease-out;
   background-color: @color-sidebar;
   border-left: 1px solid #ddd;
+
   .author {
     padding-top: 50px;
     padding-bottom: 10px;
+
     .author-img {
       width: 80px;
       height: 80px;
@@ -33,6 +38,7 @@ aside {
       background-color: #fff;
       border: 1px solid #bbb;
       border-radius: 100%;
+
       &:hover {
         animation: 1.5s rotate infinite steps(20);
       }
@@ -53,11 +59,13 @@ aside {
       position: relative;
       left: 8%;
     }
+
     .toc-title {
       font-size: 18px;
       display: block;
       margin: 15px 24px;
       font-family: @font-serif;
+
       &::before {
         content: "#";
         margin: 0px 5px;
@@ -65,13 +73,16 @@ aside {
         font-weight: bold;
       }
     }
+
     ol {
       font-size: 15px;
       list-style: disc;
       padding-left: 20px;
+
       &.toc {
         padding-left: 60px;
       }
+
       a:hover {
         color: @color-theme;
       }
@@ -80,6 +91,7 @@ aside {
 
   .friends, .social {
     font-family: @font-serif;
+
     &::before {
       content: "";
       display: block;
@@ -88,6 +100,7 @@ aside {
       position: relative;
       left: 8%;
     }
+
     .title {
       font-size: 18px;
       display: block;
@@ -99,13 +112,29 @@ aside {
         margin: 0px 5px;
       }
     }
+
     .links {
-      padding-left: 60px;
+      padding-left: 50px;
+      list-style: none;
       font-size: 15px;
-      .link-item a {
-        text-transform:capitalize;
-        &:hover {
-          color: @color-theme;
+
+      .icon {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        margin: auto 5px;
+      }
+
+      .link-item {
+        a {
+          line-height: 20px;
+          text-transform:capitalize;
+
+          &:hover {
+            color: @color-theme;
+          }
         }
       }
     }
