@@ -5,15 +5,15 @@ var cssmin = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('less', function () {
-    gulp.src('./source/_less/style.less')
+    gulp.src('./style/style.less')
         .pipe(less())
-        .pipe(autoprefixer('last 2 versions'))
+        .pipe(autoprefixer('last 3 versions'))
         .pipe(cssmin())
         .pipe(gulp.dest('./source/css'));
 });
 
 gulp.task('default', ['less'], function() {
-    gulp.watch('./source/_less/_base/*.less', ['less']);
-    gulp.watch('./source/_less/_partial/*.less', ['less']);
-    gulp.watch('./source/_less/*.less', ['less']);
+    gulp.watch('./source/style/base/*.less', ['less']);
+    gulp.watch('./source/style/partial/*.less', ['less']);
+    gulp.watch('./source/style/style.less', ['less']);
 });
