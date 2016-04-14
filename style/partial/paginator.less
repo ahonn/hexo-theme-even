@@ -1,23 +1,29 @@
 .paginator {
-    margin-top: 2em;
-    margin-bottom: 4em;
-    padding: 1em 0;
-    text-align: center;
-    display: block;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  padding: 1em 0;
+  text-align: center;
+  display: block;
 
-    .prev,
-    .next {
-        display: inline-block;
-        font-weight: bold;
-        font-size: 18px;
+  .prev,
+  .next {
+    display: inline-block;
+    font-family: @font-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  a {
+    &.prev {
+        float: left;
     }
 
-    a {
-        &.prev {
-            float: left;
-        }
-        &.next {
-            float: right;
-        }
+    &.next {
+        float: right;
     }
+
+    &:hover {
+      color: @color-theme;
+    }
+  }
 }

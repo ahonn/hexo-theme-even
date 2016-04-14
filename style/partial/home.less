@@ -1,15 +1,19 @@
 .home {
-    &.post-list {
-        margin: 2em 0;
-        .post-list-item {
-            padding: 1em 0 2em;
-            border-bottom: @small-border;
-        }
-        .read-more {
-            color: @color-theme;
-            &:hover {
-                border-bottom: @link-border;
-            }
-        }
+  &.post-list {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    .post-list-item {
+      padding-top: 1em;
+      padding-bottom: 2em;
+      border-bottom: @small-border;
     }
+    .read-more {
+      color: @color-theme;
+
+      &:hover {
+        border-bottom: @link-border;
+      }
+    }
+  }
 }

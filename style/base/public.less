@@ -1,69 +1,58 @@
 body {
-    margin: 0;
-    color: @color-font;
-    font-size: @font-size;
-    line-height: @line-height;
-    font-family: @font-default;
+  margin: 0;
+  color: @color-font;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-family: @font-default;
 }
 
 ul {
-    &.nav, &.post-list {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 a {
-    transition: 0.05s;
-    margin: 2px 0;
-    &, &:active {
-        border-color: @color-font;
-        color: @color-font;
-        text-decoration: none;
-    }
-    &.nav-list-link {
-        &.active, &:hover {
-            border-bottom: @link-border2;
-        }
-    }
-    &.post-title-link {
-        &:hover {
-            border-bottom: @link-border2;
-        }
-    }
+  margin: 2px 0;
+  border-color: @color-font;
+  color: @color-font;
+  text-decoration: none;
 }
 
 code {
-    margin: 0 2px;
-    padding: 3px 5px;
-    color: @color-code;
-    border-radius: 2px;
-    white-space: inherit;
+  margin: 0 2px;
+  padding: 3px 5px;
+  color: @color-code;
+  border-radius: 2px;
+  white-space: inherit;
 }
 
 iframe, video {
-    max-width: 100%;
-    margin: 1rem auto;
-    display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  display: block;
 }
 
 table {
-    width: 100%;
-    thead {
-        background-color: #ddd;
-        th {
-            padding: 5px;
-        }
+  width: 100%;
+
+  thead {
+    background-color: #ddd;
+
+    th {
+      padding: 5px;
     }
-    tbody {
-        tr:nth-child(2n) {
-            background-color: #eee;
-        }
-        td {
-            padding: 5px;
-        }
+  }
+
+  tbody {
+    tr:nth-child(2n) {
+      background-color: #eee;
     }
+
+    td {
+      padding: 5px;
+    }
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -71,7 +60,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .fa {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 .icon-email {
