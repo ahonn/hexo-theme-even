@@ -3,35 +3,29 @@
     padding-top: 20px;
     border-top: @small-border;
     font-family: @font-serif;
-
     a {
-      margin-right: 10px;
-      color: @color-theme;
-
-      &::before {
-        content: '#';
-        margin: 0 1px;
-      }
+        margin-right: 10px;
+        color: @color-theme;
+        &::before {
+            content: '#';
+            margin: 0 1px;
+        }
     }
 }
-
 .tagcloud {
     margin: 5em 1em;
     color: @color-theme;
     font-family: @font-serif;
     text-align: center;
-
     .tags-total p {
         width: 90px;
         margin: auto;
         border-bottom: @link-border;
     }
-
     a {
         display: inline-block;
         margin: 5px;
         word-wrap: break-word;
-
         &:hover {
             color: @color-theme;
         }
