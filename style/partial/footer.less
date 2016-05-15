@@ -3,11 +3,16 @@
     display: block;
     text-align: center;
     font-size: 30px;
-    .icon {
+    .iconfont {
       width: 30px;
       height: 30px;
+      font-size: 30px;
       display: inline-block;
       margin: 0px 5px;
+
+      &:hover {
+        color: @color-theme;
+      }
     }
 }
 
@@ -15,6 +20,11 @@
     margin: 0;
     text-align: center;
     font-family: @font-serif;
+
+    .heart {
+      margin-left: 2px;
+      margin-right: 2px;
+    }
 
     p, a {
         color: #aaa;
