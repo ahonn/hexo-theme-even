@@ -9,7 +9,10 @@ menu:
 favicon: /favicon.ico
 
 # sidebar
-sidebar: true
+## display: post / always / hide / remove
+sidebar:
+  display: remove
+
 ## Friends Link
 friends:
   Yzzting: http://www.yzz1995.cn
