@@ -11,7 +11,7 @@ favicon: /favicon.ico
 # sidebar
 ## display: post / always / hide / remove
 sidebar:
-  display: remove
+  display: hide
 
 ## Friends Link
 friends:
