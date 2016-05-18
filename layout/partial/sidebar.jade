@@ -26,7 +26,7 @@ if display != "remove"
               a(href="#{link}")
                 div(class="iconfont icon-#{name}")  
                 != name
-    if is_home() && theme.friends
+    if !is_post() && theme.friends
       .friends
         span.title Friends Link
         ul.links
