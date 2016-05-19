@@ -1,4 +1,6 @@
 extends partial/layout
+include mixins/post
+include mixins/paginator
 
 block site_title
     if page.archive
@@ -11,12 +13,10 @@ block description
     meta(name="description", content=desc)
 
 block container
-    include mixins/post
     if page.tag
         +tagList()
     if page.archive
         +postList()
 
 block pagination
-    include mixins/paginator
     +home()

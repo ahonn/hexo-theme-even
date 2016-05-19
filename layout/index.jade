@@ -1,4 +1,7 @@
 extends partial/layout
+include mixins/post
+include mixins/paginator
+include mixins/social
 
 block site_title
     != config.title
@@ -9,13 +12,10 @@ block description
         meta(name="description", content=desc)
 
 block container
-    include mixins/post
     +posts()
 
 block pagination
-    include mixins/paginator
     +home()
 
 block social
-    include mixins/social
     +social_icon()

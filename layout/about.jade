@@ -1,4 +1,6 @@
 extends partial/layout
+include mixins/post
+include mixins/comment
 
 block site_title
   != __('About') + " · " + config.title
@@ -8,9 +10,7 @@ block description
   meta(name="description", content=desc)
 
 block container
-  include mixins/post
   +about()
 
 block comment
-  include mixins/comment
   +comment()

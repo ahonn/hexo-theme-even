@@ -1,4 +1,5 @@
 extends partial/layout
+include mixins/tags
 
 block site_title
     != __('Tags') + " · " + config.title
@@ -8,5 +9,4 @@ block description
     meta(name="description", content=desc)
 
 block container
-    include mixins/tags
     +tagcloud()
