@@ -5,5 +5,18 @@ div#top
   ul.nav.nav-list
       each value, key in theme.menu
           li.nav-list-item
+            if is_home() && key == "Home"
+              a.nav-list-link.active(href=value target="_self")
+                  = __(key)
+            else if is_archive() && key == "Archives"
+              a.nav-list-link.active(href=value target="_self")
+                  = __(key)
+            else if (is_tag() || page.layout == "tags") && key == "Tags"
+              a.nav-list-link.active(href=value target="_self")
+                  = __(key)
+            else if page.layout == "about" && key == "About"
+              a.nav-list-link.active(href=value target="_self")
+                  = __(key)
+            else
               a.nav-list-link(href=value target="_self")
                   = __(key)
