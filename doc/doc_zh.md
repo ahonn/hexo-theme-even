@@ -155,6 +155,14 @@ google_analytics: UA-74273646-1
 ```
 
 #### 评论
+- 开启评论
+
+修改主题配置文件中的 comments 项开启评论
+
+comments.post 项为文章页评论
+
+comments.about 项为 About 页评论 
+
 - 使用多说评论
 
 修改主题配置文件中的 duoshuo_shortname 项为你的 ID
