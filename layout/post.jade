@@ -1,6 +1,7 @@
 extends partial/layout
 include mixins/post
 include mixins/tags
+include mixins/paginator
 include mixins/comment
 
 block site_title
@@ -17,7 +18,7 @@ block tags
   +tags()
 
 block pagination
-  +post()
+  +post_paginator()
 
 block comment
   if theme.comments.post

@@ -1,4 +1,4 @@
-mixin home()
+mixin home_paginator()
     - var prev = page.prev_link
     - var next = page.next_link
     .paginator
@@ -13,7 +13,7 @@ mixin home()
                         != __('next')
                     i.fa.fa-chevron-right
 
-mixin post()
+mixin post_paginator()
     - var prev = page.prev ? page.prev.path : false;
     - var next = page.next ? page.next.path : false;
     .paginator
