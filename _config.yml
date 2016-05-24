@@ -13,6 +13,11 @@ favicon: /favicon.ico
 sidebar:
   display: hide
 
+# comments
+comments:
+  post: true
+  about: true
+
 ## Friends Link
 friends:
   Yzzting: http://www.yzz1995.cn

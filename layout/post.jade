@@ -4,20 +4,21 @@ include mixins/tags
 include mixins/comment
 
 block site_title
-    != page.title + " · " + config.title
+  != page.title + " · " + config.title
 
 block description
-    - desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+  - desc = page.desc || page.title + ' - ' + config.author;
+  meta(name="description", content=desc)
 
 block container
-    +post()
+  +post()
 
 block tags
-    +tags()
+  +tags()
 
 block pagination
-    +post()
+  +post()
 
 block comment
+  if theme.comments.post
     +comment()
