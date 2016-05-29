@@ -2,12 +2,12 @@
     #ds-thread #ds-reset {
         .ds-sort {
             a {
-                &.ds-current, &:active {
+                &.ds-current,
+                &:active {
                     color: @color-theme;
                 }
             }
         }
-
         li.ds-tab {
             a.ds-current {
                 background-color: #fff;
@@ -18,7 +18,7 @@
         }
         .ds-service-link {
             background: #fff;
-            padding: 0px 0px;
+            padding: 0;
             &.ds-weixin {
                 color: #348903;
             }
@@ -29,21 +29,23 @@
                 color: #12b7f5;
             }
             &.ds-renren {
-                display:none;
+                display: none;
             }
         }
-
         .ds-login-buttons {
             .ds-service-list li {
                 width: auto;
             }
             .ds-more-services {
-                display:none;
+                display: none;
             }
         }
-
         .ds-sync {
-          display: none;
+            display: none;
         }
+    }
+
+    #disqus_thread {
+      margin: 0 20px;
     }
 }
