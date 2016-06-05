@@ -1,0 +1,110 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group global
+///
+
+// Font size attribute applied to '<html>' and '<body>'.
+// @type Number
+$global-font-size: 100% !default;
+
+// Global width of the site
+// @type Number
+$global-width: rem-calc(1200) !default;
+
+// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
+// @type Number
+$global-lineheight: 1.5 !default;
+
+// Default theme color of the site.
+// @type Color
+$global-theme-color: #c05b4d !default;
+
+/// Global font weight used for normal type.
+/// @type Keyword | Number
+$global-weight-normal: normal !default;
+
+/// Global font weight used for bold type.
+/// @type Keyword | Number
+$global-weight-bold: bold !default;
+
+// Color used for light gray ui items.
+// @type Color
+$light-gray: #e6e6e6 !default;
+
+// Color used for medium gray ui items.
+// @type Color
+$medium-gray: #cacaca !default;
+
+// Color used for dark gray ui items.
+// @type Color
+$dark-gray: #8a8a8a !default;
+
+// Color used for black ui items.
+// @type Color
+$black: #0a0a0a !default;
+
+// Color used for white ui items.
+// @type Color
+$white: #fefefe !default;
+
+// Text color of the body.
+// @type Color
+$body-font-color: #34495e !default;
+
+// Font family of the body.
+// @type List
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// Serif font family of body.
+// @type List
+$body-serif-font-family: 'PT Serif', 'STZhongsong', 'Microsoft Yahei', serif !default;
+
+// Background color of body
+// @type Color
+$body-background: $white;
+
+// Border top of body
+// @type List
+$body-border-top: 3px solid $global-theme-color;
+
+@mixin even-global-styles {
+  @include normalize;
+
+  html {
+    font-size: $global-font-size;
+    box-sizing: border-box;
+  }
+
+  // Default body styles
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: $body-font-family;
+    font-weight: $global-weight-normal;
+    line-height: $global-lineheight;
+    color: $body-font-color;
+    background: $body-background;
+
+    @if $body-border-top {
+      border-top: $body-border-top;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    color: $body-font-color;
+    text-decoration: none;
+  }
+
+  #main {
+    width: 800px;
+    margin: 0 auto;
+  }
+}

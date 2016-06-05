@@ -1,27 +1,10 @@
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
-
-title
-    block site_title
-        = config.title
-block description
-    meta(name="description", contebt= config.description)
-
+meta(name="description", contebt= config.description)
 meta(name="viewport", content="width=device-width, initial-scale=1")
 
+block title
+        
 link(rel="short icon", href=url_for(theme.favicon))
-
-link(rel="stylesheet", href="/css/style.css")
-
-// fonts
+link(rel="stylesheet", href=url_for("./css/style.css"))
 link(rel="stylesheet", href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css")
-
-if theme.baidu_analytics
-    // baidu analytics
-    include ../mixins/analytics
-    +baidu_analytics()
-
-if theme.google_analytics
-    // google analytics
-    include ../mixins/analytics
-    +google_analytics()

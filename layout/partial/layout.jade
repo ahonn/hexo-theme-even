@@ -3,17 +3,15 @@ html(lang=config.language)
   head
     include head
   body
-    include sidebar
-    .main
+    //- include sidebar
+    #main
       header
         include header
       section.container
         block container
         block tags
         block pagination
-      block comment
+        block comment
       footer
-        block social
-        include tool
-        include copyright
+        include footer
   include script

@@ -1,22 +1,27 @@
-div#top
-  a.logo-link(href=url_for('.'))
-      = config.title
-
-  ul.nav.nav-list
-      each value, key in theme.menu
-          li.nav-list-item
-            if is_home() && key == "Home"
-              a.nav-list-link.active(href=value target="_self")
-                  = __(key)
-            else if is_archive() && key == "Archives"
-              a.nav-list-link.active(href=value target="_self")
-                  = __(key)
-            else if (is_tag() || page.layout == "tags") && key == "Tags"
-              a.nav-list-link.active(href=value target="_self")
-                  = __(key)
-            else if page.layout == "about" && key == "About"
-              a.nav-list-link.active(href=value target="_self")
-                  = __(key)
-            else
-              a.nav-list-link(href=value target="_self")
-                  = __(key)
+//- Logo
+a.logo(href=url_for('.'))
+  = config.title
+  
+//- Navbar
+ul.nav
+  each link, name in theme.menu
+    li.nav-link
+      if is_home() && name == "Home"
+        a.active(href=link)
+          != __(name)
+          
+      else if is_archive() && name == "Archives"
+        a.active(href=link target="_self")
+          != __(name)
+          
+      else if (is_tag() || page.layout == "tags") && name == "Tags"
+        a.active(href=link target="_self")
+          != __(name)
+          
+      else if page.layout == "about" && name == "About"
+        a.active(href=link target="_self")
+          != __(name)
+          
+      else
+        a(href=link target="_self")
+          != __(name)

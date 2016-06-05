@@ -1,19 +1,29 @@
+'use strict';
 
-var gulp = require('gulp');
-var less = require('gulp-less');
-var cssmin = require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer')
+var gulp     = require('gulp');
+var sass     = require('gulp-sass');
+var mincss   = require('gulp-clean-css');
+var prefixer = require('gulp-autoprefixer');
+var rimraf   = require('rimraf');
 
-gulp.task('less', function () {
-    gulp.src('./style/style.less')
-        .pipe(less())
-        .pipe(autoprefixer('last 3 versions'))
-        .pipe(cssmin())
-        .pipe(gulp.dest('./source/css'));
+gulp.task('clean', function (done) {
+  rimraf('./source/css/style.css', done);
 });
 
-gulp.task('default', ['less'], function() {
-    gulp.watch('./source/style/base/*.less', ['less']);
-    gulp.watch('./source/style/partial/*.less', ['less']);
-    gulp.watch('./source/style/style.less', ['less']);
+// Compile Sass into CSS
+gulp.task('sass', function () {
+  gulp.src('./style/style.scss')
+      .pipe(sass())
+      .pipe(prefixer('last 3 versions'))
+      .pipe(mincss())
+      .pipe(gulp.dest('./source/css'));
 });
+
+// Watch for changes to Sass
+gulp.task('watch', function () {
+  gulp.watch('./style/**/*.scss', ['sass']);
+});
+
+gulp.task('build', ['clean', 'sass']);
+
+gulp.task('default', ['build', 'watch']);

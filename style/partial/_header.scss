@@ -1,0 +1,56 @@
+// Even theme for Hexo by Ahonn
+
+@font-face {
+  font-family: 'Chancery';
+  src: url('../fonts/chancery/apple-chancery-webfont.eot');
+  src: url('../fonts/chancer/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/chancery/apple-chancery-webfont.woff') format('woff'),
+  url('../fonts/chancery/apple-chancery-webfont.ttf') format('truetype'),
+  url('../fonts/chancery/apple-chancery-webfont.svg#apple-chancery') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+$header-height: 4rem;
+
+$logo-font-family: 'Chancery', cursive, LiSu, sans-serif;
+
+$logo-font-size: 3rem;
+
+
+
+@mixin even-header {
+  header {
+    height: $header-height;
+    padding: 1.5rem 6rem;
+
+    .logo {
+      float: left;
+      font-size: $logo-font-size;
+      font-family: $logo-font-family;
+    }
+
+    .nav {
+      float: right;
+      left: 80px;
+      margin: 0;
+      font-family: $body-serif-font-family;
+
+      .nav-link {
+        display: inline-block;
+        padding: 1.5rem 0.7rem;
+
+        a {
+          font-size: 1.05rem;
+          line-height: $global-lineheight;
+        }
+
+        :hover, .active {
+          border-radius: 2px;
+          border-bottom: 2px solid $global-theme-color;
+          transition: 0.1s ease-out;
+        }
+      }
+    }
+  }
+}
