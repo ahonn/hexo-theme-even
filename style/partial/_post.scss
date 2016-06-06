@@ -1,0 +1,94 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group post
+///
+
+// Font siz of post title
+// @type Number
+$post-title-font-size: 26px;
+
+// Border bottom of post title link
+// @type List
+$post-title-link-border: 2px solid $global-theme-color;
+
+// Border bottom of '<a>'
+// @type List
+$content-link-border: 1px solid $global-theme-color;
+
+// Border Left of '<blockquote>'
+// @type List
+$content-blockquote-border: 4px solid $global-theme-color;
+
+// List style of '<ul>'
+// @type List
+$content-list-style: inside square;
+
+@mixin even-post {
+  .post {
+    .post-title {
+      margin: 0px;
+      font-size: $post-title-font-size;
+      font-family: $body-serif-font-family;
+
+      .post-link {
+        &:hover {
+          border-bottom: $post-title-link-border;
+          transition: 0.1s;
+        }
+      }
+    }
+
+    .post-time {
+      margin-top: 5px;
+      display: inline-block;
+      color: $dark-gray;
+    }
+
+    .post-content {
+      @for $i from 1 through 6 {
+        h#{$i} {
+          font-family: $body-serif-font-family;
+        }
+      }
+
+      .headerlink {
+        &:hover {
+          border-bottom: 0; 
+        }
+
+        &::before {
+          content: '#';
+          position: relative;
+          top: 2px;
+          margin-right: 5px;
+          font-size: 1.3em;
+        }
+      }
+
+      a {
+        color: $global-theme-color;
+
+        &:hover {
+          border-bottom: $content-link-border;
+        }
+      }
+
+      blockquote {
+        margin: 2em 0;
+        padding-left: 20px;
+        color: $dark-gray;
+        border-left: $content-blockquote-border;
+      }
+
+      img {
+        display: inline-block;
+        max-width: 100%;
+      }
+
+      ul {
+        list-style: $content-list-style;
+      }
+    }
+  }
+}

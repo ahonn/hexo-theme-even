@@ -13,6 +13,8 @@
 @import 'partial/iconfont';
 @import 'partial/header';
 @import 'partial/footer';
+@import 'partial/post';
+@import 'partial/code';
 
 @import "partial/home";
 
@@ -22,5 +24,7 @@
 @include even-iconfont;
 @include even-header;
 @include even-footer;
+@include even-post;
+@include even-code;
 
 @include even-home;

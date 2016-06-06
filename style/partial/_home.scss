@@ -16,6 +16,7 @@ $readMore-border-bottom: 1px solid $global-theme-color;
     margin-bottom: $home-margin;
 
     .post-item {
+      list-style: none;
       padding-top: 1em;
       padding-bottom: 2em;
       border-bottom: $post-border-bottom;
@@ -23,6 +24,7 @@ $readMore-border-bottom: 1px solid $global-theme-color;
 
     .read-more {
       color: $global-theme-color;
+      font-family: $body-serif-font-family;
 
       &:hover {
         border-bottom: $readMore-border-bottom

@@ -69,9 +69,12 @@ $body-background: $white;
 $body-border-top: 3px solid $global-theme-color;
 
 // Width of the main
-// Number
+// @type Number
 $body-main-width: 800px;
 
+// Margin of the container
+// @type Number
+$body-container-margin: 32px 20px;
 
 // Global styles of the even theme
 @mixin even-global-styles {
@@ -117,5 +120,9 @@ $body-main-width: 800px;
   #main {
     width: $body-main-width;
     margin: 0 auto;
+  }
+
+  #container {
+    margin: $body-container-margin
   }
 }

@@ -406,6 +406,9 @@ ul {
   width: 800px;
   margin: 0 auto; }
 
+#container {
+  margin: 32px 20px; }
+
 .iconfont {
   display: inline-block;
   font-family: "iconfont" !important;
@@ -491,14 +494,81 @@ header {
   bottom: 20px;
   z-index: 10; }
 
+.post .post-title {
+  margin: 0px;
+  font-size: 26px;
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-title .post-link:hover {
+    border-bottom: 2px solid #c05b4d;
+    transition: 0.1s; }
+
+.post .post-time {
+  margin-top: 5px;
+  display: inline-block;
+  color: #8a8a8a; }
+
+.post .post-content h1 {
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+
+.post .post-content h2 {
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+
+.post .post-content h3 {
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+
+.post .post-content h4 {
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+
+.post .post-content h5 {
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+
+.post .post-content h6 {
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+
+.post .post-content .headerlink:hover {
+  border-bottom: 0; }
+
+.post .post-content .headerlink::before {
+  content: '#';
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  font-size: 1.3em; }
+
+.post .post-content a {
+  color: #c05b4d; }
+  .post .post-content a:hover {
+    border-bottom: 1px solid #c05b4d; }
+
+.post .post-content blockquote {
+  margin: 2em 0;
+  padding-left: 20px;
+  color: #8a8a8a;
+  border-left: 4px solid #c05b4d; }
+
+.post .post-content img {
+  display: inline-block;
+  max-width: 100%; }
+
+.post .post-content ul {
+  list-style: inside square; }
+
+code {
+  padding: 3px 5px;
+  color: #c05b4d;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.04); }
+
 .home {
   margin-top: 2em;
   margin-bottom: 2em; }
   .home .post-item {
+    list-style: none;
     padding-top: 1em;
     padding-bottom: 2em;
     border-bottom: 1px solid #e6e6e6; }
   .home .read-more {
-    color: #c05b4d; }
+    color: #c05b4d;
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
     .home .read-more:hover {
       border-bottom: 1px solid #c05b4d; }

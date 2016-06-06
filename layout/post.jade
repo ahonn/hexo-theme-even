@@ -1,0 +1,22 @@
+extends partial/layout
+
+include mixins/container
+include mixins/paginator
+include mixins/tags
+include mixins/comment
+
+block title
+  title= config.title
+
+block container
+  +post()
+
+block tags
+  +tags()
+
+block pagination
+  +paginator('post')
+
+block comment
+  if theme.comments.post
+    +comment()
