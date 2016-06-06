@@ -1,0 +1,72 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group footer
+///
+
+// Font size of the iconfont
+// @type Number
+$icon-font-size: 30px !default;
+
+// Margin right of the icon
+// @type Number
+$icon-margin-right: 5px !default;
+
+@mixin even-footer {
+  @include even-social;
+  @include even-copyright;
+  @include even-toolbar;
+}
+
+@mixin even-social {
+  .social {
+    display: block;
+    text-align: center;
+
+    .iconfont {
+      display: inline-block;
+      margin-right: $icon-margin-right;
+      font-size: $icon-font-size;
+
+      &:hover {
+        color: $global-theme-color;
+      }
+    }
+  }
+}
+
+@mixin even-copyright {
+  .copyright {
+    color: $dark-gray;
+    text-align: center;
+    font-family: $body-serif-font-family;
+
+    .heart {
+      margin: 0 5px;
+    }
+
+    .author {
+      color: $dark-gray;
+
+      &:hover {
+        color: $global-theme-color;
+      }
+    }
+  }
+}
+
+@mixin even-toolbar {
+  .sidebar {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 10;
+  }
+
+  #back2top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+  }
+}

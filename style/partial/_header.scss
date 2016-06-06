@@ -1,5 +1,38 @@
 // Even theme for Hexo by Ahonn
 
+///
+// @group header
+///
+
+// Height of the header.
+// @type Number
+$header-height: 60px !default;
+
+// Padding of the header.
+// @type List
+$header-padding: 20px 100px !default;
+
+// Font size of the logo.
+// @type Number
+$logo-font-size: 50px !default;
+
+// Font family of the logo.
+// @type List
+$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+
+// Padding of navbar link item.
+// @type List
+$navbar-link-padding: 20px 10px !default;
+
+// Font size of navbar.
+// @type Number
+$navbar-font-size: 17px !default;
+
+// Border bottom of navbar when it hover of active.
+// @tpye List
+$navbar-active-border: 2px solid $global-theme-color !default;
+
+// Font face whit the logo.
 @font-face {
   font-family: 'Chancery';
   src: url('../fonts/chancery/apple-chancery-webfont.eot');
@@ -11,18 +44,10 @@
   font-style: normal;
 }
 
-$header-height: 4rem;
-
-$logo-font-family: 'Chancery', cursive, LiSu, sans-serif;
-
-$logo-font-size: 3rem;
-
-
-
 @mixin even-header {
   header {
     height: $header-height;
-    padding: 1.5rem 6rem;
+    padding: $header-padding;
 
     .logo {
       float: left;
@@ -32,23 +57,22 @@ $logo-font-size: 3rem;
 
     .nav {
       float: right;
-      left: 80px;
-      margin: 0;
+      margin-top: 0;
       font-family: $body-serif-font-family;
 
       .nav-link {
         display: inline-block;
-        padding: 1.5rem 0.7rem;
+        padding: $navbar-link-padding;
 
         a {
-          font-size: 1.05rem;
+          font-size: $navbar-font-size;
           line-height: $global-lineheight;
         }
 
         :hover, .active {
-          border-radius: 2px;
-          border-bottom: 2px solid $global-theme-color;
           transition: 0.1s ease-out;
+          border-radius: 2px;
+          border-bottom: $navbar-active-border;
         }
       }
     }

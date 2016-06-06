@@ -1,7 +1,7 @@
 /**
  * Even theme for Hexo by Ahonn
  * Version 1.0.0
- * github.com/ahonn/hexo-theme-even
+ * https://github.com/ahonn/hexo-theme-even
  */
 
 // Normalize.css
@@ -10,7 +10,17 @@
 // Global variables and styles
 @import 'global';
 
-@import "partial/header";
+@import 'partial/iconfont';
+@import 'partial/header';
+@import 'partial/footer';
 
+@import "partial/home";
+
+// include even theme style
 @include even-global-styles;
+
+@include even-iconfont;
 @include even-header;
+@include even-footer;
+
+@include even-home;

@@ -1,0 +1,16 @@
+//- Home
+mixin home()
+  ul.home
+    - page.posts.each(function (item) {
+      li.post-item
+        article.post
+          h2.post-title
+            a.post-link(href=url_for(item.path))
+              != item.title
+          span.post-time
+            != full_date(item.data, 'll')
+          div.post-content
+            != item.excerpt
+          a.read-more(href=url_for(item.path))
+            != __('more') 
+    - })

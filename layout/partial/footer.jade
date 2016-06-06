@@ -1,6 +1,6 @@
 //- social
 if theme.social
-  div.social-icon
+  div.social
     for link, name in theme.social
       a.iconfont(class="icon-#{name}" href=url_for(link)) 
 
@@ -12,10 +12,10 @@ if theme.social
   if since
     - year = year == since ? year : "#{since}-#{year}"
     
-  p &copy;#{year}
+  p &copy; #{year}
     span.heart
       i.fa.fa-heart
-    a(href=url_for(config.url))
+    a.author(href=url_for(config.url))
       != config.author
 
 //- Sidebar toggle
@@ -24,5 +24,5 @@ if theme.sidebar.display != "remove"
     i.fa.fa-bars
     
 //- Back to top
-label.back2top
+label#back2top
   i.fa.fa-chevron-up

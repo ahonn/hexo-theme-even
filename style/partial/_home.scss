@@ -1,0 +1,32 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group home
+///
+
+$home-margin: 2em;
+
+$post-border-bottom: 1px solid $light-gray;
+
+$readMore-border-bottom: 1px solid $global-theme-color;
+
+@mixin even-home {
+  .home {
+    margin-top: $home-margin;
+    margin-bottom: $home-margin;
+
+    .post-item {
+      padding-top: 1em;
+      padding-bottom: 2em;
+      border-bottom: $post-border-bottom;
+    }
+
+    .read-more {
+      color: $global-theme-color;
+
+      &:hover {
+        border-bottom: $readMore-border-bottom
+      }
+    }
+  }
+}

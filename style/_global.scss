@@ -68,6 +68,12 @@ $body-background: $white;
 // @type List
 $body-border-top: 3px solid $global-theme-color;
 
+// Width of the main
+// Number
+$body-main-width: 800px;
+
+
+// Global styles of the even theme
 @mixin even-global-styles {
   @include normalize;
 
@@ -103,8 +109,13 @@ $body-border-top: 3px solid $global-theme-color;
     text-decoration: none;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
   #main {
-    width: 800px;
+    width: $body-main-width;
     margin: 0 auto;
   }
 }

@@ -15,7 +15,7 @@ gulp.task('sass', function () {
   gulp.src('./style/style.scss')
       .pipe(sass())
       .pipe(prefixer('last 3 versions'))
-      .pipe(mincss())
+      // .pipe(mincss())
       .pipe(gulp.dest('./source/css'));
 });
 

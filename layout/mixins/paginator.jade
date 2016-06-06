@@ -1,0 +1,20 @@
+//- paginator
+mixin paginator(layout)
+  if layout == 'home'
+    - var prev = page.prev_link
+    - var next = page.next_link
+  else if layout == 'post'
+    - var prev = page.prev ? page.prev.path : false;
+    - var next = page.next ? page.next.path : false;
+    
+  .paginator
+    if page.prev || prev
+      a.prev(href=url_for(prev))
+        i.fa.fa-chevron-left
+        span 
+          != __('prev')
+    if page.next || next
+      a.next(href=url_for(next))
+        span
+          != __('next')
+        i.fa.fa-chevron-right
