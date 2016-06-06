@@ -1,8 +1,159 @@
+
+// Color of the '<code>'
+// @type Color
+$code-color: #c7254e;
+
+// Color of the code background
+// @type Color
+$code-background: #f8f5ec;
+
+// Font family of the code
+// @type List
+$code-font-family: Consolas, Monaco, Menlo, Consolas, monospace;
+
+// Color of the code header background
+// @type Color
+$highlight-header-background: #f1ede4;
+
+
+$hightlight-map: (
+  constant: #0092db,
+  keyword: #a71d5d,
+  number: #ae81ff,
+  tag: #2973b7,
+  symbol: #0047ab,
+  title: #795da3,
+  string: #0047ab,
+  comment: #969896
+) !default;
+
 @mixin even-code {
+  code, pre {
+    font-size: 0.8em;
+    font-family: $code-font-family;
+    background: $code-background;
+  }
+
   code {
     padding: 3px 5px;
-    color: $global-theme-color;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.04)
+    color: $code-color;
+  }
+
+  .highlight {
+    position: relative;
+    margin: 1em 0;
+    border-radius: 5px;
+    overflow-x: auto;
+
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: bold;
+      color: $medium-gray;
+      background: $highlight-header-background;
+      content: 'Code';
+    }
+
+    .code pre {
+      margin: 0;
+      padding: 30px 14px 14px;
+    }
+
+    .gutter {
+      display: none;
+    }
+
+    table, tr, td {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-collapse: collapse;
+    }
+  }
+
+  pre {
+      .constant,
+      .function .keyword {
+          color: map-get($hightlight-map, constant);
+      }
+
+      .keyword,
+      .params,
+      .attribute {
+          color: map-get($hightlight-map, keyword);
+      }
+
+      .number,
+      .literal {
+          color: map-get($hightlight-map, number);
+      }
+
+      .tag,
+      .tag .title,
+      .change,
+      .winutils,
+      .flow,
+      .lisp .title,
+      .clojure .built_in,
+      .nginx .title,
+      .tex .special {
+          color: map-get($hightlight-map, tag);
+      }
+
+      .symbol,
+      .symbol .string,
+      .value,
+      .regexp {
+          color: map-get($hightlight-map, symbol);
+      }
+
+      .title {
+          color: map-get($hightlight-map, title);
+      }
+
+      .string,
+      .tag .value,
+      .subst,
+      .haskell .type,
+      .ruby .class .parent,
+      .built_in,
+      .sql .aggregate,
+      .django .template_tag,
+      .django .variable,
+      .smalltalk .class,
+      .javadoc,
+      .django .filter .argument,
+      .smalltalk .localvars,
+      .smalltalk .array,
+      .attr_selector,
+      .pseudo,
+      .addition,
+      .stream,
+      .envvar,
+      .apache .tag,
+      .apache .cbracket,
+      .tex .command,
+      .prompt {
+          color: map-get($hightlight-map, string);
+      }
+
+      .comment,
+      .preprocessor,
+      .java .annotation,
+      .python .decorator,
+      .template_comment,
+      .pi,
+      .doctype,
+      .shebang,
+      .apache .sqbracket,
+      .tex .formula {
+          color: map-get($hightlight-map, comment);
+      }
   }
 }

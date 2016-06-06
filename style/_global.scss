@@ -54,7 +54,7 @@ $body-font-color: #34495e !default;
 
 // Font family of the body.
 // @type List
-$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$body-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
 // Serif font family of body.
 // @type List
@@ -91,6 +91,8 @@ $body-container-margin: 32px 20px;
     margin: 0;
     font-family: $body-font-family;
     font-weight: $global-weight-normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     line-height: $global-lineheight;
     color: $body-font-color;
     background: $body-background;

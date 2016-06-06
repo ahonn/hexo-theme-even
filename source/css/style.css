@@ -381,8 +381,10 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   color: #34495e;
   background: #fefefe;
@@ -553,11 +555,112 @@ header {
 .post .post-content ul {
   list-style: inside square; }
 
+code, pre {
+  font-size: 0.8em;
+  font-family: Consolas, Monaco, Menlo, Consolas, monospace;
+  background: #f8f5ec; }
+
 code {
   padding: 3px 5px;
-  color: #c05b4d;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.04); }
+  color: #c7254e; }
+
+.highlight {
+  position: relative;
+  margin: 1em 0;
+  border-radius: 5px;
+  overflow-x: auto; }
+  .highlight::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #cacaca;
+    background: #f1ede4;
+    content: 'Code'; }
+  .highlight .code pre {
+    margin: 0;
+    padding: 30px 14px 14px; }
+  .highlight .gutter {
+    display: none; }
+  .highlight table, .highlight tr, .highlight td {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse; }
+
+pre .constant,
+pre .function .keyword {
+  color: #0092db; }
+
+pre .keyword,
+pre .params,
+pre .attribute {
+  color: #a71d5d; }
+
+pre .number,
+pre .literal {
+  color: #ae81ff; }
+
+pre .tag,
+pre .tag .title,
+pre .change,
+pre .winutils,
+pre .flow,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #2973b7; }
+
+pre .symbol,
+pre .symbol .string,
+pre .value,
+pre .regexp {
+  color: #0047ab; }
+
+pre .title {
+  color: #795da3; }
+
+pre .string,
+pre .tag .value,
+pre .subst,
+pre .haskell .type,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #0047ab; }
+
+pre .comment,
+pre .preprocessor,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .apache .sqbracket,
+pre .tex .formula {
+  color: #969896; }
 
 .home {
   margin-top: 2em;
