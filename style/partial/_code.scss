@@ -6,19 +6,19 @@
 
 // Color of the '<code>'
 // @type Color
-$code-color: #c7254e;
+$code-color: #c7254e !default;
 
 // Color of the code background
 // @type Color
-$code-background: #f8f5ec;
+$code-background: #f8f5ec !default;
 
 // Font family of the code
 // @type List
-$code-font-family: Consolas, Monaco, Menlo, Consolas, monospace;
+$code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 
 // Color of the code header background
 // @type Color
-$highlight-header-background: #f1ede4;
+$highlight-header-background: #f1ede4 !default;
 
 // hightlight color of the code
 // @type Map

@@ -6,23 +6,23 @@
 
 // Border top of post page tags
 // @type List
-$tags-border-top: 1px solid $light-gray;
+$tags-border-top: 1px solid $light-gray !default;
 
 // Width of tag total
 // @type Number
-$tag-total-width: 110px;
+$tag-total-width: 110px !default;
 
 // Font size of tag total
 // @type Number
-$tag-total-font-size: 18px;
+$tag-total-font-size: 18px !default;
 
 // Border bottom of tagcloud total
 // @type List
-$tag-total-border-bottom: 2px solid $global-theme-color;
+$tag-total-border-bottom: 2px solid $global-theme-color !default;
 
 // Margin of the tag link
 // @type Number
-$tag-link-margin: 5px;
+$tag-link-margin: 5px !default;
 
 @mixin even-tags {
   .tags {

@@ -6,7 +6,7 @@
 
 // Font size of paginator
 // @type Number
-$paginator-font-size: 18px;
+$paginator-font-size: 18px !default;
 
 @mixin even-paginator {
   .paginator {

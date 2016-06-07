@@ -6,19 +6,19 @@
 
 // Font siz of post title
 // @type Number
-$post-title-font-size: 26px;
+$post-title-font-size: 26px !default;
 
 // Border bottom of post title link
 // @type List
-$post-title-link-border: 2px solid $global-theme-color;
+$post-title-link-border: 2px solid $global-theme-color !default;
 
 // Border bottom of '<a>'
 // @type List
-$content-link-border: 1px solid $global-theme-color;
+$content-link-border: 1px solid $global-theme-color !default;
 
 // Border Left of '<blockquote>'
 // @type List
-$content-blockquote-border: 4px solid $global-theme-color;
+$content-blockquote-border: 4px solid $global-theme-color !default;
 
 // List style of '<ul>'
 // @type List

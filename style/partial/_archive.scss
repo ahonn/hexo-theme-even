@@ -6,23 +6,23 @@
 
 // Font size of archive
 // @type Number
-$archive-font-size: 16px;
+$archive-font-size: 16px !default;
 
 // Max width of archive
 // @type Number
-$archive-max-width: 500px;
+$archive-max-width: 500px !default;
 
 // Padding of archive item
 // @type List
-$archive-item-padding: 2px 10px;
+$archive-item-padding: 2px 10px !default;
 
 // Border left of archive item
 // @type List
-$archive-item-border: 1px solid $medium-gray;
+$archive-item-border: 1px solid $medium-gray !default;
 
 // Border left of archive item when hover
 // @type List
-$archive-item-hover-border: 3px solid $global-theme-color;
+$archive-item-hover-border: 3px solid $global-theme-color !default;
 
 @mixin even-archive {
   .archive {

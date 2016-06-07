@@ -4,11 +4,17 @@
 // @group home
 ///
 
-$home-margin: 2em;
+// Margin of the home
+// @type Number
+$home-margin: 2em !default;
 
-$post-border-bottom: 1px solid $light-gray;
+// Border bottom of the post
+// @type List
+$post-border-bottom: 1px solid $light-gray !default;
 
-$readMore-border-bottom: 1px solid $global-theme-color;
+// Border bottom of read more
+// @type List
+$readMore-border-bottom: 1px solid $global-theme-color !default;
 
 @mixin even-home {
   .home {
