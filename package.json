@@ -1,12 +1,12 @@
 {
-  "name": "even",
+  "name": "Even",
   "version": "1.0.0",
   "description": "A simple theme for Hexo blog framework",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build"
   },
-  "keywords": ["hexo", "theme", "even"],
+  "keywords": ["Hexo", "Even", "Jade", "Sass"],
   "author": "ahonn",
   "license": "MIT",
   "devDependencies": {
