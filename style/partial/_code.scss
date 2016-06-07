@@ -1,3 +1,8 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group code
+///
 
 // Color of the '<code>'
 // @type Color
@@ -15,7 +20,8 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace;
 // @type Color
 $highlight-header-background: #f1ede4;
 
-
+// hightlight color of the code
+// @type Map
 $hightlight-map: (
   constant: #0092db,
   keyword: #a71d5d,
@@ -29,7 +35,7 @@ $hightlight-map: (
 
 @mixin even-code {
   code, pre {
-    font-size: 0.8em;
+    font-size: 13px;
     font-family: $code-font-family;
     background: $code-background;
   }
@@ -52,7 +58,7 @@ $hightlight-map: (
       top: 0;
       right: 0;
       left: 0;
-      padding: 3px 7px;
+      padding: 2px 7px;
       font-size: 12px;
       font-weight: bold;
       color: $medium-gray;
@@ -62,7 +68,7 @@ $hightlight-map: (
 
     .code pre {
       margin: 0;
-      padding: 30px 14px 14px;
+      padding: 30px 14px 10px;
     }
 
     .gutter {
@@ -80,18 +86,18 @@ $hightlight-map: (
   pre {
       .constant,
       .function .keyword {
-          color: map-get($hightlight-map, constant);
+        color: map-get($hightlight-map, constant);
       }
 
       .keyword,
       .params,
       .attribute {
-          color: map-get($hightlight-map, keyword);
+        color: map-get($hightlight-map, keyword);
       }
 
       .number,
       .literal {
-          color: map-get($hightlight-map, number);
+        color: map-get($hightlight-map, number);
       }
 
       .tag,
@@ -103,18 +109,18 @@ $hightlight-map: (
       .clojure .built_in,
       .nginx .title,
       .tex .special {
-          color: map-get($hightlight-map, tag);
+        color: map-get($hightlight-map, tag);
       }
 
       .symbol,
       .symbol .string,
       .value,
       .regexp {
-          color: map-get($hightlight-map, symbol);
+        color: map-get($hightlight-map, symbol);
       }
 
       .title {
-          color: map-get($hightlight-map, title);
+        color: map-get($hightlight-map, title);
       }
 
       .string,
@@ -140,7 +146,7 @@ $hightlight-map: (
       .apache .cbracket,
       .tex .command,
       .prompt {
-          color: map-get($hightlight-map, string);
+        color: map-get($hightlight-map, string);
       }
 
       .comment,
@@ -153,7 +159,7 @@ $hightlight-map: (
       .shebang,
       .apache .sqbracket,
       .tex .formula {
-          color: map-get($hightlight-map, comment);
+        color: map-get($hightlight-map, comment);
       }
   }
 }

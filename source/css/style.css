@@ -496,67 +496,57 @@ header {
   bottom: 20px;
   z-index: 10; }
 
-.post .post-title {
-  margin: 0px;
-  font-size: 26px;
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-  .post .post-title .post-link:hover {
-    border-bottom: 2px solid #c05b4d;
-    transition: 0.1s; }
-
-.post .post-time {
-  margin-top: 5px;
-  display: inline-block;
-  color: #8a8a8a; }
-
-.post .post-content h1 {
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-
-.post .post-content h2 {
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-
-.post .post-content h3 {
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-
-.post .post-content h4 {
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-
-.post .post-content h5 {
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-
-.post .post-content h6 {
-  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
-
-.post .post-content .headerlink:hover {
-  border-bottom: 0; }
-
-.post .post-content .headerlink::before {
-  content: '#';
-  position: relative;
-  top: 2px;
-  margin-right: 5px;
-  font-size: 1.3em; }
-
-.post .post-content a {
-  color: #c05b4d; }
-  .post .post-content a:hover {
-    border-bottom: 1px solid #c05b4d; }
-
-.post .post-content blockquote {
-  margin: 2em 0;
-  padding-left: 20px;
-  color: #8a8a8a;
-  border-left: 4px solid #c05b4d; }
-
-.post .post-content img {
-  display: inline-block;
-  max-width: 100%; }
-
-.post .post-content ul {
-  list-style: inside square; }
+.post {
+  padding-top: 1em;
+  padding-bottom: 2em; }
+  .post .post-title {
+    margin: 0px;
+    font-size: 26px;
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+    .post .post-title .post-link:hover {
+      border-bottom: 2px solid #c05b4d;
+      transition: 0.1s; }
+  .post .post-time {
+    margin-top: 5px;
+    display: inline-block;
+    color: #8a8a8a; }
+  .post .post-content h1 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-content h2 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-content h3 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-content h4 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-content h5 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-content h6 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .post .post-content .headerlink:hover {
+    border-bottom: 0; }
+  .post .post-content .headerlink::before {
+    content: '#';
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    font-size: 1.3em; }
+  .post .post-content a {
+    color: #c05b4d; }
+    .post .post-content a:hover {
+      border-bottom: 1px solid #c05b4d; }
+  .post .post-content blockquote {
+    margin: 2em 0;
+    padding-left: 20px;
+    color: #8a8a8a;
+    border-left: 4px solid #c05b4d; }
+  .post .post-content img {
+    display: inline-block;
+    max-width: 100%; }
+  .post .post-content ul {
+    list-style: inside square; }
 
 code, pre {
-  font-size: 0.8em;
+  font-size: 13px;
   font-family: Consolas, Monaco, Menlo, Consolas, monospace;
   background: #f8f5ec; }
 
@@ -575,7 +565,7 @@ code {
     top: 0;
     right: 0;
     left: 0;
-    padding: 3px 7px;
+    padding: 2px 7px;
     font-size: 12px;
     font-weight: bold;
     color: #cacaca;
@@ -583,7 +573,7 @@ code {
     content: 'Code'; }
   .highlight .code pre {
     margin: 0;
-    padding: 30px 14px 14px; }
+    padding: 30px 14px 10px; }
   .highlight .gutter {
     display: none; }
   .highlight table, .highlight tr, .highlight td {
@@ -662,16 +652,107 @@ pre .apache .sqbracket,
 pre .tex .formula {
   color: #969896; }
 
+.paginator {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  padding: 1em 0; }
+  .paginator .prev,
+  .paginator .next {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+    .paginator .prev span,
+    .paginator .next span {
+      margin: 0 5px; }
+    .paginator .prev:hover,
+    .paginator .next:hover {
+      color: #c05b4d; }
+  .paginator .prev {
+    float: left; }
+  .paginator .next {
+    float: right; }
+
 .home {
   margin-top: 2em;
   margin-bottom: 2em; }
   .home .post-item {
     list-style: none;
-    padding-top: 1em;
-    padding-bottom: 2em;
     border-bottom: 1px solid #e6e6e6; }
   .home .read-more {
     color: #c05b4d;
+    font-size: 1.1em;
     font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
     .home .read-more:hover {
       border-bottom: 1px solid #c05b4d; }
+
+.archive {
+  margin: 5em auto;
+  font-size: 16px;
+  max-width: 500px; }
+  .archive h2 {
+    font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .archive .post-item {
+    padding: 2px 10px;
+    border-left: 1px solid #cacaca; }
+    .archive .post-item:hover {
+      padding-left: 13px;
+      border-left: 3px solid #c05b4d;
+      transition: 0.2s ease-out; }
+  .archive .post-time {
+    display: inline-block;
+    width: 60px;
+    margin: 0 10px;
+    color: #8a8a8a; }
+    .archive .post-time.tag {
+      width: 100px; }
+  .archive .post-link {
+    color: #c05b4d; }
+
+.tags {
+  margin-top: 35px;
+  padding-top: 20px;
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif;
+  border-top: 1px solid #e6e6e6; }
+  .tags a {
+    margin-right: 5px;
+    color: #c05b4d; }
+    .tags a::before {
+      content: '#'; }
+
+.tagcloud {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+  color: #c05b4d;
+  font-family: "PT Serif", "STZhongsong", "Microsoft Yahei", serif; }
+  .tagcloud .total p {
+    margin: auto;
+    font-size: 18px;
+    width: 110px;
+    border-bottom: 2px solid #c05b4d; }
+  .tagcloud a {
+    display: inline-block;
+    word-wrap: break-word;
+    margin: 5px; }
+    .tagcloud a:hover {
+      color: #c05b4d; }
+
+@media screen and (max-width: 800px) {
+  #main {
+    width: 100%; }
+  header {
+    padding: 20px 0; }
+    header .logo, header .nav {
+      float: none;
+      display: block;
+      text-align: center; }
+      header .logo .nav-link, header .nav .nav-link {
+        padding: 15px 8px; }
+  .archive .post-time {
+    margin: 0;
+    width: auto;
+    font-size: 13px;
+    display: block; }
+  #back2top {
+    display: none; } }

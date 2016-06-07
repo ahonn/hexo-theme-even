@@ -15,8 +15,12 @@
 @import 'partial/footer';
 @import 'partial/post';
 @import 'partial/code';
+@import 'partial/paginator';
+@import 'partial/media';
 
-@import "partial/home";
+@import 'partial/home';
+@import 'partial/archive';
+@import 'partial/tags';
 
 // include even theme style
 @include even-global-styles;
@@ -26,5 +30,10 @@
 @include even-footer;
 @include even-post;
 @include even-code;
+@include even-paginator;
 
 @include even-home;
+@include even-archive;
+@include even-tags;
+
+@include even-media;

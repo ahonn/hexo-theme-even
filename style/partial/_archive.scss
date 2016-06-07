@@ -1,0 +1,63 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group archive
+///
+
+// Font size of archive
+// @type Number
+$archive-font-size: 16px;
+
+// Max width of archive
+// @type Number
+$archive-max-width: 500px;
+
+// Padding of archive item
+// @type List
+$archive-item-padding: 2px 10px;
+
+// Border left of archive item
+// @type List
+$archive-item-border: 1px solid $medium-gray;
+
+// Border left of archive item when hover
+// @type List
+$archive-item-hover-border: 3px solid $global-theme-color;
+
+@mixin even-archive {
+  .archive {
+    margin: 5em auto;
+    font-size: $archive-font-size;
+    max-width: $archive-max-width;
+
+    h2 {
+      font-family: $body-serif-font-family;
+    }
+
+    .post-item {
+      padding: $archive-item-padding;
+      border-left: $archive-item-border;
+
+      &:hover {
+        padding-left: 13px;
+        border-left: $archive-item-hover-border;
+        transition: 0.2s ease-out
+      }
+    }
+
+    .post-time {
+      display: inline-block;
+      width: 60px;
+      margin: 0 10px;
+      color: $dark-gray;
+
+      &.tag {
+        width: 100px;
+      }
+    }
+
+    .post-link {
+      color: $global-theme-color;
+    }
+  }
+}

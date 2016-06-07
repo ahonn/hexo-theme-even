@@ -9,7 +9,7 @@ mixin tags()
 //- Tag cloud
 mixin tagcloud()
   .tagcloud
-    div.tags-total
+    div.total
       p!= 'A total of '
-      span!= site.tags.length-1
+        span!= site.tags.length-1
     != tagcloud({min_font: 14, max_font: 26, amount: 100, orderby: 'count'})

@@ -8,22 +8,32 @@ menu:
 # site icon
 favicon: /favicon.ico
 
+# sidebar
+## display: post / always / hide / remove
+sidebar:
+  display: hide
+
 # comments
 comments:
   post: true
   about: true
 
+## Friends Link
+friends:
+  friends: http://127.0.0.1
+
+
 # Analytics
 ## Baidu Analytics
-baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
+baidu_analytics:
 ## Google Analytics
-google_analytics: UA-74273646-1
+google_analytics:
 
 # Comments
 ## Duoshuo
-# duoshuo_shortname: ahonn
+duoshuo_shortname:
 ## Disqus
-disqus_shortname: ahonn
+disqus_shortname:
 
 # Social links
 social:
@@ -31,6 +41,6 @@ social:
   github: https://github.com/ahonn
   # twitter:
   # facebook:
-  weibo: http://weibo.com/ahonn
-  zhihu: https://www.zhihu.com/people/ahonn
+  # weibo:
+  # zhihu:
   rss: /atom.xml

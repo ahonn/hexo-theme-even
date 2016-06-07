@@ -1,0 +1,34 @@
+@mixin even-media {
+  @media screen and (max-width: $global-width) {
+    #main {
+      width: 100%;
+    }
+
+    header {
+      padding: 20px 0;
+
+      .logo, .nav {
+        float: none;
+        display: block;
+        text-align: center;
+
+        .nav-link {
+          padding: 15px 8px;
+        }
+      }
+    }
+
+    .archive {
+      .post-time {
+        margin: 0;
+        width: auto;
+        font-size: 13px;
+        display: block;
+      }
+    }
+
+    #back2top {
+      display: none;
+    }
+  }
+}

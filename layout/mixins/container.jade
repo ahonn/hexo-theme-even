@@ -25,4 +25,41 @@ mixin post()
     .post-content
       != page.content
   
-    
+//- Archive
+mixin archive()
+  article.archive
+    - var year = 0;
+    - var change = false;
+    - page.posts.each(function (item) {
+      - var itemYear = date(item.date, 'YYYY') - 0;
+      - change = year !== itemYear;
+      - year = change ? itemYear : year;
+      
+      if change
+        h2.year
+          != year
+      .post-item
+        .post-time
+          != full_date(item.date, 'MMM D')
+        a.post-link(href=url_for(item.path))
+          != item.title
+    - })
+
+//- Tag
+mixin tag()
+  .archive
+    h2.tag
+      = page.tag
+    each item in page.posts.toArray()
+      .post-item
+        .post-time.tag
+          != full_date(item.date, 'll')
+        a.post-link(href=url_for(item.path))
+          != item.title    
+
+//- About
+mixin about()
+  .post
+    article.post-block
+      .post-content
+        != page.content

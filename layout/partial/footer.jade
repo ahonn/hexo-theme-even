@@ -1,5 +1,5 @@
 //- social
-if theme.social
+if theme.social && is_home()
   div.social
     for link, name in theme.social
       a.iconfont(class="icon-#{name}" href=url_for(link)) 
@@ -10,18 +10,15 @@ if theme.social
   - var year = currentDate.getFullYear()
   - var since = config.since
   if since
-    - year = year == since ? year : "#{since}-#{year}"
+    - year = year == since ? year : since + '-' + year
+    - copyright = '&copy;' + year
     
-  p &copy; #{year}
+  p
+    != copyright
     span.heart
       i.fa.fa-heart
     a.author(href=url_for(config.url))
       != config.author
-
-//- Sidebar toggle
-if theme.sidebar.display != "remove"
-  label.sidebar(for="sidebar-toggle")
-    i.fa.fa-bars
     
 //- Back to top
 label#back2top

@@ -26,6 +26,9 @@ $content-list-style: inside square;
 
 @mixin even-post {
   .post {
+    padding-top: 1em;
+    padding-bottom: 2em;
+
     .post-title {
       margin: 0px;
       font-size: $post-title-font-size;
@@ -54,7 +57,7 @@ $content-list-style: inside square;
 
       .headerlink {
         &:hover {
-          border-bottom: 0; 
+          border-bottom: 0;
         }
 
         &::before {

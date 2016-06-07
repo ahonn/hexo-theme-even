@@ -1,0 +1,13 @@
+extends partial/layout
+include mixins/container
+include mixins/comment
+
+block title
+  title!= __('About') + " · " + config.title
+
+block container
+  +about()
+
+block comment
+  if theme.comments.about
+    +comment()

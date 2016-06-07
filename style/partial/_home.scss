@@ -17,13 +17,12 @@ $readMore-border-bottom: 1px solid $global-theme-color;
 
     .post-item {
       list-style: none;
-      padding-top: 1em;
-      padding-bottom: 2em;
       border-bottom: $post-border-bottom;
     }
 
     .read-more {
       color: $global-theme-color;
+      font-size: 1.1em;
       font-family: $body-serif-font-family;
 
       &:hover {

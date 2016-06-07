@@ -1,6 +1,6 @@
 //- paginator
 mixin paginator(layout)
-  if layout == 'home'
+  if layout == 'home' || layout == 'archive'
     - var prev = page.prev_link
     - var next = page.next_link
   else if layout == 'post'
