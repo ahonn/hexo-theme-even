@@ -446,7 +446,7 @@ header {
   padding: 20px 100px; }
   header .logo {
     float: left;
-    font-size: 50px;
+    font-size: 48px;
     font-family: "Chancery", cursive, LiSu, sans-serif; }
   header .nav {
     float: right;
@@ -743,16 +743,22 @@ pre .tex .formula {
     width: 100%; }
   header {
     padding: 20px 0; }
+    header .logo {
+      font-size: 42px; }
     header .logo, header .nav {
       float: none;
       display: block;
       text-align: center; }
       header .logo .nav-link, header .nav .nav-link {
-        padding: 15px 8px; }
-  .archive .post-time {
-    margin: 0;
-    width: auto;
-    font-size: 13px;
-    display: block; }
+        padding: 5px 8px; }
+  .archive {
+    margin: 4em 1em 5em; }
+    .archive .post-time {
+      margin: 0;
+      width: auto;
+      font-size: 13px;
+      display: block; }
+  .tagcloud {
+    margin-top: 4em; }
   #back2top {
     display: none; } }
