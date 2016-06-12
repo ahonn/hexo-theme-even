@@ -50,4 +50,7 @@
 }
 .icon-zhihu:before {
     content: "\e607";
+    font-size: 27px;
+    position: relative;
+    top: -2px;
 }
