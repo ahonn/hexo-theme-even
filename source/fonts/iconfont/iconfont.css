@@ -31,6 +31,8 @@
 }
 .icon-email:before {
     content: "\e605";
+    position: relative;
+    top: -2px;
 }
 .icon-facebook:before {
     content: "\e601";
