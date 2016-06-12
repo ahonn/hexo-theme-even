@@ -28,9 +28,10 @@ disqus_shortname: ahonn
 # Social links
 social:
   email: mailto:ahonn95@outlook.com
-  github: https://github.com/ahonn
+  # stack-overflow:
   # twitter:
   # facebook:
+  github: https://github.com/ahonn
   weibo: http://weibo.com/ahonn
   zhihu: https://www.zhihu.com/people/ahonn
   rss: /atom.xml
