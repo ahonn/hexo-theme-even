@@ -62,15 +62,25 @@ $body-serif-font-family: 'PT Serif', 'STZhongsong', 'Microsoft Yahei', serif !de
 
 // Background color of body
 // @type Color
-$body-background: $white;
+$body-background: $white !default;
 
 // Border top of body
 // @type List
-$body-border-top: 3px solid $global-theme-color;
+$body-border-top: 3px solid $global-theme-color !default;
 
 // Margin of the container
 // @type Number
-$body-container-margin: 32px 20px;
+$body-container-margin: 32px 20px !default;
+
+// headings of the body
+// @type Map
+$body-headings: (
+  h2: 22px,
+  h3: 20px,
+  h4: 18px,
+  h5: 16px,
+  h6: 16px
+) !default;
 
 // Global styles of the even theme
 @mixin even-global-styles {
@@ -113,6 +123,12 @@ $body-container-margin: 32px 20px;
   ul {
     margin: 0;
     padding: 0;
+  }
+
+  @each $header, $size in $body-headings {
+    #{$header} {
+      font-size: $size;
+    }
   }
 
   #main {
