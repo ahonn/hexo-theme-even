@@ -10,12 +10,16 @@ $icon-font-size: 30px !default;
 
 // Margin right of the icon
 // @type Number
-$icon-margin-right: 5px !default;
+$icon-margin-right: 10px !default;
 
 @mixin even-footer {
-  @include even-social;
-  @include even-copyright;
-  @include even-toolbar;
+  footer {
+    padding-top: 2em;
+
+    @include even-social;
+    @include even-copyright;
+    @include even-toolbar;
+  }
 }
 
 @mixin even-social {
@@ -37,7 +41,9 @@ $icon-margin-right: 5px !default;
 
 @mixin even-copyright {
   .copyright {
-    color: $dark-gray;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: mix($dark-gray, $body-font-color);
     text-align: center;
     font-family: $body-serif-font-family;
 
@@ -45,10 +51,12 @@ $icon-margin-right: 5px !default;
       margin: 0 5px;
     }
 
-    .author {
-      color: $dark-gray;
+    p {
+      margin: 0;
+    }
 
-      &:hover {
+    .theme {
+      a {
         color: $global-theme-color;
       }
     }

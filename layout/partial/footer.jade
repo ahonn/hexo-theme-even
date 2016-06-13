@@ -17,8 +17,13 @@ if theme.social && is_home()
     != copyright
     span.heart
       i.fa.fa-heart
-    a.author(href=url_for(config.url))
+    span.author
       != config.author
+  p.theme
+    != "Theme by " 
+    
+    a(href="https://github.com/ahonn/hexo-theme-even") 
+      != "Even"
     
 //- Back to top
 label#back2top
