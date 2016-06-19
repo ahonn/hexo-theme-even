@@ -22,7 +22,7 @@ $content-blockquote-border: 4px solid $global-theme-color !default;
 
 // List style of '<ul>'
 // @type List
-$content-list-style: inside square;
+$content-list-style: inside;
 
 @mixin even-post {
   .post {
