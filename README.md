@@ -9,7 +9,7 @@ Check out Even theme in live : [hexo-theme-even demo](https://www.ahonn.me)
 
 ## Document
 - [中文文档](/doc/doc_zh.md)
-- [Document](/doc/doc_en.md)
+- ~~[Document](/doc/doc_en.md)~~
 
 ## Installation
 ```
