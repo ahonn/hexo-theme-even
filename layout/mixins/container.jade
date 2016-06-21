@@ -8,7 +8,7 @@ mixin home()
             a.post-link(href=url_for(item.path))
               != item.title
           span.post-time
-            != full_date(item.data, 'll')
+            != full_date(item.date, 'll')
           div.post-content
             != item.excerpt
           a.read-more(href=url_for(item.path))
@@ -21,7 +21,7 @@ mixin post()
     h1.post-title
       != page.title
     span.post-time
-      != full_date(page.data, 'll')
+      != full_date(page.date, 'll')
     .post-content
       != page.content
   
