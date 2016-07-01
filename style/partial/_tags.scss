@@ -61,9 +61,16 @@ $tag-link-margin: 5px !default;
       display: inline-block;
       word-wrap: break-word;
       margin: $tag-link-margin;
+      position: relative;
+      transition-duration: 0.2s;
+      transition-property: transform;
+      transition-timing-function: ease-out;
 
+      &:active,
+      &:focus,
       &:hover {
         color: $global-theme-color;
+        transform: scale(1.05); 
       }
     }
   }
