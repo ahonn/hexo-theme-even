@@ -85,6 +85,7 @@ $hightlight-map: (
 
   pre {
       .constant,
+      .name,
       .function .keyword {
         color: map-get($hightlight-map, constant);
       }
