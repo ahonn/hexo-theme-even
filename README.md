@@ -23,6 +23,7 @@ $ git clone https://github.com/ahonn/hexo-theme-even even
 
 ## TODO
 - Add English documents
+- Move fontawesome icon to iconfont
 - Add article directory
 - Add code type to the code block
 
