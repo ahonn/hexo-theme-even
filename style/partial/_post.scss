@@ -59,6 +59,14 @@ $content-list-style: inside;
         &:hover {
           border-bottom: 0;
         }
+
+        &::before {
+          content: '#';
+          position: relative;
+          top: 2px;
+          margin-right: 5px;
+          font-size: 1.3em;
+        }
       }
 
       a {
