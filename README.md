@@ -20,5 +20,11 @@ $ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitem
 $ cd themes/
 $ git clone https://github.com/ahonn/hexo-theme-even even
 ```
+
+## TODO
+- Add English documents
+- Add article directory
+- Add code type to the code block
+
 ## Contact
 Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
