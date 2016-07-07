@@ -11,12 +11,12 @@ link(rel="stylesheet", href=url_for("fonts/iconfont/iconfont.css"))
 link(rel="stylesheet", href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css")
 link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono")
 
-if theme.baidu_analytics
+if theme.baidu_analytics && !env.debug
   // baidu analytics
   include ../mixins/analytics
   +baidu_analytics()
 
-if theme.google_analytics
+if theme.google_analytics && !env.debug
   // google analytics
   include ../mixins/analytics
-  +google_analytics()
+  +google_analytics() 
