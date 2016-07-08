@@ -6,17 +6,22 @@ meta(name="viewport", content="width=device-width, initial-scale=1")
 block title
         
 link(rel="short icon", href=url_for(theme.favicon))
-link(rel="stylesheet", href=url_for("css/style.css"))
+
+// icon
 link(rel="stylesheet", href=url_for("fonts/iconfont/iconfont.css"))
 link(rel="stylesheet", href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css")
+
+// font
 link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono")
 
+// theme style
+link(rel="stylesheet", href=url_for("css/style.css"))
+
+include ../mixins/analytics
 if theme.baidu_analytics && !env.debug
   // baidu analytics
-  include ../mixins/analytics
   +baidu_analytics()
 
 if theme.google_analytics && !env.debug
   // google analytics
-  include ../mixins/analytics
   +google_analytics() 

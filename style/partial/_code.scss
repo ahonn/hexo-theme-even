@@ -81,86 +81,82 @@ $hightlight-map: (
       width: 100%;
       border-collapse: collapse;
     }
-  }
 
-  pre {
-      .constant,
-      .name,
-      .function .keyword {
-        color: map-get($hightlight-map, constant);
-      }
-
-      .keyword,
-      .params,
-      .attribute {
-        color: map-get($hightlight-map, keyword);
-      }
-
-      .number,
-      .literal {
-        color: map-get($hightlight-map, number);
-      }
-
-      .tag,
-      .tag .title,
-      .change,
-      .winutils,
-      .flow,
-      .lisp .title,
-      .clojure .built_in,
-      .nginx .title,
-      .tex .special {
-        color: map-get($hightlight-map, tag);
-      }
-
-      .symbol,
-      .symbol .string,
-      .value,
-      .regexp {
-        color: map-get($hightlight-map, symbol);
-      }
-
-      .title {
-        color: map-get($hightlight-map, title);
-      }
-
-      .string,
-      .tag .value,
-      .subst,
-      .haskell .type,
-      .ruby .class .parent,
-      .built_in,
-      .sql .aggregate,
-      .django .template_tag,
-      .django .variable,
-      .smalltalk .class,
-      .javadoc,
-      .django .filter .argument,
-      .smalltalk .localvars,
-      .smalltalk .array,
-      .attr_selector,
-      .pseudo,
-      .addition,
-      .stream,
-      .envvar,
-      .apache .tag,
-      .apache .cbracket,
-      .tex .command,
-      .prompt {
-        color: map-get($hightlight-map, string);
-      }
-
-      .comment,
-      .preprocessor,
-      .java .annotation,
-      .python .decorator,
-      .template_comment,
-      .pi,
-      .doctype,
-      .shebang,
-      .apache .sqbracket,
-      .tex .formula {
-        color: map-get($hightlight-map, comment);
-      }
+    @include code-heightlight-solarized;
   }
 }
+
+@mixin code-heightlight-solarized {
+    .code {
+      .comment,
+      .quote {
+        color: #93a1a1;
+      }
+
+      /* Solarized Green */
+      .keyword,
+      .selector-tag,
+      .addition {
+        color: #859900;
+      }
+
+      /* Solarized Cyan */
+      .number,
+      .string,
+      .meta .meta-string,
+      .literal,
+      .doctag,
+      .regexp {
+        color: #2aa198;
+      }
+
+      /* Solarized Blue */
+      .title,
+      .section,
+      .name,
+      .selector-id,
+      .selector-class {
+        color: #268bd2;
+      }
+
+      /* Solarized Yellow */
+      .attribute,
+      .attr,
+      .variable,
+      .template-variable,
+      .class .title,
+      .type {
+        color: #b58900;
+      }
+
+      /* Solarized Orange */
+      .symbol,
+      .bullet,
+      .subst,
+      .meta,
+      .meta .keyword,
+      .selector-attr,
+      .selector-pseudo,
+      .link {
+        color: #cb4b16;
+      }
+
+      /* Solarized Red */
+      .built_in,
+      .deletion {
+        color: #dc322f;
+      }
+
+      .formula {
+        background: #eee8d5;
+      }
+
+      .emphasis {
+        font-style: italic;
+      }
+
+      .strong {
+        font-weight: bold;
+      }
+    }
+  }
