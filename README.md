@@ -5,7 +5,7 @@ A simple theme for Hexo blog framework
 ![even](http://7xqvel.com1.z0.glb.clouddn.com/even.png?imageView/3/w/600)
 
 ## Demo
-Check out Even theme in live : [hexo-theme-even demo](https://www.ahonn.me)
+Check out Even theme in live : [demo](http://www.ahonn.me)
 
 ## Document
 - [中文文档](/doc/doc_zh.md)
