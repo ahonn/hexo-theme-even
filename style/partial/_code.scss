@@ -20,18 +20,20 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 // @type Color
 $highlight-header-background: #f1ede4 !default;
 
-// hightlight color of the code
-// @type Map
-$hightlight-map: (
-  constant: #0092db,
-  keyword: #a71d5d,
-  number: #ae81ff,
-  tag: #2973b7,
-  symbol: #0047ab,
-  title: #795da3,
-  string: #0047ab,
-  comment: #969896
-) !default;
+// Code type list
+// @type List
+$code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
+                 "python", "json", "swift", "ruby", "perl", "php", "c", "java",
+                 "cpp", "scheme");
+
+// Code type signs
+@mixin code-type-signs {
+  @each $sign in $code-type-list {
+    &.#{$sign}::after {
+      content: to-upper-case($sign);
+    }
+  }
+}
 
 @mixin even-code {
   code, pre {
@@ -63,8 +65,10 @@ $hightlight-map: (
       font-weight: bold;
       color: $medium-gray;
       background: $highlight-header-background;
-      content: 'Code';
+      content: 'CODE';
     }
+
+    @include code-type-signs;
 
     .code pre {
       margin: 0;
@@ -83,80 +87,82 @@ $hightlight-map: (
     }
 
     @include code-heightlight-solarized;
+    
   }
 }
 
+// Code heightlight style: solarized
 @mixin code-heightlight-solarized {
-    .code {
-      .comment,
-      .quote {
-        color: #93a1a1;
-      }
+  .code {
+    .comment,
+    .quote {
+      color: #93a1a1;
+    }
 
-      /* Solarized Green */
-      .keyword,
-      .selector-tag,
-      .addition {
-        color: #859900;
-      }
+    /* Solarized Green */
+    .keyword,
+    .selector-tag,
+    .addition {
+      color: #859900;
+    }
 
-      /* Solarized Cyan */
-      .number,
-      .string,
-      .meta .meta-string,
-      .literal,
-      .doctag,
-      .regexp {
-        color: #2aa198;
-      }
+    /* Solarized Cyan */
+    .number,
+    .string,
+    .meta .meta-string,
+    .literal,
+    .doctag,
+    .regexp {
+      color: #2aa198;
+    }
 
-      /* Solarized Blue */
-      .title,
-      .section,
-      .name,
-      .selector-id,
-      .selector-class {
-        color: #268bd2;
-      }
+    /* Solarized Blue */
+    .title,
+    .section,
+    .name,
+    .selector-id,
+    .selector-class {
+      color: #268bd2;
+    }
 
-      /* Solarized Yellow */
-      .attribute,
-      .attr,
-      .variable,
-      .template-variable,
-      .class .title,
-      .type {
-        color: #b58900;
-      }
+    /* Solarized Yellow */
+    .attribute,
+    .attr,
+    .variable,
+    .template-variable,
+    .class .title,
+    .type {
+      color: #b58900;
+    }
 
-      /* Solarized Orange */
-      .symbol,
-      .bullet,
-      .subst,
-      .meta,
-      .meta .keyword,
-      .selector-attr,
-      .selector-pseudo,
-      .link {
-        color: #cb4b16;
-      }
+    /* Solarized Orange */
+    .symbol,
+    .bullet,
+    .subst,
+    .meta,
+    .meta .keyword,
+    .selector-attr,
+    .selector-pseudo,
+    .link {
+      color: #cb4b16;
+    }
 
-      /* Solarized Red */
-      .built_in,
-      .deletion {
-        color: #dc322f;
-      }
+    /* Solarized Red */
+    .built_in,
+    .deletion {
+      color: #dc322f;
+    }
 
-      .formula {
-        background: #eee8d5;
-      }
+    .formula {
+      background: #eee8d5;
+    }
 
-      .emphasis {
-        font-style: italic;
-      }
+    .emphasis {
+      font-style: italic;
+    }
 
-      .strong {
-        font-weight: bold;
-      }
+    .strong {
+      font-weight: bold;
     }
   }
+}
