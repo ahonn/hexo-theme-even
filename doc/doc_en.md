@@ -94,6 +94,7 @@ Modify `favicon` items in theme config
 #### Modify the site set up time
 Add `since` items in site config, value of the site set up time
 
+```
 # Site
 title: Ahonn
 subtitle:
