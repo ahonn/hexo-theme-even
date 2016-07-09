@@ -13,10 +13,11 @@
   + [添加统计分析](#添加统计分析)
   + [添加评论服务](#添加评论服务)
 
-### 主题配置
 站点配置文件指博客根目录下的 `_config.yml`
 
 主题配置文件指主题目录下的 `_config.yml`
+
+### 主题配置
 
 #### 设置首页文章数
 修改站点配置文件中的 `per_page` 项：
@@ -51,7 +52,6 @@ hexo new page tags
 ```
 ---
 title: tags
-date: yyyy-mm-dd hh:mm:ss
 layout: tags   # 添加使用 tags 模版
 ---
 ```
@@ -78,7 +78,6 @@ hexo new page about
 ```
 ---
 title: about
-date: yyyy-mm-dd hh:mm:ss
 layout: about   # 添加使用 about 模版
 ---
 ```
@@ -93,7 +92,7 @@ menu:
 ```
 
 #### 修改站点图标
-修改主题配置文件中的 f`avicon` 项
+修改主题配置文件中的 `favicon` 项
 
 #### 修改站点建立时间
 在站点配置文件中添加 `since` 项，值为站点建立年份
@@ -110,6 +109,7 @@ since: 2013  # 添加 since 项
 
 #### 修改社交链接
 修改主题配置文件中的 `social` 项，当值为空时不显示
+
 ```
 # Social links
 social:
@@ -138,13 +138,6 @@ google_analytics: UA-74273646-1
 ```
 
 #### 添加评论服务
-- 开启评论
-
-修改主题配置文件中的 `comments` 项开启评论
-
-comments.post 项为文章页评论
-
-comments.about 项为关于页评论
 
 - 使用多说评论
 
@@ -153,6 +146,7 @@ comments.about 项为关于页评论
 - 使用 Disqus 评论
 
 修改主题配置文件中的 `disqus_shortname` 项为你的 ID
+
 ```
 # Duoshuo
 duoshuo_shortname: ahonn
@@ -160,4 +154,12 @@ duoshuo_shortname: ahonn
 # disqus_shortname: ahonn
 ```
 
-> 同时启用时默认使用 Disqus
+**同时启用时默认使用 Disqus**
+
+- 评论设置
+
+修改主题配置文件中的 `comments` 项
+
+`comments.post` 项为文章页评论
+
+`comments.about` 项为关于页评论
