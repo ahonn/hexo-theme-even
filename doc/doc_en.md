@@ -122,11 +122,11 @@ social:
 
 #### Add analytics
 
-- Baidu analytics
+#####  Baidu analytics
 Modify `baidu_analytics` items to use baidu analytics in theme config, the value is your baidu analytics id
 
 
-- Google analytics
+##### Google analytics
 Modify `google_analytics` items to use google analytics in theme config, the value is your google analytics id
 
 ```
@@ -138,11 +138,11 @@ google_analytics: your google analytics id
 
 #### Add comments
 
-- Use duoshou comments 
+##### Use duoshou comments 
 
 Modify `duoshuo_shortname` items, value is your duoshuo id.
 
-- Use disqus comments
+##### Use disqus comments
 
 Modify `disqus_shortname` items, value is your disqus id.
 
@@ -155,7 +155,7 @@ duoshuo_shortname: your duoshuo id
 
 **Use disques comments when use that both**
 
-- Comments setting
+##### Comments setting
 
 Modify `comments` items:
 

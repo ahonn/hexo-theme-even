@@ -122,12 +122,14 @@ social:
 ```
 
 ### 第三方服务
+
 #### 统计分析
-- 开启百度统计
+
+##### 开启百度统计
 
 修改主题配置文件中的 `baidu_analytics` 项为你的 ID
 
-- 开启谷歌分析
+##### 开启谷歌分析
 
 修改主题配置文件中的 `google_analytics` 项为你的 ID
 ```
@@ -139,11 +141,11 @@ google_analytics: UA-74273646-1
 
 #### 添加评论服务
 
-- 使用多说评论
+##### 使用多说评论
 
 修改主题配置文件中的 `duoshuo_shortname` 项为你的 ID
 
-- 使用 Disqus 评论
+##### 使用 Disqus 评论
 
 修改主题配置文件中的 `disqus_shortname` 项为你的 ID
 
@@ -156,7 +158,7 @@ duoshuo_shortname: ahonn
 
 **同时启用时默认使用 Disqus**
 
-- 评论设置
+##### 评论设置
 
 修改主题配置文件中的 `comments` 项
 
