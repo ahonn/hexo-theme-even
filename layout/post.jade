@@ -6,7 +6,7 @@ include mixins/tags
 include mixins/comment
 
 block title
-  title= config.title
+  title= page.title + " · " + config.title
 
 block container
   +post()
