@@ -6,7 +6,12 @@
   "scripts": {
     "build": "gulp build"
   },
-  "keywords": ["Hexo", "Even", "Jade", "Sass"],
+  "keywords": [
+    "Hexo",
+    "Even",
+    "Jade",
+    "Sass"
+  ],
   "author": "ahonn",
   "license": "MIT",
   "devDependencies": {
