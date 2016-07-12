@@ -10,11 +10,11 @@ mixin paginator(layout)
   .paginator
     if page.prev || prev
       a.prev(href=url_for(prev))
-        i.fa.fa-chevron-left
+        i.iconfont.icon-left
         span 
           != __('prev')
     if page.next || next
       a.next(href=url_for(next))
         span
           != __('next')
-        i.fa.fa-chevron-right
+        i.iconfont.icon-right
