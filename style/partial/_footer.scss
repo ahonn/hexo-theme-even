@@ -64,17 +64,18 @@ $icon-margin-right: 10px !default;
 }
 
 @mixin even-toolbar {
-  .sidebar {
-    position: fixed;
-    right: 20px;
-    bottom: 50px;
-    z-index: 10;
-  }
 
   #back2top {
     position: fixed;
     right: 20px;
     bottom: 20px;
     z-index: 10;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: translateY(-5px); 
+    }
   }
 }
