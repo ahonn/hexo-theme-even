@@ -10,10 +10,12 @@ block title
         != page.tag + " · " + config.title
         
 block container
-  if page.tag
-      +tag()
   if page.archive
-      +archive()
+    +archive()
+  if page.tag
+    +tag()
+  if page.category
+    +category()
 
 block pagination
   +paginator('archive')

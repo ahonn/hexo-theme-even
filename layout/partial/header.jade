@@ -13,6 +13,10 @@ ul.nav
       else if is_archive() && name == "Archives"
         a.active(href=link target="_self")
           != __(name)
+
+      else if (is_category() || page.layout == "categories") && name == "Categories"
+        a.active(href=link target="_self")
+          != __(name)
           
       else if (is_tag() || page.layout == "tags") && name == "Tags"
         a.active(href=link target="_self")

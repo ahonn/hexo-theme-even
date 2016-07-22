@@ -1,0 +1,9 @@
+extends partial/layout
+include mixins/categories
+
+block title
+  title= __('Categories') + ' · ' + config.title
+  
+block container
+  +categories()
+

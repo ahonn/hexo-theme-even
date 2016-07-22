@@ -27,7 +27,7 @@ mixin post()
   
 //- Archive
 mixin archive()
-  article.archive
+  .archive
     - var year = 0;
     - var change = false;
     - page.posts.each(function (item) {
@@ -45,6 +45,18 @@ mixin archive()
           != item.title
     - })
 
+//- Category
+mixin category()
+  .archive
+    h2.category
+      = page.category
+    each item in page.posts.toArray()
+      .post-item
+        .post-time.category
+          != full_date(item.date, 'll')
+        a.post-link(href=url_for(item.path))
+          != item.title 
+
 //- Tag
 mixin tag()
   .archive
@@ -59,7 +71,7 @@ mixin tag()
 
 //- About
 mixin about()
-  .post
+  article.post
     article.post-block
       .post-content
         != page.content

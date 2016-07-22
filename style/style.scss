@@ -21,6 +21,7 @@
 // Layout style
 @import 'partial/home';
 @import 'partial/archive';
+@import 'partial/categories';
 @import 'partial/tags';
 
 ///
@@ -38,5 +39,6 @@
 @include even-home;
 @include even-archive;
 @include even-tags;
+@include even-categories;
 
 @include even-media;

@@ -26,7 +26,7 @@ $archive-item-hover-border: 3px solid $global-theme-color !default;
 
 @mixin even-archive {
   .archive {
-    margin: 5em auto;
+    margin: 3em auto;
     font-size: $archive-font-size;
     max-width: $archive-max-width;
 
@@ -51,7 +51,8 @@ $archive-item-hover-border: 3px solid $global-theme-color !default;
       margin: 0 10px;
       color: $dark-gray;
 
-      &.tag {
+      &.tag,
+      &.category {
         width: 100px;
       }
     }
