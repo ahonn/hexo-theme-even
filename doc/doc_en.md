@@ -40,6 +40,30 @@ archive_generator:
   daily: false
 ```
 
+#### Add categories page 
+- Create page
+Run `hexo new page categories`
+
+- Set the page layout
+Add in `source/categories/index.md`
+
+```
+---
+title: categories
+layout: categories   
+---
+```
+
+- Modify menu
+Modify `Menu` items in theme config:
+
+```
+menu:
+  Home: /
+  Archives: /archives/
+  Categories: /categories/   # Add Categories
+```
+
 #### Add tags page 
 - Create page
 Run `hexo new page tags`

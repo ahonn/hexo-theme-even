@@ -39,6 +39,33 @@ archive_generator:
   daily: false
 ```
 
+
+#### 添加分类页
+- 新建页面
+
+在博客根目录下：
+```
+hexo new page categories
+```
+- 设置页面模版
+
+在新建的 `source/categories/index.md` 中添加：
+```
+---
+title: categories
+layout: categories   # 添加使用 categories 模版
+---
+```
+- 修改菜单
+
+修改主题配置文件中的 `Menu` 项：
+```
+menu:
+  Home: /
+  Archives: /archives/
+  Categories: /categories/   # 添加 Categories 选项
+```
+
 #### 添加标签页
 - 新建页面
 
