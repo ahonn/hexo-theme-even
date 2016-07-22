@@ -5,26 +5,27 @@ if theme.social && is_home()
       a.iconfont(class="icon-#{name}" href=url_for(link)) 
 
 //- Copyright
-.copyright
-  - var currentDate = new Date()
-  - var year = currentDate.getFullYear()
-  - var since = config.since
-  if since
-    - year = year == since ? year : since + '-' + year
-  - copyright = '&copy;' + year
-    
-  p
-    != copyright
-    span.heart
-      i.iconfont.icon-heart
-    span.author
-      != config.author
-  p.theme
-    != "Theme by " 
-    
-    a(href="https://github.com/ahonn/hexo-theme-even") 
-      != "Even"
-    
+if page.layout != 'tags' && page.layout != 'categories'
+  .copyright
+    - var currentDate = new Date()
+    - var year = currentDate.getFullYear()
+    - var since = config.since
+    if since
+      - year = year == since ? year : since + '-' + year
+    - copyright = '&copy;' + year
+      
+    p
+      != copyright
+      span.heart
+        i.iconfont.icon-heart
+      span.author
+        != config.author
+    p.theme
+      != "Theme by " 
+      
+      a(href="https://github.com/ahonn/hexo-theme-even") 
+        != "Even"
+  
 //- Back to top
 label#back2top
   i.iconfont.icon-up

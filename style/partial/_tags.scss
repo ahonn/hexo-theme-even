@@ -42,13 +42,15 @@ $tag-link-margin: 5px !default;
   }
 
   .tagcloud {
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 5em;
     text-align: center;
     color: $global-theme-color;
     font-family: $body-serif-font-family;
 
     .total {
+      margin-bottom: 10px;
+
       p {
         margin: auto;
         font-size: $tag-total-font-size;

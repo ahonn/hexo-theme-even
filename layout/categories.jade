@@ -1,11 +1,9 @@
 extends partial/layout
-include mixins/tags
+include mixins/categories
 
 block title
-  title= __('Tags') + ' · ' + config.title
+  title= __('Categories') + ' · ' + config.title
   
 block container
-  .tagcloud
-    div.total
-      != list_categories({style: '', separator: '/'})
+  +categories()
 
