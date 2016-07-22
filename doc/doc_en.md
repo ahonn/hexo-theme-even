@@ -4,6 +4,7 @@
 - [Config](#Config)
   + [Set the home page article number](#Set_the_home_page_article_number)
   + [Set the archive page number](#Set_the_archive_page_number)
+  + [Add categories page](#Add_categories_page)
   + [Add tags page](#Add_tags_page)
   + [Add about page](#Add_about_page)
   + [Modify the site icon](#Modify_the_site_icon)
