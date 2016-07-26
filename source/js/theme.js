@@ -31,6 +31,7 @@ $(function() {
  
     $window.scroll(function() {
         if ($window.scrollTop() > offset.top) {
+            console.log("Run");
             $sidebar.css({
               "position": "fixed",
               "top": "15px"

@@ -24,6 +24,8 @@ mixin post()
       != full_date(page.date, 'll')
     if toc(page.content)
       .post-sidebar#sidebar
+        h3.heading
+          != __('Directory')
         != toc(page.content, {list_number: false})
     .post-content
       != page.content
