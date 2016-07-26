@@ -28,6 +28,7 @@ $content-list-style: inside;
   .post {
     padding-top: 1em;
     padding-bottom: 2em;
+    // position: relative;
 
     .post-title {
       margin: 0px;
@@ -46,6 +47,21 @@ $content-list-style: inside;
       margin-top: 5px;
       display: inline-block;
       color: $dark-gray;
+    }
+
+    .post-sidebar {
+      width: 190px;
+      position: absolute;
+      margin-left: 780px;
+      padding: 10px 0 20px 15px;
+      font-size: 14px;
+      background-color: #f8f5ec;
+      border-radius: 5px;
+
+      ol {
+        padding-left: 20px;
+        list-style: square;
+      }
     }
 
     .post-content {

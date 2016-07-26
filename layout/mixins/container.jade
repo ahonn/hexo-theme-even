@@ -22,6 +22,9 @@ mixin post()
       != page.title
     span.post-time
       != full_date(page.date, 'll')
+    if toc(page.content)
+      .post-sidebar#sidebar
+        != toc(page.content, {list_number: false})
     .post-content
       != page.content
   
