@@ -18,13 +18,16 @@ $(function() {
   // Post follow sidebar
   $(function() {
     var $sidebar   = $("#sidebar"),
-        topPadding = 15;
+        $headerlink = $(".headerlink"),
+        $toclink    = $(".toc-link");
 
     if ($sidebar.length) {
       var offset = $sidebar.offset();
 
-      $(window).scroll(function() {
-        if ($(window).scrollTop() > offset.top) {
+      $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop > offset.top) {
           $sidebar.css({
             "position": "fixed",
             "top": "15px"
@@ -35,6 +38,19 @@ $(function() {
             "top": offset.top
           });
         }
+
+        for(var i = 0; i < $headerlink.length; i++) {
+          var eqLength = i + 1 === $headerlink.length,
+              minTop = $($headerlink[i]).offset().top,
+              maxTop = eqLength ? Infinity : $($headerlink[i+1]).offset().top;
+
+          if (minTop <= scrollTop && scrollTop < maxTop) {
+            $($toclink[i]).addClass("active");
+          } else {
+            $($toclink[i]).removeClass("active");
+          }
+        }
+        
       });
     }
   });
