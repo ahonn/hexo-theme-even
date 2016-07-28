@@ -41,16 +41,16 @@ $(function() {
 
         for(var i = 0; i < $headerlink.length; i++) {
           var eqLength = i + 1 === $headerlink.length,
-              minTop = $($headerlink[i]).offset().top,
-              maxTop = eqLength ? Infinity : $($headerlink[i+1]).offset().top;
+              minTop = $($headerlink[i]).offset().top - 20,
+              maxTop = eqLength ? Infinity : $($headerlink[i+1]).offset().top - 20;
 
-          if (minTop <= scrollTop && scrollTop < maxTop) {
+          if (minTop < scrollTop && scrollTop <= maxTop) {
             $($toclink[i]).addClass("active");
           } else {
             $($toclink[i]).removeClass("active");
           }
         }
-        
+
       });
     }
   });

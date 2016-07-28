@@ -53,17 +53,23 @@ $content-list-style: inside;
       width: 190px;
       position: absolute;
       margin-left: 780px;
-      font-size: 14px;
-      border-left: 3px solid #f1ede4; 
+      font-size: 15px;
+      border-left: 3px solid rgba($global-theme-color, 0.75);
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      font-family: $body-serif-font-family;
 
       .heading {
         margin: 5px 10px;
         font-size: 18px;
-        font-family: $body-serif-font-family;
       }
 
       ol {
         list-style: square;
+
+        a.active {
+          color: $global-theme-color;
+        }
       }
 
       .toc {
