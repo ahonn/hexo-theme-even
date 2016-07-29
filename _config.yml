@@ -14,6 +14,9 @@ comments:
   post: true
   about: true
 
+# sidebar
+sidebar: true
+
 # Analytics
 ## Baidu Analytics
 baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8

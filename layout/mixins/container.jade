@@ -22,7 +22,7 @@ mixin post()
       != page.title
     span.post-time
       != full_date(page.date, 'll')
-    if toc(page.content)
+    if theme.sidebar && toc(page.content)
       .post-sidebar#sidebar
         h3.heading
           != __('Directory')
