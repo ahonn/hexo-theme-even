@@ -1,3 +1,5 @@
+"use strict";
+
 $(function() {
   // Back to top
   $(function () {
@@ -17,25 +19,33 @@ $(function() {
 
   // Post follow sidebar
   $(function() {
-    var $sidebar   = $("#sidebar"),
+    var $sidebar    = $("#sidebar"),
+        $tags       = $('.tags'),
         $headerlink = $(".headerlink"),
         $toclink    = $(".toc-link");
 
     if ($sidebar.length) {
-      var offset = $sidebar.offset();
+      var minScrollTop = $sidebar.offset().top,
+          maxScrollTop = $tags.offset().top - $sidebar.height();
+
 
       $(window).scroll(function () {
-        var scrollTop = $(window).scrollTop();
+        var scrollTop     = $(window).scrollTop();
 
-        if (scrollTop > offset.top) {
+        if (minScrollTop < scrollTop && scrollTop < maxScrollTop) {
           $sidebar.css({
             "position": "fixed",
             "top": "15px"
           });
-        } else {
+        } else if (scrollTop > maxScrollTop) {
           $sidebar.css({
             "position": "absolute",
-            "top": offset.top
+            "top": maxScrollTop
+          });
+        }else {
+          $sidebar.css({
+            "position": "absolute",
+            "top": minScrollTop
           });
         }
 
@@ -50,7 +60,6 @@ $(function() {
             $($toclink[i]).removeClass("active");
           }
         }
-
       });
     }
   });
