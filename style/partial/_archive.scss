@@ -30,7 +30,10 @@ $archive-item-hover-border: 3px solid $global-theme-color !default;
     font-size: $archive-font-size;
     max-width: $archive-max-width;
 
-    h2 {
+    .year {
+      margin: 20px 0;
+      font-size: 28px;
+      font-weight: 400;
       font-family: $body-serif-font-family;
     }
 
