@@ -32,6 +32,7 @@ $content-list-style: inside;
 
     .post-title {
       margin: 0px;
+      font-weight: 400;
       font-size: $post-title-font-size;
       font-family: $body-serif-font-family;
 
@@ -62,6 +63,7 @@ $content-list-style: inside;
       .heading {
         margin: 5px 10px;
         font-size: 18px;
+        font-weight: 500;
       }
 
       ol {
@@ -86,6 +88,7 @@ $content-list-style: inside;
       @for $i from 1 through 6 {
         h#{$i} {
           font-family: $body-serif-font-family;
+          font-weight: 400;
         }
       }
 
@@ -96,10 +99,8 @@ $content-list-style: inside;
 
         &::before {
           content: '§';
-          position: relative;
-          top: 2px;
           margin-right: 5px;
-          font-size: 1.3em;
+          font-size: 1.1em;
         }
       }
 
