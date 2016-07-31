@@ -7,6 +7,7 @@
   + [Add categories page](#Add_categories_page)
   + [Add tags page](#Add_tags_page)
   + [Add about page](#Add_about_page)
+  + [Open/close the article directory sidebar](#Open/close_the_article_directory_sidebar)
   + [Modify the site icon](#Modify_the_site_icon)
   + [Modify the site set up time](#Modify_the_site_set_up_time)
   + [Modify the social links](#Modify_the_social_links)
@@ -111,6 +112,15 @@ menu:
   Home: /
   Archives: /archives/
   About: /about/   # Add About 
+```
+
+#### Open/close the article directory sidebar
+
+Modify `sidebar` items in theme config(true: open, false: close)
+
+```
+# article directory sidebar
+sidebar: true
 ```
 
 #### Modify the site icon
