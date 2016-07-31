@@ -2,7 +2,7 @@
 
 A simple theme for Hexo blog framework
 
-![even](http://7xqvel.com1.z0.glb.clouddn.com/even.png?imageView/3/w/600)
+![even](http://7xqvel.com1.z0.glb.clouddn.com/Hello%20World%20%C2%B7%20Even.png?imageView/3/w/600)
 
 ## Demo
 Check out Even theme in live : [demo](http://www.ahonn.me)
