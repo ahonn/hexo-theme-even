@@ -139,10 +139,14 @@ $content-list-style: inside;
 
       > table {
         margin-bottom: 20px;
+        border-spacing: 0;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.125);
+        border: 3px double mix($global-theme-color, $white, 30%);
 
         th, td {
-          padding: 5px 10px;
-          border: 3px double mix($global-theme-color, $white, 30%);
+          padding: 5px 15px;
+          background-color: mix(#f8f5ec, $white, 30%);
+          border: 1px double mix($global-theme-color, $white, 30%);
         }
       }
     }
