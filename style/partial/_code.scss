@@ -72,11 +72,17 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
 
     .code pre {
       margin: 0;
-      padding: 30px 14px 10px;
+      padding: 30px 10px 10px;
     }
 
     .gutter {
-      display: none;
+      width: 10px;
+      color: $medium-gray;
+
+      pre {
+        margin: 0;
+        padding: 30px 7px 10px;
+      }
     }
 
     table, tr, td {
