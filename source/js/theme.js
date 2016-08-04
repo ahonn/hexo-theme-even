@@ -18,7 +18,7 @@ $(function() {
   });
 
   // Post follow sidebar
-  $(function() {
+  (function() {
     var $sidebar    = $("#sidebar"),
         $tags       = $('.tags'),
         $headerlink = $(".headerlink"),
@@ -28,7 +28,9 @@ $(function() {
       var minScrollTop = $sidebar.offset().top,
           maxScrollTop = $tags.offset().top - $sidebar.height();
 
-
+      $(window).load(function() {
+        maxScrollTop = $tags.offset().top - $sidebar.height();
+      });
       $(window).scroll(function () {
         var scrollTop     = $(window).scrollTop();
 
@@ -62,5 +64,5 @@ $(function() {
         }
       });
     }
-  });
+  })();
 });
