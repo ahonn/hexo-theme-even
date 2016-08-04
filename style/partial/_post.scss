@@ -136,6 +136,15 @@ $content-list-style: inside;
       ul {
         list-style: $content-list-style;
       }
+
+      > table {
+        margin-bottom: 20px;
+
+        th, td {
+          padding: 5px 10px;
+          border: 3px double mix($global-theme-color, $white, 30%);
+        }
+      }
     }
   }
 }
