@@ -73,6 +73,10 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
     .code pre {
       margin: 0;
       padding: 30px 10px 10px;
+
+      .line {
+        height: 19px;
+      }
     }
 
     .gutter {
