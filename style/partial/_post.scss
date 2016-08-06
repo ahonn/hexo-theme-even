@@ -118,18 +118,25 @@ $content-table-border-color: mix($global-theme-color, $white, 30%) !default;
 
       blockquote {
         margin: 2em 0;
-        padding: 0 20px;
+        padding: 10px 20px;
         position: relative;
-        color: rgba(#34495e, 0.75);
-        
-        &::before {
-          content: "“";
-          font-size: 44px;
-          color: $global-theme-color;
-          position: absolute;
-          top: -20px;
-          left: -5px;
+        color: rgba(#34495e, 0.8);
+        background-color: rgba($global-theme-color, 0.05);
+        border-left: 3px solid rgba($global-theme-color, 0.3);
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+        p {
+          margin: 0;
         }
+        
+        // &::before {
+        //   content: "“";
+        //   font-size: 44px;
+        //   color: $global-theme-color;
+        //   position: absolute;
+        //   top: -20px;
+        //   left: -5px;
+        // }
       }
       
       img {
