@@ -8,6 +8,7 @@
   + [Add tags page](#Add_tags_page)
   + [Add about page](#Add_about_page)
   + [Open/close the article directory sidebar](#Open/close_the_article_directory_sidebar)
+  + [Modify the home page article preview location](#Modify_the_home_page_article_preview_location)
   + [Modify the site icon](#Modify_the_site_icon)
   + [Modify the site set up time](#Modify_the_site_set_up_time)
   + [Modify the social links](#Modify_the_social_links)
@@ -18,6 +19,8 @@
 Site config: `yourblog/_config.yml`
 
 Theme config: `yourblog/themes/even/_config.yml`
+
+**In order to update do not change the existing `_config.yml` file in theme, the theme of the configuration file named `_layout.yml`. Use the theme for the first time will need to create the `_config.yml` file and copy the contents of the `_layout.yml` in the `_config.yml`.**
 
 ### Config
 
@@ -122,6 +125,11 @@ Modify `sidebar` items in theme config(true: open, false: close)
 # article directory sidebar
 sidebar: true
 ```
+
+#### Modify the home page article preview location
+In the article add `<!-- more -->` tag, the contents of the above will be on the home page preview.
+
+Read more of the position will be in the tag.
 
 #### Modify the site icon
 Modify `favicon` items in theme config
