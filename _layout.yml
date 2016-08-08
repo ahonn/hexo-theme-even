@@ -2,7 +2,7 @@
 menu:
   Home: /
   Archives: /archives/
-  # Categories: /categories/
+  Categories: /categories/
   Tags: /tags/
   About: /about/
 
@@ -19,23 +19,23 @@ sidebar: true
 
 # Analytics
 ## Baidu Analytics
-baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
+baidu_analytics: Your baidu Analytics ID
 ## Google Analytics
-google_analytics: UA-74273646-1
+google_analytics: Your Google Analytics ID
 
 # Comments
 ## Duoshuo
-# duoshuo_shortname: ahonn
+duoshuo_shortname: Your duoshuo ID
 ## Disqus
-disqus_shortname: ahonn
+disqus_shortname: Your disqus ID
 
 # Social links
 social:
-  email: mailto:ahonn95@outlook.com
+  email: 
   # stack-overflow:
   # twitter:
   # facebook:
-  github: https://github.com/ahonn
-  weibo: http://weibo.com/ahonn
-  zhihu: https://www.zhihu.com/people/ahonn
+  github: 
+  # weibo: 
+  # zhihu: 
   rss: /atom.xml
