@@ -24,11 +24,18 @@
 
     .archive {
       margin: 4em 1em 5em;
+
       .post-time {
         margin: 0;
         width: auto;
         font-size: 13px;
         display: block;
+
+        &.tag,
+        &.category {
+          margin-left: 0;
+          width: auto;
+        }
       }
 
       .post-link {
