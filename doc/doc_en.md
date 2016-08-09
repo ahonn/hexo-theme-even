@@ -20,7 +20,7 @@ Site config: `yourblog/_config.yml`
 
 Theme config: `yourblog/themes/even/_config.yml`
 
-**In order to update do not change the existing `_config.yml` file in theme, the theme of the configuration file named `_layout.yml`. Use the theme for the first time will need to create the `_config.yml` file and copy the contents of the `_layout.yml` in the `_config.yml`.**
+**In order to update do not change the existing `_config.yml` file in theme, the theme of the configuration file named `_config.yml.sample`. Use the theme for the first time will need to create the `_config.yml` file and copy the contents of the `_config.yml.sample` in the `_config.yml`.**
 
 ### Config
 

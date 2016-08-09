@@ -19,6 +19,17 @@ $ npm install
 $ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
 $ cd themes/
 $ git clone https://github.com/ahonn/hexo-theme-even even
+$ cd even/
+$ cp _config.yml.sample _config.yml
+```
+
+Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
+
+```
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: even
 ```
 
 ## Contact
