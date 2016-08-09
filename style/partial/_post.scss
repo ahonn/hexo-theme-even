@@ -22,7 +22,11 @@ $content-blockquote-border: 4px solid $global-theme-color !default;
 
 // List style of '<ul>'
 // @type List
-$content-list-style: inside;
+$content-list-style: inside !default;
+
+// Table border color
+// @type Color
+$content-table-border-color: mix($global-theme-color, $white, 30%) !default;
 
 @mixin even-post {
   .post {
@@ -53,17 +57,19 @@ $content-list-style: inside;
     .post-sidebar {
       width: 190px;
       position: absolute;
+      padding: 10px 5px;
       margin-left: 780px;
       font-size: 15px;
-      border-left: 3px solid rgba($global-theme-color, 0.75);
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
       font-family: $body-serif-font-family;
+      border-radius: 5px;
+      background-color: rgba(#f8f5ec, 0.6);
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
 
       .heading {
         margin: 5px 10px;
         font-size: 18px;
         font-weight: 500;
+        text-transform: uppercase;
       }
 
       ol {
@@ -76,7 +82,7 @@ $content-list-style: inside;
 
       .toc {
         margin: 7px 0;
-        padding-left: 30px;
+        padding-left: 25px;
 
         .toc-child {
           padding-left: 20px;
@@ -114,17 +120,15 @@ $content-list-style: inside;
 
       blockquote {
         margin: 2em 0;
-        padding: 0 20px;
+        padding: 10px 20px;
         position: relative;
-        color: rgba(#34495e, 0.75);
-        
-        &::before {
-          content: "“";
-          font-size: 44px;
-          color: $global-theme-color;
-          position: absolute;
-          top: -20px;
-          left: -5px;
+        color: rgba(#34495e, 0.8);
+        background-color: rgba($global-theme-color, 0.05);
+        border-left: 3px solid rgba($global-theme-color, 0.3);
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+        p {
+          margin: 0;
         }
       }
       
@@ -135,6 +139,19 @@ $content-list-style: inside;
 
       ul {
         list-style: $content-list-style;
+      }
+
+      > table {
+        margin-bottom: 20px;
+        border-spacing: 0;
+        box-shadow: 2px 2px 3px rgba(0,0,0,.125);
+        border: 3px double $content-table-border-color;
+
+        th, td {
+          padding: 5px 15px;
+          background-color: mix(#f8f5ec, $white, 30%);
+          border: 1px double $content-table-border-color;
+        }
       }
     }
   }
