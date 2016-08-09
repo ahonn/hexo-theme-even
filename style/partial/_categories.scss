@@ -34,9 +34,9 @@
 
       .category-count {
         display: inline-block;
-        position: absolute;
-        top: -2px;
-        right: -8px;
+        position: relative;
+        top: -8px;
+        right: -2px;
         color: $global-theme-color;
         font-size: 12px;
       }
@@ -45,7 +45,7 @@
       &:focus,
       &:hover {
         color: $global-theme-color;
-        transform: scale(1.05); 
+        transform: scale(1.05);
       }
     }
   }

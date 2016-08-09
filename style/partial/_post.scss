@@ -55,10 +55,10 @@ $content-table-border-color: mix($global-theme-color, $white, 30%) !default;
     }
 
     .post-sidebar {
-      width: 190px;
+      width: 240px;
       position: absolute;
       padding: 10px 5px;
-      margin-left: 780px;
+      margin-left: 720px;
       font-size: 15px;
       font-family: $body-serif-font-family;
       border-radius: 5px;
@@ -131,7 +131,7 @@ $content-table-border-color: mix($global-theme-color, $white, 30%) !default;
           margin: 0;
         }
       }
-      
+
       img {
         display: inline-block;
         max-width: 100%;
