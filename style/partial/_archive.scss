@@ -50,18 +50,26 @@ $archive-item-hover-border: 3px solid $global-theme-color !default;
 
     .post-time {
       display: inline-block;
-      width: 60px;
+      width: 12%;
       margin: 0 10px;
       color: $dark-gray;
 
       &.tag,
       &.category {
-        width: 110px;
+        margin: 0;
+        width: 25%;
       }
     }
 
     .post-link {
+      width: 75%;
+      display: inline-block;
       color: $global-theme-color;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+      top: 6px;
     }
   }
 }

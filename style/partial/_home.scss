@@ -24,6 +24,18 @@ $readMore-border-bottom: 1px solid $global-theme-color !default;
     .post-item {
       list-style: none;
       border-bottom: $post-border-bottom;
+
+      .post-title {
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .post-title {
+        display: block;
+      }
     }
 
     .read-more {
