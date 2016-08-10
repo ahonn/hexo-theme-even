@@ -7,8 +7,9 @@ block title
     if page.archive
         != __('Archive') + " · " + config.title
     if page.tag
-        != page.tag + " · " + config.title
-        
+        != __('Tag') + " - "+ page.tag + " · " + config.title
+    if page.category
+        != __('Category') + " - "+ page.category + " · " + config.title
 block container
   if page.archive
     +archive()
