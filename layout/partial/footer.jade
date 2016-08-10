@@ -2,7 +2,10 @@
 if theme.social && is_home()
   div.social
     for link, name in theme.social
-      a.iconfont(class="icon-#{name}" href=url_for(link)) 
+      if name == "email"
+        a.iconfont(class="icon-#{name}" href="mailto:#{link}") 
+      else
+        a.iconfont(class="icon-#{name}" href=url_for(link)) 
 
 //- Copyright
 if page.layout != 'tags' && page.layout != 'categories'
