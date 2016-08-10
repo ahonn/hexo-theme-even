@@ -9,14 +9,19 @@ mixin home()
               != item.title
           span.post-time
             != full_date(item.date, 'll')
-          div.post-content
-            != item.excerpt
-          a.read-more(href=url_for(item.path))
-            != __('more') 
+          if item.excerpt
+            div.post-content
+              != item.excerpt
+            a.read-more(href=url_for(item.path))
+              != __('more')
+          else
+            div.post-content
+              != item.content
+
     - })
 
 //- Post
-mixin post() 
+mixin post()
   article.post
     h1.post-title
       != page.title
@@ -29,7 +34,7 @@ mixin post()
         != toc(page.content, {list_number: false})
     .post-content
       != page.content
-  
+
 //- Archive
 mixin archive()
   .archive
@@ -39,7 +44,7 @@ mixin archive()
       - var itemYear = date(item.date, 'YYYY') - 0;
       - change = year !== itemYear;
       - year = change ? itemYear : year;
-      
+
       if change
         h2.year
           != year
@@ -60,7 +65,7 @@ mixin category()
         .post-time.category
           != full_date(item.date, 'll')
         a.post-link(href=url_for(item.path))
-          != item.title 
+          != item.title
 
 //- Tag
 mixin tag()
@@ -72,7 +77,14 @@ mixin tag()
         .post-time.tag
           != full_date(item.date, 'll')
         a.post-link(href=url_for(item.path))
-          != item.title    
+          != item.title
+
+//- Page
+mixin page()
+  article.post
+    article.post-block
+      .post-content
+        != page.content
 
 //- About
 mixin about()
