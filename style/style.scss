@@ -15,14 +15,17 @@
 @import 'partial/footer';
 @import 'partial/post';
 @import 'partial/code';
+@import 'partial/sidebar';
 @import 'partial/paginator';
-@import 'partial/media';
 
 // Layout style
 @import 'partial/home';
 @import 'partial/archive';
 @import 'partial/categories';
 @import 'partial/tags';
+
+@import 'partial/media';
+
 
 ///
 // include even theme style
@@ -33,6 +36,7 @@
 @include even-header;
 @include even-footer;
 @include even-post;
+@include even-sidebar;
 @include even-code;
 @include even-paginator;
 

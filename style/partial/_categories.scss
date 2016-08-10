@@ -4,8 +4,11 @@
 // @group categories
 ///
 
-@mixin even-categories {
+// Font size of category
+// @type Number
+$category-count-font-size: 12px !default;
 
+@mixin even-categories {
   .categories {
     margin-top: 3em;
     margin-bottom: 5em;

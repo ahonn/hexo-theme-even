@@ -12,6 +12,10 @@ $code-color: #c7254e !default;
 // @type Color
 $code-background: #f8f5ec !default;
 
+// Font size of Code 
+// @type Number
+$code-font-size: 13px !default;
+
 // Font family of the code
 // @type List
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
@@ -24,7 +28,7 @@ $highlight-header-background: #f1ede4 !default;
 // @type List
 $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
                  "python", "json", "swift", "ruby", "perl", "php", "c", "java",
-                 "cpp", "scheme");
+                 "cpp", "scheme") !default;
 
 // Code type signs
 @mixin code-type-signs {
@@ -35,11 +39,12 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
   }
 }
 
+
 @mixin even-code {
   code, pre {
-    font-size: 13px;
     padding: 7px;
     border-radius: 5px;
+    font-size: $code-font-size;
     font-family: $code-font-family;
     background: $code-background;
   }
@@ -98,13 +103,15 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
       border-collapse: collapse;
     }
 
-    @include code-heightlight-solarized;
+    @include code-hightlight;
     
   }
 }
 
-// Code heightlight style: solarized
-@mixin code-heightlight-solarized {
+
+// Code highlight style: solarized
+// You can choose your favorite style in here: https://highlightjs.org/
+@mixin code-hightlight {
   .code {
     .comment,
     .quote {
