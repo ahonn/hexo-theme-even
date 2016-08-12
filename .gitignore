@@ -1,3 +1,4 @@
 .DS_Store
 _config.yml
 /node_modules
+*.log
