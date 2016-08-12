@@ -114,7 +114,9 @@ $content-table-bg: mix(#f8f5ec, $white, 30%) !default;
         max-width: 100%;
       }
 
-      ul {
+      > ul, 
+      > ol {
+        padding: 0;
         list-style: $content-list-style;
       }
 
