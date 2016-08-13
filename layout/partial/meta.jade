@@ -1,0 +1,26 @@
+//- SEO metas: author, description, keywords
+meta(name="author", content= config.author)
+
+- var description;
+if page.description
+  - description = page.description;
+else if page.excerpt
+  - description = strip_html(page.excerpt).substring(0, 140).replace(/\s/g, '');
+else if page.content
+  - description = strip_html(page.content).substring(0, 140).replace(/\s/g, '');
+else
+  - description = config.description
+meta(name="description", content= description)
+- var keywords;
+if page.keywords
+  - keywords = page.keywords;
+else if page.tags
+  - keywords = [];
+  - page.tags.each(function(tag) {
+      - keywords.push(tag.name);
+  - });
+else
+  - keywords = false;
+
+if keywords
+  meta(name="keywords", content= keywords)
