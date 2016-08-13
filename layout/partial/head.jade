@@ -1,26 +1,28 @@
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
-meta(name="description", content= config.description)
 meta(name="viewport", content="width=device-width, initial-scale=1")
 
-block title
-        
-link(rel="short icon", href=url_for(theme.favicon))
+include meta
 
-// font
+block title
+
+link(rel="short icon", href=url_for(theme.favicon))
+//- canonical url https://support.google.com/webmasters/answer/139066
+link(rel="canonical", href=url_for(url.replace(/index\.html/,'')))
+//- font
 link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono")
 
-// icon
+//- icon
 link(rel="stylesheet", href=url_for("fonts/iconfont/iconfont.css"))
 
-// theme style
+//- theme style
 link(rel="stylesheet", href=url_for("css/style.css"))
 
 include ../mixins/analytics
 if theme.baidu_analytics && !env.debug
-  // baidu analytics
+  //- baidu analytics
   +baidu_analytics()
 
 if theme.google_analytics && !env.debug
-  // google analytics
-  +google_analytics() 
+  //- google analytics
+  +google_analytics()
