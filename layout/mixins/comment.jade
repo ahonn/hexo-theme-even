@@ -5,8 +5,8 @@ mixin comment()
       div#disqus_thread
     script(type="text/javascript").
       var disqus_config = function () {
-          this.page.url = '#{page.permalink}';
-          this.page.identifier = '#{page.path}';
+          this.page.url = '#{page.permalink.replace(/index\.html/,'')}';
+          this.page.identifier = '#{page.path.replace(/index\.html/,'')}';
           this.page.title = '#{page.title}';
       };
       (function() {
@@ -17,7 +17,6 @@ mixin comment()
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
       })();
-
   else if theme.duoshuo_shortname
     section#comments
       .ds-thread(data-thread-key=url data-title=page.title data-url=url)
