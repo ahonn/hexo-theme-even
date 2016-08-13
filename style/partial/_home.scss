@@ -18,6 +18,7 @@ $readMore-border-bottom: 1px solid $global-theme-color !default;
 
 @mixin even-home {
   .home {
+    padding-left: 0;
     margin-top: $home-margin;
     margin-bottom: $home-margin;
 
