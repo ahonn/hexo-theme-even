@@ -30,7 +30,7 @@ mixin post()
     if theme.sidebar && toc(page.content)
       .post-sidebar#sidebar
         h3.heading
-          != __('Directory')
+          != __('toc')
         != toc(page.content, {list_number: false})
     .post-content
       != page.content
