@@ -1,4 +1,6 @@
-//- SEO metas: author, description, keywords
+meta(charset="utf-8")
+meta(name="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1")
 meta(name="author", content= config.author)
 
 - var description;
@@ -11,6 +13,7 @@ else if page.content
 else
   - description = config.description
 meta(name="description", content= description)
+
 - var keywords;
 if page.keywords
   - keywords = page.keywords;
