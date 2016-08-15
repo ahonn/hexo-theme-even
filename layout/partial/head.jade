@@ -2,15 +2,13 @@ include meta
 
 block title
 
-link(rel="short icon", href=url_for(theme.favicon))
+link(rel="icon", href=url_for(theme.favicon))
+
 //- canonical url https://support.google.com/webmasters/answer/139066
 link(rel="canonical", href=url_for(url.replace(/index\.html/,'')))
-//- font
-link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono")
 
-//- icon
+//- iconfont
 link(rel="stylesheet", href=url_for("fonts/iconfont/iconfont.css"))
-
 //- theme style
 link(rel="stylesheet", href=url_for("css/style.css"))
 
