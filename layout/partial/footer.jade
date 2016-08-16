@@ -16,18 +16,25 @@ if page.layout != 'tags' && page.layout != 'categories'
     if since
       - year = year == since ? year : since + '-' + year
     - copyright = '&copy;' + year
-      
-    p
+    
+    p.power
+      != "Powered by "
+      a(href="https://hexo.io/")
+        != "Hexo" 
+      != " and Theme by "
+      a(href="https://github.com/ahonn/hexo-theme-even") 
+        != "Even"
+    p.since
       != copyright
       span.heart
         i.iconfont.icon-heart
       span.author
         != config.author
-    p.theme
-      != "Theme by " 
+    //- p.theme
+    //-   != "Theme by " 
       
-      a(href="https://github.com/ahonn/hexo-theme-even") 
-        != "Even"
+    //-   a(href="https://github.com/ahonn/hexo-theme-even") 
+    //-     != "Even"
   
 //- Back to top
 label#back2top

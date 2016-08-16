@@ -42,8 +42,8 @@ $icon-margin-right: 10px !default;
 @mixin even-copyright {
   .copyright {
     margin-top: 15px;
-    margin-bottom: 20px;
-    color: mix($dark-gray, $body-font-color);
+    margin-bottom: 10px;
+    color: $dark-gray;
     text-align: center;
     font-family: $body-serif-font-family;
 
@@ -55,14 +55,16 @@ $icon-margin-right: 10px !default;
       }
     }
 
-    p {
+    .power {
       margin: 0;
-    }
 
-    .theme {
       a {
         color: $global-theme-color;
       }
+    }
+
+    .since {
+      margin: 0;
     }
   }
 }
