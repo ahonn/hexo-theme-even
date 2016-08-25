@@ -1,0 +1,79 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group tags
+///
+
+// Border top of post page tags
+// @type List
+$tags-border-top: 1px solid $global-light-gray !default;
+
+// Width of tag total
+// @type Number
+$tag-total-width: 110px !default;
+
+// Font size of tag total
+// @type Number
+$tag-total-font-size: 18px !default;
+
+// Border bottom of tagcloud total
+// @type List
+$tag-total-border-bottom: 2px solid $global-theme-color !default;
+
+// Margin of the tag link
+// @type Number
+$tag-link-margin: 5px !default;
+
+@mixin even-tags {
+  .tags {
+    margin-top: 35px;
+    padding-top: 20px;
+    font-family: $global-serif-font-family;
+    border-top: $tags-border-top;
+
+    a {
+      margin-right: 5px;
+      color: $global-theme-color;
+
+      &::before {
+        content: '#';
+      }
+    }
+  }
+
+  .tagcloud {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    text-align: center;
+    color: $global-theme-color;
+    font-family: $global-serif-font-family;
+
+    .total {
+      margin-bottom: 10px;
+
+      p {
+        margin: auto;
+        font-size: $tag-total-font-size;
+        width: $tag-total-width;
+        border-bottom: $tag-total-border-bottom;
+      }
+    }
+
+    a {
+      display: inline-block;
+      word-wrap: break-word;
+      margin: $tag-link-margin;
+      position: relative;
+      transition-duration: 0.2s;
+      transition-property: transform;
+      transition-timing-function: ease-out;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $global-theme-color;
+        transform: scale(1.05); 
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@mixin even-media {
+  @media screen and (max-width: $global-body-width) {
+    #main {
+      width: 100%;
+    }
+
+    header {
+      padding: 20px 0;
+
+      .logo {
+        font-size: 42px;
+      }
+
+      .logo, .nav {
+        float: none;
+        display: block;
+        text-align: center;
+
+        .nav-link {
+          padding: 5px 8px;
+        }
+      }
+    }
+
+    .archive {
+      margin: 4em 1em 5em;
+
+      .post-time {
+        margin: 0;
+        width: auto;
+        font-size: 13px;
+        display: block;
+
+        &.tag,
+        &.category {
+          margin-left: 0;
+          width: auto;
+        }
+      }
+
+      .post-link {
+        width: 100%;
+      }
+    }
+
+    .tagcloud {
+      margin-top: 4em;
+    }
+
+    .post {
+      .post-sidebar {
+        display: none;
+      }
+    }
+
+    #back2top {
+      display: none;
+    }
+  }
+}

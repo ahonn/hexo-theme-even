@@ -1,7 +1,7 @@
 {
   "name": "Even",
   "version": "1.0.0",
-  "description": "A simple theme for Hexo blog framework",
+  "description": "A simple theme for Hexo",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build --color --tasks",

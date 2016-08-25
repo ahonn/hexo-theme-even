@@ -1,0 +1,55 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group categories
+///
+
+// Font size of category
+// @type Number
+$category-count-font-size: 12px !default;
+
+@mixin even-categories {
+  .categories {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    text-align: center;
+    color: $global-theme-color;
+    font-family: $global-serif-font-family;
+
+    .total {
+      margin-bottom: 20px;
+
+      p {
+        margin: auto;
+        font-size: $tag-total-font-size;
+        width: $tag-total-width;
+        border-bottom: $tag-total-border-bottom;
+      }
+    }
+
+    .category-link {
+      display: inline-block;
+      margin: 3px 10px;
+      position: relative;
+      transition-duration: 0.2s;
+      transition-property: transform;
+      transition-timing-function: ease-out;
+
+      .category-count {
+        display: inline-block;
+        position: relative;
+        top: -8px;
+        right: -2px;
+        color: $global-theme-color;
+        font-size: 12px;
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $global-theme-color;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

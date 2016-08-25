@@ -1,0 +1,135 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group global
+///
+
+// =============== Global ===============//
+
+// Font size attribute applied to '<html>' and '<body>'.
+// @type Number
+$global-font-size: 100% !default;
+
+// Global width of the site
+// @type Number
+$global-body-width: 800px !default;
+
+// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
+// @type Number
+$global-lineheight: 1.5 !default;
+
+// Font family of the site.
+// @type List
+$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+
+// Serif font family of site.
+// @type List
+$global-serif-font-family: Athelas, Times New Roman, STHeiti, Microsoft Yahei, serif !default;
+
+
+// =============== Color ===============//
+// Default theme color of the site.
+// @type Color
+$global-theme-color: #c05b4d !default;
+
+// Color used for black ui items.
+// @type Color
+$global-black: #0a0a0a !default;
+
+// Color used for white ui items.
+// @type Color
+$global-white: #fefefe !default;
+
+// Color used for light gray ui items.
+// @type Color
+$global-light-gray: #e6e6e6 !default;
+
+// Color used for medium gray ui items.
+// @type Color
+$global-medium-gray: #cacaca !default;
+
+// Color used for dark gray ui items.
+// @type Color
+$global-dark-gray: #8a8a8a !default;
+
+// Text color of the body.
+// @type Color
+$global-font-color: #34495e !default;
+
+
+// =============== Body ===============//
+// Background color of body
+// @type Color
+$body-background: $global-white !default;
+
+// Border top of body
+// @type List
+$body-border-top: 3px solid $global-theme-color !default;
+
+// Margin of the container
+// @type Number
+$body-container-margin: 32px 20px !default;
+
+// headings of the body
+// @type Map
+$body-headings: (
+  h2: 22px,
+  h3: 20px,
+  h4: 18px,
+  h5: 16px,
+  h6: 16px
+) !default;
+
+
+// =============== Global styling ===============//
+@mixin even-global-styles {
+  @include normalize;
+
+  html {
+    font-size: $global-font-size;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: $global-font-family;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: $global-lineheight;
+    color: $global-font-color;
+    background: $body-background;
+
+    @if $body-border-top {
+      border-top: $body-border-top;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    color: $global-font-color;
+    text-decoration: none;
+  }
+
+  @each $header, $size in $body-headings {
+    #{$header} {
+      font-size: $size;
+    }
+  }
+
+  #main {
+    width: $global-body-width;
+    margin: 0 auto;
+  }
+
+  #container {
+    margin: $body-container-margin
+  }
+}

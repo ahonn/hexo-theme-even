@@ -1,0 +1,137 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group post
+///
+
+// Font siz of post title
+// @type Number
+$post-title-font-size: 26px !default;
+
+// Border bottom of post title link
+// @type List
+$post-title-link-border: 2px solid $global-theme-color !default;
+
+// Heading before content
+// @type String
+$content-headerlink-content: '§' !default;
+
+// Border bottom of '<a>'
+// @type List
+$content-link-border: 1px solid $global-theme-color !default;
+
+// Background color of '<blockquote>'
+// @type Color
+$content-blockquote-bg: rgba($global-theme-color, 0.05) !default;
+
+// Border left of '<blockquote>'
+// @type List
+$content-blockquote-border-left: 3px solid rgba($global-theme-color, 0.3) !default;
+
+// List style of '<ul>'
+// @type List
+$content-list-style: inside !default;
+
+// border color of '<table>'
+// @type Color
+$content-table-border-color: lighten($global-theme-color, 30%) !default;
+
+// background color of '<table>'
+// @type Color
+$content-table-bg: lighten(#f8f5ec, 30%) !default;
+
+
+@mixin even-post {
+  .post {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    // position: relative;
+
+    .post-title {
+      margin: 0px;
+      font-weight: 400;
+      font-size: $post-title-font-size;
+      font-family: $global-serif-font-family;
+
+      .post-link {
+        &:hover {
+          border-bottom: $post-title-link-border;
+          transition: 0.1s;
+        }
+      }
+    }
+
+    .post-time {
+      margin-top: 5px;
+      display: inline-block;
+      color: $global-dark-gray;
+    }
+
+    .post-content {
+      @for $i from 1 through 6 {
+        h#{$i} {
+          font-weight: 400;
+          font-family: $global-serif-font-family;
+        }
+      }
+
+      .headerlink {
+        &:hover {
+          border-bottom: 0;
+        }
+
+        &::before {
+          content: $content-headerlink-content;
+          margin-right: 5px;
+          font-size: 1.1em;
+        }
+      }
+
+      a {
+        color: $global-theme-color;
+
+        &:hover {
+          border-bottom: $content-link-border;
+        }
+      }
+
+      blockquote {
+        margin: 2em 0;
+        padding: 10px 20px;
+        position: relative;
+        color: rgba(#34495e, 0.8);
+        background-color: $content-blockquote-bg;
+        border-left: $content-blockquote-border-left;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+        p {
+          margin: 0;
+        }
+      }
+
+      img {
+        display: inline-block;
+        max-width: 100%;
+      }
+
+      > ul, 
+      > ol {
+        padding: 0;
+        list-style: $content-list-style;
+      }
+
+      > table {
+        margin-bottom: 20px;
+        border-spacing: 0;
+        box-shadow: 2px 2px 3px rgba(0,0,0,.125);
+        border: 3px double $content-table-border-color;
+
+        th, td {
+          padding: 5px 15px;
+          background-color: $content-table-bg;
+          border: 1px double $content-table-border-color;
+        }
+      }
+    }
+  }
+}

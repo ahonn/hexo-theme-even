@@ -1,0 +1,41 @@
+// Even theme for Hexo by Ahonn
+
+///
+// @group paginator
+///
+
+// Font size of paginator
+// @type Number
+$paginator-font-size: 20px !default;
+
+@mixin even-paginator {
+  .paginator {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    padding: 1em 0;
+
+    .prev,
+    .next {
+      display: inline-block;
+      font-weight: bold;
+      font-size: $paginator-font-size;
+      font-family: $global-serif-font-family;
+
+      span {
+        margin: 0 5px;
+      }
+
+      &:hover {
+        color: $global-theme-color;
+      }
+    }
+
+    .prev {
+      float: left;
+    }
+
+    .next {
+      float: right;
+    }
+  }
+}
