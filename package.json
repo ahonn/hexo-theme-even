@@ -4,8 +4,8 @@
   "description": "A simple theme for Hexo blog framework",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp build",
-    "start": "gulp"
+    "build": "gulp build --color --tasks",
+    "start": "gulp --color"
   },
   "keywords": [
     "Hexo",
