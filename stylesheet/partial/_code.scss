@@ -80,7 +80,7 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
       font-size: 12px;
       font-weight: bold;
       color: $global-medium-gray;
-      background: darken($code-background, 5%);
+      background: darken($code-background, 3%);
       content: 'CODE';
     }
 
