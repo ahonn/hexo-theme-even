@@ -12,7 +12,7 @@ $global-font-size: 100% !default;
 
 // Global width of the site
 // @type Number
-$global-width: 800px !default;
+$global-body-width: 800px !default;
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
 // @type Number
@@ -125,7 +125,7 @@ $body-headings: (
   }
 
   #main {
-    width: $global-width;
+    width: $global-body-width;
     margin: 0 auto;
   }
 

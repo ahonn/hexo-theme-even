@@ -1,5 +1,5 @@
 @mixin even-media {
-  @media screen and (max-width: $global-width) {
+  @media screen and (max-width: $global-body-width) {
     #main {
       width: 100%;
     }
