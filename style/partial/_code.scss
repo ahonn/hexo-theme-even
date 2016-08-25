@@ -8,10 +8,6 @@
 // @type Color
 $code-color: #c7254e !default;
 
-// Color of the code background
-// @type Color
-$code-background: #f8f5ec !default;
-
 // Font size of Code 
 // @type Number
 $code-font-size: 13px !default;
@@ -19,6 +15,23 @@ $code-font-size: 13px !default;
 // Font family of the code
 // @type List
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
+
+// Color of the code background
+// @type Color
+$code-background: #f8f5ec !default;
+
+
+// Color of code highlight, solarized
+// @type Map
+$code-highlight-color: (
+  comment: #93a1a1,
+  keyword: #859900,
+  number: #2aa198,
+  name: #268bd2,
+  attribute: #b58900,
+  symbol: #cb4b16,
+  built_in: #dc322f
+);
 
 // Code type list
 // @type List
@@ -104,53 +117,45 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
   }
 }
 
-
-// Code highlight style: solarized
-// You can choose your favorite style in here: https://highlightjs.org/
 @mixin code-hightlight {
   .code {
     .comment,
     .quote {
-      color: #93a1a1;
+      color: map-get($code-highlight-color, comment);
     }
 
-    /* Solarized Green */
     .keyword,
     .selector-tag,
     .addition {
-      color: #859900;
+      color: map-get($code-highlight-color, keyword);
     }
 
-    /* Solarized Cyan */
     .number,
     .string,
     .meta .meta-string,
     .literal,
     .doctag,
     .regexp {
-      color: #2aa198;
+      color: map-get($code-highlight-color, number);
     }
 
-    /* Solarized Blue */
     .title,
     .section,
     .name,
     .selector-id,
     .selector-class {
-      color: #268bd2;
+      color: map-get($code-highlight-color, title);
     }
 
-    /* Solarized Yellow */
     .attribute,
     .attr,
     .variable,
     .template-variable,
     .class .title,
     .type {
-      color: #b58900;
+      color: map-get($code-highlight-color, attribute);
     }
 
-    /* Solarized Orange */
     .symbol,
     .bullet,
     .subst,
@@ -159,25 +164,12 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
     .selector-attr,
     .selector-pseudo,
     .link {
-      color: #cb4b16;
+      color: map-get($code-highlight-color, symbol);
     }
 
-    /* Solarized Red */
     .built_in,
     .deletion {
-      color: #dc322f;
-    }
-
-    .formula {
-      background: #eee8d5;
-    }
-
-    .emphasis {
-      font-style: italic;
-    }
-
-    .strong {
-      font-weight: bold;
+      color: map-get($code-highlight-color, built_in);
     }
   }
 }
