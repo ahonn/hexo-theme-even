@@ -20,10 +20,6 @@ $code-font-size: 13px !default;
 // @type List
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 
-// Color of the code header background
-// @type Color
-$highlight-header-background: #f1ede4 !default;
-
 // Code type list
 // @type List
 $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
@@ -70,8 +66,8 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
       padding: 2px 7px;
       font-size: 12px;
       font-weight: bold;
-      color: $medium-gray;
-      background: $highlight-header-background;
+      color: $global-medium-gray;
+      background: darken($code-background, 5%);
       content: 'CODE';
     }
 
@@ -88,7 +84,7 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
 
     .gutter {
       width: 10px;
-      color: $medium-gray;
+      color: $global-medium-gray;
 
       pre {
         margin: 0;

@@ -10,7 +10,7 @@ $home-margin: 2em !default;
 
 // Border bottom of the post
 // @type List
-$post-border-bottom: 1px solid $light-gray !default;
+$post-border-bottom: 1px solid $global-light-gray !default;
 
 // Border bottom of read more
 // @type List
@@ -42,7 +42,7 @@ $readMore-border-bottom: 1px solid $global-theme-color !default;
     .read-more {
       color: $global-theme-color;
       font-size: 1.1em;
-      font-family: $body-serif-font-family;
+      font-family: $global-serif-font-family;
 
       &:hover {
         border-bottom: $readMore-border-bottom

@@ -34,11 +34,11 @@ $content-list-style: inside !default;
 
 // border color of '<table>'
 // @type Color
-$content-table-border-color: mix($global-theme-color, $white, 30%) !default;
+$content-table-border-color: lighten($global-theme-color, 30%) !default;
 
 // background color of '<table>'
 // @type Color
-$content-table-bg: mix(#f8f5ec, $white, 30%) !default;
+$content-table-bg: lighten(#f8f5ec, 30%) !default;
 
 
 @mixin even-post {
@@ -51,7 +51,7 @@ $content-table-bg: mix(#f8f5ec, $white, 30%) !default;
       margin: 0px;
       font-weight: 400;
       font-size: $post-title-font-size;
-      font-family: $body-serif-font-family;
+      font-family: $global-serif-font-family;
 
       .post-link {
         &:hover {
@@ -64,14 +64,14 @@ $content-table-bg: mix(#f8f5ec, $white, 30%) !default;
     .post-time {
       margin-top: 5px;
       display: inline-block;
-      color: $dark-gray;
+      color: $global-dark-gray;
     }
 
     .post-content {
       @for $i from 1 through 6 {
         h#{$i} {
           font-weight: 400;
-          font-family: $body-serif-font-family;
+          font-family: $global-serif-font-family;
         }
       }
 
@@ -128,7 +128,7 @@ $content-table-bg: mix(#f8f5ec, $white, 30%) !default;
 
         th, td {
           padding: 5px 15px;
-          background-color: mix(#f8f5ec, $white, 30%);
+          background-color: $content-table-bg;
           border: 1px double $content-table-border-color;
         }
       }

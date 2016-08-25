@@ -9,11 +9,11 @@ $(function() {
       var timer = setInterval(function () {
         var top = $(window).scrollTop();
         $(window).scrollTop(Math.floor(-top / 5) + top);
-      
+
         if (!top) {
           clearInterval(timer);
         }
-      }, 30); 
+      }, 30);
     });
   });
 

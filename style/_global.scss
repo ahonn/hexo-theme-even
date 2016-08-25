@@ -4,6 +4,8 @@
 // @group global
 ///
 
+// =============== Global ===============//
+
 // Font size attribute applied to '<html>' and '<body>'.
 // @type Number
 $global-font-size: 100% !default;
@@ -16,53 +18,49 @@ $global-width: 800px !default;
 // @type Number
 $global-lineheight: 1.5 !default;
 
+// Font family of the site.
+// @type List
+$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+
+// Serif font family of site.
+// @type List
+$global-serif-font-family: Athelas, Times New Roman, STHeiti, Microsoft Yahei, serif !default;
+
+
+// =============== Color ===============//
 // Default theme color of the site.
 // @type Color
 $global-theme-color: #c05b4d !default;
 
-/// Global font weight used for normal type.
-/// @type Keyword | Number
-$global-weight-normal: normal !default;
-
-/// Global font weight used for bold type.
-/// @type Keyword | Number
-$global-weight-bold: bold !default;
-
-// Color used for light gray ui items.
-// @type Color
-$light-gray: #e6e6e6 !default;
-
-// Color used for medium gray ui items.
-// @type Color
-$medium-gray: #cacaca !default;
-
-// Color used for dark gray ui items.
-// @type Color
-$dark-gray: #8a8a8a !default;
-
 // Color used for black ui items.
 // @type Color
-$black: #0a0a0a !default;
+$global-black: #0a0a0a !default;
 
 // Color used for white ui items.
 // @type Color
-$white: #fefefe !default;
+$global-white: #fefefe !default;
+
+// Color used for light gray ui items.
+// @type Color
+$global-light-gray: #e6e6e6 !default;
+
+// Color used for medium gray ui items.
+// @type Color
+$global-medium-gray: #cacaca !default;
+
+// Color used for dark gray ui items.
+// @type Color
+$global-dark-gray: #8a8a8a !default;
 
 // Text color of the body.
 // @type Color
-$body-font-color: #34495e !default;
+$global-font-color: #34495e !default;
 
-// Font family of the body.
-// @type List
-$body-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
-// Serif font family of body.
-// @type List
-$body-serif-font-family: Athelas, Times New Roman, STHeiti, Microsoft Yahei, serif !default;
-
+// =============== Body ===============//
 // Background color of body
 // @type Color
-$body-background: $white !default;
+$body-background: $global-white !default;
 
 // Border top of body
 // @type List
@@ -82,7 +80,8 @@ $body-headings: (
   h6: 16px
 ) !default;
 
-// Global styles of the even theme
+
+// =============== Global styling ===============//
 @mixin even-global-styles {
   @include normalize;
 
@@ -91,16 +90,15 @@ $body-headings: (
     box-sizing: border-box;
   }
 
-  // Default body styles
   body {
     padding: 0;
     margin: 0;
-    font-family: $body-font-family;
-    font-weight: $global-weight-normal;
+    font-family: $global-font-family;
+    font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: $global-lineheight;
-    color: $body-font-color;
+    color: $global-font-color;
     background: $body-background;
 
     @if $body-border-top {
@@ -116,7 +114,7 @@ $body-headings: (
   }
 
   a {
-    color: $body-font-color;
+    color: $global-font-color;
     text-decoration: none;
   }
 

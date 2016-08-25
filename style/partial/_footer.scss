@@ -43,9 +43,9 @@ $icon-margin-right: 10px !default;
   .copyright {
     margin-top: 15px;
     margin-bottom: 10px;
-    color: $dark-gray;
+    color: $global-dark-gray;
     text-align: center;
-    font-family: $body-serif-font-family;
+    font-family: $global-serif-font-family;
 
     .heart {
       margin: 0 5px;

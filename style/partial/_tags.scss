@@ -6,7 +6,7 @@
 
 // Border top of post page tags
 // @type List
-$tags-border-top: 1px solid $light-gray !default;
+$tags-border-top: 1px solid $global-light-gray !default;
 
 // Width of tag total
 // @type Number
@@ -28,7 +28,7 @@ $tag-link-margin: 5px !default;
   .tags {
     margin-top: 35px;
     padding-top: 20px;
-    font-family: $body-serif-font-family;
+    font-family: $global-serif-font-family;
     border-top: $tags-border-top;
 
     a {
@@ -46,7 +46,7 @@ $tag-link-margin: 5px !default;
     margin-bottom: 5em;
     text-align: center;
     color: $global-theme-color;
-    font-family: $body-serif-font-family;
+    font-family: $global-serif-font-family;
 
     .total {
       margin-bottom: 10px;
