@@ -18,7 +18,7 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 
 // Color of the code background
 // @type Color
-$code-background: #f8f5ec !default;
+$code-background: $global-deputy-color !default;
 
 
 // Color of code highlight, solarized
