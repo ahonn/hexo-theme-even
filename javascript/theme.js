@@ -5,6 +5,18 @@ $(function() {
   $(function () {
     var $back2top = $("#back2top");
 
+    $(window).scroll(function () {
+      if($(window).scrollTop() > 100) {
+        $back2top.animate({
+          opacity: 1
+        }, 'slow', 'ease');
+      } else {
+        $back2top.animate({
+          opacity: 0
+        }, 'slow', 'ease');
+      }
+    });
+
     $back2top.click(function (e) {
       var timer = setInterval(function () {
         var top = $(window).scrollTop();
