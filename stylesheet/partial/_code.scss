@@ -52,7 +52,6 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
 @mixin even-code {
   code, pre {
     padding: 7px;
-    border-radius: 5px;
     font-size: $code-font-size;
     font-family: $code-font-family;
     background: $code-background;
