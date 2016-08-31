@@ -27,11 +27,11 @@ $readMore-border-bottom: 1px solid $global-theme-color !default;
       border-bottom: $post-border-bottom;
 
       .post-title {
-        width: 90%;
         display: inline-block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        // width: 90%;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
       }
 
       .post-title {
