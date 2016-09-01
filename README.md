@@ -32,13 +32,5 @@ Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
 theme: even
 ```
 
-## New features
-
-Now, you can change the theme color, modify `theme-color` item in `_config.yml`.
-
-Theme color: Cobalt Blue, Mint Green, Dark Violet, Hot Pink, Default:
-
-![colorful even color](http://ww1.sinaimg.cn/large/72f96cbagw1f7dztg34fbj21402bc166.jpg)
-
 ## Contact
 Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
