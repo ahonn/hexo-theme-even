@@ -9,6 +9,10 @@ menu:
 # site icon
 favicon: /favicon.ico
 
+# theme color
+# Default | Mint Green | Marine Blue | Hot Pink
+theme_color: Default
+
 # comments
 comments:
   post: true
