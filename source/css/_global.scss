@@ -6,31 +6,28 @@
 
 // =============== Global ===============//
 
-// Font size attribute applied to '<html>' and '<body>'.
-// @type Number
-$global-font-size: 100% !default;
+$theme-color-config: hexo-theme-config('theme_color');
 
-// Global width of the site
-// @type Number
-$global-body-width: 800px !default;
+$theme-color-map: (
+  'Default': #c05b4d #f8f5ec,
+  'Mint Green': #16982B #f5f5f5,
+  'Marine Blue': #00477D #f0f2f5,
+  'Hot Pink': #FF69B4 #faf4f5,
+  'Dark Violet': #9932CC #f5f4fa
+) !default;
 
-// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-// @type Number
-$global-lineheight: 1.5 !default;
+$theme-color: map-get($theme-color-map, 'Default');
+@if $theme-color-config != 'Default' {
+  $theme-color: map-get($theme-color-map, $theme-color-config);
+}
 
-// Font family of the site.
-// @type List
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
-
-// Serif font family of site.
-// @type List
-$global-serif-font-family: Athelas, Times New Roman, STHeiti, Microsoft Yahei, serif !default;
-
-
-// =============== Color ===============//
 // Default theme color of the site.
 // @type Color
-$global-theme-color: #c05b4d !default;
+$global-theme-color: nth($theme-color, 1) !default;
+
+// Deputy theme color of the site.
+// @type Color
+$global-deputy-color: nth($theme-color, 2) !default;
 
 // Color used for black ui items.
 // @type Color
@@ -55,6 +52,26 @@ $global-dark-gray: #8a8a8a !default;
 // Text color of the body.
 // @type Color
 $global-font-color: #34495e !default;
+
+// Font size attribute applied to '<html>' and '<body>'.
+// @type Number
+$global-font-size: 100% !default;
+
+// Global width of the site
+// @type Number
+$global-body-width: 800px !default;
+
+// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
+// @type Number
+$global-lineheight: 1.5 !default;
+
+// Font family of the site.
+// @type List
+$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+
+// Serif font family of site.
+// @type List
+$global-serif-font-family: Athelas, Times New Roman, STHeiti, Microsoft Yahei, serif !default;
 
 
 // =============== Body ===============//

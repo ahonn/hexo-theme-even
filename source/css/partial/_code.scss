@@ -18,7 +18,7 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 
 // Color of the code background
 // @type Color
-$code-background: #f8f5ec !default;
+$code-background: $global-deputy-color !default;
 
 
 // Color of code highlight, solarized
@@ -52,7 +52,6 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
 @mixin even-code {
   code, pre {
     padding: 7px;
-    border-radius: 5px;
     font-size: $code-font-size;
     font-family: $code-font-family;
     background: $code-background;
@@ -80,7 +79,7 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
       font-size: 12px;
       font-weight: bold;
       color: $global-medium-gray;
-      background: darken($code-background, 5%);
+      background: darken($code-background, 3%);
       content: 'CODE';
     }
 
