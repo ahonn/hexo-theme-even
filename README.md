@@ -2,7 +2,13 @@
 
 A simple theme for Hexo blog framework
 
+Desktop Browser:
 ![even](http://ww4.sinaimg.cn/large/006tNbRwjw1f6l0ryrho2j31kw0yb7a6.jpg)
+
+Colorful & Mobile:
+![colorful and mobile](http://ww1.sinaimg.cn/large/72f96cbagw1f7e0aftmitj21dz0hhn2f.jpg)
+
+**Now, you can change the theme color, modify theme-color item in _config.yml.**
 
 ## Demo
 Check out Even theme in live : [demo](http://www.ahonn.me)
