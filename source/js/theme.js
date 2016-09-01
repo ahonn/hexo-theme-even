@@ -1,1 +1,68 @@
-"use strict";$(function(){$(function(){var o=$("#back2top");o.click(function(o){var t=setInterval(function(){var o=$(window).scrollTop();$(window).scrollTop(Math.floor(-o/5)+o),o||clearInterval(t)},30)})}),function(){var o=$("#sidebar"),t=$(".tags"),i=$(".headerlink"),n=$(".toc-link");if(o.length){var s=o.offset().top,e=t.offset().top-o.height();$(window).load(function(){e=t.offset().top-o.height()}),$(window).scroll(function(){var t=$(window).scrollTop();s<t&&t<e?o.css({position:"fixed",top:"15px"}):t>e?o.css({position:"absolute",top:e}):o.css({position:"absolute",top:s});for(var a=0;a<i.length;a++){var l=a+1===i.length,c=$(i[a]).offset().top-20,f=l?1/0:$(i[a+1]).offset().top-20;c<t&&t<=f?$(n[a]).addClass("active"):$(n[a]).removeClass("active")}})}}()});
+"use strict";
+
+$(function() {
+  // Back to top
+  $(function () {
+    var $back2top = $("#back2top");
+
+    $back2top.click(function (e) {
+      var timer = setInterval(function () {
+        var top = $(window).scrollTop();
+        $(window).scrollTop(Math.floor(-top / 5) + top);
+
+        if (!top) {
+          clearInterval(timer);
+        }
+      }, 30);
+    });
+  });
+
+  // Post follow sidebar
+  (function() {
+    var $sidebar    = $("#sidebar"),
+        $tags       = $('.tags'),
+        $headerlink = $(".headerlink"),
+        $toclink    = $(".toc-link");
+
+    if ($sidebar.length) {
+      var minScrollTop = $sidebar.offset().top,
+          maxScrollTop = $tags.offset().top - $sidebar.height();
+
+      $(window).load(function() {
+        maxScrollTop = $tags.offset().top - $sidebar.height();
+      });
+      $(window).scroll(function () {
+        var scrollTop     = $(window).scrollTop();
+
+        if (minScrollTop < scrollTop && scrollTop < maxScrollTop) {
+          $sidebar.css({
+            "position": "fixed",
+            "top": "15px"
+          });
+        } else if (scrollTop > maxScrollTop) {
+          $sidebar.css({
+            "position": "absolute",
+            "top": maxScrollTop
+          });
+        }else {
+          $sidebar.css({
+            "position": "absolute",
+            "top": minScrollTop
+          });
+        }
+
+        for(var i = 0; i < $headerlink.length; i++) {
+          var eqLength = i + 1 === $headerlink.length,
+              minTop = $($headerlink[i]).offset().top - 20,
+              maxTop = eqLength ? Infinity : $($headerlink[i+1]).offset().top - 20;
+
+          if (minTop < scrollTop && scrollTop <= maxTop) {
+            $($toclink[i]).addClass("active");
+          } else {
+            $($toclink[i]).removeClass("active");
+          }
+        }
+      });
+    }
+  })();
+});
