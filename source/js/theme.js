@@ -3,9 +3,6 @@
 $(function() {
   // Back to top
   (function () {
-    if('scroll-behavior' in document.documentElement.style) {
-      return;
-    }
     var $back2top = $("#back2top");
 
     $(window).scroll(function () {
@@ -20,15 +17,23 @@ $(function() {
       }
     });
 
-    $back2top.click(function (e) {
-      var timer = setInterval(function () {
-        var top = $(window).scrollTop();
-        $(window).scrollTop(Math.floor(-top / 5) + top);
-
-        if (!top) {
-          clearInterval(timer);
+    function smoothScroll(el, to, duration) {
+      if (duration < 0) {
+        return;
+      }
+      var difference = to - $(window).scrollTop();
+      var perTick = difference / duration * 10;
+      this.scrollToTimerCache = setTimeout(function() {
+        if (!isNaN(parseInt(perTick, 10))) {
+          window.scrollTo(0, $(window).scrollTop() + perTick);
+          smoothScroll(el, to, duration - 10);
         }
-      }, 30);
+      }.bind(this), 10);
+    }
+
+    $back2top.click(function (e) {
+      e.preventDefault();
+      smoothScroll($(window), 0, 200);
     });
   })();
 
