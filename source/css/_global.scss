@@ -117,6 +117,7 @@ $body-headings: (
     line-height: $global-lineheight;
     color: $global-font-color;
     background: $body-background;
+    scroll-behavior: smooth;
 
     @if $body-border-top {
       border-top: $body-border-top;
