@@ -2,7 +2,10 @@
 
 $(function() {
   // Back to top
-  $(function () {
+  (function () {
+    if('scroll-behavior' in document.documentElement.style) {
+      return;
+    }
     var $back2top = $("#back2top");
 
     $back2top.click(function (e) {
@@ -15,7 +18,7 @@ $(function() {
         }
       }, 30);
     });
-  });
+  })();
 
   // Post follow sidebar
   (function() {
