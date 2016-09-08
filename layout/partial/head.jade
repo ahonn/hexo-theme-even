@@ -6,6 +6,8 @@ link(rel="icon", href=url_for(theme.favicon))
 
 //- canonical url https://support.google.com/webmasters/answer/139066
 link(rel="canonical", href=url_for(url.replace(/index\.html/,'')))
+//- RSS
+!= feed_tag('atom.xml')
 
 //- iconfont
 link(rel="stylesheet", href=url_for("fonts/iconfont/iconfont.css"))
