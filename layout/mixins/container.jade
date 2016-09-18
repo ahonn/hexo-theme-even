@@ -9,14 +9,10 @@ mixin home()
               != item.title
           span.post-time
             != full_date(item.date, 'll')
-          if item.description
+          - var excerpt = item.description || item.excerpt;
+          if excerpt
             div.post-content
-              != item.description
-            a.read-more(href=url_for(item.path))
-              != __('more')
-          else if item.excerpt
-            div.post-content
-              != item.excerpt
+              != excerpt
             a.read-more(href=url_for(item.path))
               != __('more')
           else
