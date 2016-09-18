@@ -114,10 +114,14 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
         max-width: 100%;
       }
 
-      > ul, 
-      > ol {
+      > ul {
         padding: 0;
         list-style: $content-list-style;
+      }
+
+      > ol {
+        padding: 0;
+        list-style: $content-list-style decimal;
       }
 
       > table {
