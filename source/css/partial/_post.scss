@@ -72,6 +72,9 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
         h#{$i} {
           font-weight: 400;
           font-family: $global-serif-font-family;
+          &:target {
+            color: $global-theme-color;
+          }
         }
       }
 
