@@ -34,6 +34,7 @@ $tag-link-margin: 5px !default;
     a {
       margin-right: 5px;
       color: $global-theme-color;
+      word-break: break-all;
 
       &::before {
         content: '#';
@@ -72,7 +73,7 @@ $tag-link-margin: 5px !default;
       &:focus,
       &:hover {
         color: $global-theme-color;
-        transform: scale(1.05); 
+        transform: scale(1.05);
       }
     }
   }
