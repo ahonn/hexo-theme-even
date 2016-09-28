@@ -92,6 +92,7 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
 
       a {
         color: $global-theme-color;
+        word-break: break-all;
 
         &:hover {
           border-bottom: $content-link-border;

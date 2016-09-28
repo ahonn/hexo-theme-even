@@ -6,7 +6,7 @@
 
 // =============== Global ===============//
 
-$theme-color-config: hexo-theme-config('theme_color');
+$theme-color-config: hexo-theme-config('theme_color') !default;
 
 $theme-color-map: (
   'Default': #c05b4d #f8f5ec,
@@ -16,10 +16,8 @@ $theme-color-map: (
   'Dark Violet': #9932CC #f5f4fa
 ) !default;
 
-$theme-color: map-get($theme-color-map, 'Default');
-@if $theme-color-config != 'Default' {
-  $theme-color: map-get($theme-color-map, $theme-color-config);
-}
+$theme-color-config: if(map-has-key($theme-color-map, $theme-color-config), $theme-color-config, 'Default');
+$theme-color: map-get($theme-color-map, $theme-color-config);
 
 // Default theme color of the site.
 // @type Color
