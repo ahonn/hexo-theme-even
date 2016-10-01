@@ -6,7 +6,7 @@
 
 // Width of post sidebar
 // @type Number
-$post-sidebar-width: 190px !default;
+$post-sidebar-width: 200px !default;
 
 // Font size of post sidebar
 // @type Number
@@ -24,13 +24,14 @@ $post-sidebar-list-style: square;
   .post .post-sidebar {
     width: $post-sidebar-width;
     position: absolute;
-    padding: 10px 5px;
-    margin-left: $global-body-width;
+    padding: 10px;
+    margin-left: $global-body-width - 20px;
     font-size: $post-sidebar-font-size;
     font-family: $global-serif-font-family;
     border-radius: 5px;
     background: $post-sidebar-bg;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    word-wrap: break-word;
 
     .heading {
       margin: 5px 10px;
@@ -40,6 +41,10 @@ $post-sidebar-list-style: square;
     }
 
     ol {
+      list-style: none;
+    }
+
+    > ol {
       list-style: $post-sidebar-list-style;
 
       a.active {
@@ -49,10 +54,10 @@ $post-sidebar-list-style: square;
 
     .toc {
       margin: 7px 0;
-      padding-left: 25px;
+      padding-left: 15px;
 
       .toc-child {
-        padding-left: 20px;
+        padding-left: 15px;
       }
     }
   }
