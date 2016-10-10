@@ -1,12 +1,8 @@
 {
   "name": "Even",
   "version": "1.0.0",
-  "description": "A simple theme for Hexo",
-  "main": "gulpfile.js",
-  "scripts": {
-    "build": "gulp build --color --tasks",
-    "start": "gulp --color"
-  },
+  "description": "A super simple theme for Hexo",
+  "main": "index.js",
   "keywords": [
     "Hexo",
     "Even",
@@ -15,15 +11,6 @@
   ],
   "author": "ahonn",
   "license": "MIT",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "^2.0.9",
-    "gulp-cli": "^1.2.1",
-    "gulp-sass": "^2.3.1",
-    "gulp-uglify": "^2.0.0",
-    "rimraf": "^2.4.3"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahonn/hexo-theme-even.git"
