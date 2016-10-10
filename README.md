@@ -8,8 +8,6 @@ Desktop Browser:
 Colorful & Mobile:
 ![colorful and mobile](http://ww1.sinaimg.cn/large/72f96cbagw1f7e0aftmitj21dz0hhn2f.jpg)
 
-**Now, you can change the theme color, modify theme-color item in _config.yml.**
-
 ## Demo
 Check out Even theme in live : [demo](http://www.ahonn.me)
 
@@ -22,7 +20,7 @@ Check out Even theme in live : [demo](http://www.ahonn.me)
 $ hexo init blog
 $ cd blog
 $ npm install
-$ npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
+$ npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed hexo-generator-sitemap hexo-browsersync
 $ cd themes/
 $ git clone https://github.com/ahonn/hexo-theme-even even
 $ cd even/
