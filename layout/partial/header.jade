@@ -25,7 +25,7 @@ ul.nav
       else if page.layout == "about" && name == "About"
         a.active(href=link target="_self")
           != __(name)
-      else if page.title == name
+      else if page.layout == "page" && page.title == name
         a.active(href=link target="_self")
           != __(name)
       else
