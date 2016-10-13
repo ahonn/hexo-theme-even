@@ -1,12 +1,8 @@
 # hexo-theme-even
 
-A simple theme for Hexo blog framework
+A super simple theme for Hexo 
 
-Desktop Browser:
 ![even](http://ww4.sinaimg.cn/large/006tNbRwjw1f6l0ryrho2j31kw0yb7a6.jpg)
-
-Colorful & Mobile:
-![colorful and mobile](http://ww1.sinaimg.cn/large/72f96cbagw1f7e0aftmitj21dz0hhn2f.jpg)
 
 ## Demo
 Check out Even theme in live : [demo](http://www.ahonn.me)

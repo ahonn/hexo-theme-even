@@ -9,6 +9,7 @@
   + [添加分类页](#添加分类页)
   + [添加标签页](#添加标签页)
   + [添加关于页](#添加关于页)
+  + [添加自定义页面](#添加自定义页面)
   + [开启/关闭文章侧栏目录](#开启/关闭文章侧栏目录)
   + [修改首页文章预览位置](#修改首页文章预览位置)
   + [修改站点图标](#修改站点图标)
@@ -171,6 +172,33 @@ menu:
   Home: /
   Archives: /archives/
   About: /about/   # 添加 About 选项
+```
+
+#### 添加自定义页面
+- 新建页面
+
+在博客根目录下：
+```
+hexo new page xxxx
+```
+- 设置页面模版
+
+在新建的 `source/xxxx/index.md` 中添加：
+```
+---
+title: xxxx
+layout: page   # 添加使用 page 模版
+---
+```
+- 修改菜单
+
+在主题配置文件中的 `Menu` 项中添加：
+```
+menu:
+  Home: /
+  Archives: /archives/
+  About: /about/ 
+  xxxx: /xxxx/  # 确保与 source/xxxx/index.md 文件中的 title 一直
 ```
 
 #### 开启/关闭文章侧栏目录
