@@ -3,6 +3,7 @@
 ### 目录
 - [主题配置](#主题配置)
   + [修改博客主题色](#修改博客主题色)
+  + [修改文章内锚点样式](#修改文章内锚点样式)
   + [设置首页文章数](#设置首页文章数)
   + [设置归档页文章数](#设置归档页文章数)
   + [设置标签页文章数](#设置标签页文章数)
@@ -33,12 +34,13 @@ Even 主题自带以上 5 种主题色，分别是：
 - Hot Pink: <span style="background-color: #FF69B4;">#FF69B4</span>
 - Dark Violet: <span style="background-color: #9932CC;">#9932CC</span>
 
-修改主题配置文件中的 `theme_color` 项选择主题色：
+修改主题配置文件中的 `theme.color` 项选择主题色：
 
 ```
 # theme color
 # Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-theme_color: Default
+theme:
+  color: Default  # 默认配色
 ```
 ##### 自定义主题颜色
 修改主题目录下 `source/css/_global.scss` 中的 `$theme-color-map` 添加颜色：
@@ -56,6 +58,14 @@ $theme-color-map: (
 键即为配置文件中的 `theme_color` 的值，第一个颜色为全局的主题颜色，第二个颜色为代码块的背景颜色（可根据主题颜色计算）。
 
 添加后，修改主题配置文件中的 `theme_color` 项选择自定义的主题色即可。
+
+#### 修改文章内锚点样式
+默认文章内的标题锚点为 `§`，可通过主题配置文件修改
+
+```
+theme:
+  headerlink: "§"  # 可修改为 "#" 或者 "" 等
+```
 
 #### 设置首页文章数
 修改站点配置文件中的 `per_page` 项：
