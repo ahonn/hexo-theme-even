@@ -14,7 +14,10 @@ $post-title-link-border: 2px solid $global-theme-color !default;
 
 // Heading before content
 // @type String
-$content-headerlink-content: quote(hexo-theme-config('theme.headerlink')) !default;
+$content-headerlink-content: "§" !default;
+@if str-length(hexo-theme-config('theme.headerlink')) == 1 {
+  $content-headerlink-content: quote(hexo-theme-config('theme.headerlink'));
+}
 
 // Border bottom of '<a>'
 // @type List
