@@ -21,14 +21,16 @@ $(function() {
       if (duration < 0) {
         return;
       }
+      var perTickDur = 10;
       var difference = to - $(window).scrollTop();
-      var perTick = difference / duration * 10;
-      this.scrollToTimerCache = setTimeout(function() {
-        if (!isNaN(parseInt(perTick, 10))) {
-          window.scrollTo(0, $(window).scrollTop() + perTick);
-          smoothScroll(el, to, duration - 10);
+      var perTickDiff = difference / duration * perTickDur;
+      // console.log(difference);
+      setTimeout(function() {
+        if (!isNaN(parseInt(perTickDiff, 10))) {
+          window.scrollTo(0, $(window).scrollTop() + perTickDiff);
+          smoothScroll(el, to, duration - perTickDur);
         }
-      }.bind(this), 10);
+      }, perTickDur);
     }
 
     $back2top.click(function (e) {
