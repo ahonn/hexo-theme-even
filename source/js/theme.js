@@ -45,11 +45,11 @@ $(function() {
         $toclink    = $(".toc-link");
 
     if ($sidebar.length) {
-      var minScrollTop = $sidebar.offset().top,
-          maxScrollTop = $tags.offset().top - $sidebar.height();
+      var minScrollTop = $sidebar.offset().top - 15,
+          maxScrollTop = $tags.offset().top - $sidebar.height() - 15;
 
       $(window).load(function() {
-        maxScrollTop = $tags.offset().top - $sidebar.height();
+        maxScrollTop = $tags.offset().top - $sidebar.height() - 15;
       });
       $(window).scroll(function () {
         var scrollTop     = $(window).scrollTop();
@@ -62,12 +62,12 @@ $(function() {
         } else if (scrollTop > maxScrollTop) {
           $sidebar.css({
             "position": "absolute",
-            "top": maxScrollTop
+            "top": maxScrollTop + 15
           });
-        }else {
+        } else {
           $sidebar.css({
             "position": "absolute",
-            "top": minScrollTop
+            "top": minScrollTop + 15
           });
         }
 
