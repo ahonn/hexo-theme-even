@@ -23,7 +23,7 @@ $(function() {
       }
       var difference = to - $(window).scrollTop();
       var perTick = difference / duration * 10;
-      this.scrollToTimerCache = setTimeout(function() {
+      setTimeout(function() {
         if (!isNaN(parseInt(perTick, 10))) {
           window.scrollTo(0, $(window).scrollTop() + perTick);
           smoothScroll(el, to, duration - 10);
