@@ -30,6 +30,11 @@ $archive-item-hover-border: 3px solid $global-theme-color !default;
     font-size: $archive-font-size;
     max-width: $archive-max-width;
 
+    .tags-title,
+    .categorys-title {
+      font-family: $global-serif-font-family;
+    }
+
     .year {
       margin: 20px 0;
       font-size: 28px;
@@ -44,21 +49,23 @@ $archive-item-hover-border: 3px solid $global-theme-color !default;
       &:hover {
         padding-left: 13px;
         border-left: $archive-item-hover-border;
-        transition: 0.2s ease-out
+        transition: 0.2s ease-out;
+
+        .post-time {
+          color: darken($global-dark-gray, 10%);
+        }
+
+        .post-link {
+          color: darken($global-theme-color, 10%);
+        }
       }
     }
 
     .post-time {
       display: inline-block;
-      width: 12%;
+      // width: 12%;
       margin: 0 10px;
       color: $global-dark-gray;
-
-      &.tag,
-      &.category {
-        margin-left: 10px;
-        width: 20%;
-      }
     }
 
     .post-link {

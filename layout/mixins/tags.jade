@@ -11,6 +11,5 @@ mixin tagcloud()
   .tagcloud
     div.total
       if site.tags.length != 0
-        p!= 'A total of '
-          span!= site.tags.length
+        p!= _p('total', site.tags.length)
     != tagcloud({min_font: 16, max_font: 26, amount: 100, orderby: 'count'})

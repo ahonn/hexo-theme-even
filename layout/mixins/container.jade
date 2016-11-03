@@ -51,7 +51,7 @@ mixin archive()
           != year
       .post-item
         .post-time
-          != full_date(item.date, 'MMM D')
+          != full_date(item.date, 'MM-DD')
         a.post-link(href=url_for(item.path))
           != item.title
     - })
@@ -59,24 +59,24 @@ mixin archive()
 //- Category
 mixin category()
   .archive
-    h2.category
+    h2.categorys-title
       = page.category
     each item in page.posts.toArray()
       .post-item
         .post-time.category
-          != full_date(item.date, 'll')
+          != full_date(item.date, 'YYYY-MM-DD')
         a.post-link(href=url_for(item.path))
           != item.title
 
 //- Tag
 mixin tag()
   .archive
-    h2.tag
+    h2.tags-title
       = page.tag
     each item in page.posts.toArray()
       .post-item
         .post-time.tag
-          != full_date(item.date, 'll')
+          != full_date(item.date, 'YYYY-MM-DD')
         a.post-link(href=url_for(item.path))
           != item.title
 
