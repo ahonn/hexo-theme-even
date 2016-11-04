@@ -6,7 +6,7 @@ if theme.social && (is_home() || is_post() || page.layout == 'about')
       a.iconfont(class="icon-#{name}" href=href title=name)
 
 //- Copyright
-if page.layout != 'tags' && page.layout != 'categories' && !is_archive
+if page.layout != 'tags' && page.layout != 'categories'
   .copyright
     - var currentDate = new Date()
     - var year = currentDate.getFullYear()
