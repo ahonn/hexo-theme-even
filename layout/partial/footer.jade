@@ -1,12 +1,12 @@
 //- social
-if theme.social && is_home()
+if theme.social && (is_home() || is_post() || page.layout == 'about')
   div.social
     for link, name in theme.social
       - var href = name != "email" ? url_for(link) : ('mailto:' + link)
       a.iconfont(class="icon-#{name}" href=href title=name)
 
 //- Copyright
-if page.layout != 'tags' && page.layout != 'categories'
+if page.layout != 'tags' && page.layout != 'categories' && !is_archive
   .copyright
     - var currentDate = new Date()
     - var year = currentDate.getFullYear()
