@@ -17,6 +17,7 @@
 @import 'partial/code';
 @import 'partial/sidebar';
 @import 'partial/paginator';
+@import 'partial/iconfont'; 
 
 // Layout style
 @import 'partial/home';
@@ -39,6 +40,7 @@
 @include even-sidebar;
 @include even-code;
 @include even-paginator;
+@include even-iconfont;
 
 @include even-home;
 @include even-archive;
