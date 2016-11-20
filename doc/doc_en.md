@@ -46,7 +46,6 @@ theme:
 
 ##### custom youself theme color
 Modify `$theme-color-map` in `source/css/_global.scss`:
-
 ```
 $theme-color-map: (
   'Default': #c05b4d #f8f5ec,
@@ -58,7 +57,6 @@ $theme-color-map: (
 ```
 
 Just like:
-
 ```
 'Color name': [theme color] [code block backgroup color]
 ```
@@ -67,7 +65,6 @@ Change `theme.color` item to your color name
 
 #### Set article anchor
 The defualt anchor is `§`, can change it in thmem config:
-
 ```
 theme:
   anchor: "§"  # "#" OR "", etc
@@ -89,7 +86,6 @@ npm install hexo-generator-archive --save
 ```
 
 Add `archive_generator` items in site config:
-
 ```
 # Generator-archive
 archive_generator:
@@ -118,7 +114,6 @@ Run `hexo new page categories`
 
 - Set the page layout
 Add in `source/categories/index.md`
-
 ```
 ---
 title: categories
@@ -128,7 +123,6 @@ layout: categories
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
@@ -142,7 +136,6 @@ Run `hexo new page tags`
 
 - Set the page layout
 Add in `source/tags/index.md`
-
 ```
 ---
 title: tag
@@ -152,7 +145,6 @@ layout: tags
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
@@ -166,7 +158,6 @@ Run `hexo new page about`
 
 - Set the page layout
 Add in `source/about/index.md`
-
 ```
 ---
 title: about
@@ -176,7 +167,6 @@ layout: about
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
@@ -190,7 +180,6 @@ Run `hexo new page xxxx`
 
 - Set the page layout
 Add in `source/xxxx/index.md`
-
 ```
 ---
 title: xxxx
@@ -200,12 +189,12 @@ layout: page # use page layout
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
   Archives: /archives/
   xxxx: /xxxx/   # make sure eq title
+```
 
 
 #### Open/close the article contents sidebar
@@ -262,11 +251,11 @@ social:
 #####  Baidu analytics
 Modify `baidu_analytics` items to use baidu analytics in theme config, the value is your baidu analytics id
 
-
 ##### Google analytics
 Modify `google_analytics` items to use google analytics in theme config, the value is your google analytics id
 
-```
+``` 
+# Analytics
 ## Baidu Analytics
 baidu_analytics: Your Baidu Analytics ID
 ## Google Analytics
@@ -284,10 +273,11 @@ Modify `duoshuo_shortname` items, value is your duoshuo id.
 Modify `disqus_shortname` items, value is your disqus id.
 
 ```
-# Duoshuo
-duoshuo_shortname: your duoshuo id
-# Disqus
-disqus_shortname: your disqus id
+# Comments
+## Duoshuo
+duoshuo_shortname: Your duoshuo ID
+## Disqus
+disqus_shortname: Your disqus ID
 ```
 
 **Use disques comments when use that both**
