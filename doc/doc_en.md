@@ -287,7 +287,7 @@ Modify `disqus_shortname` items, value is your disqus id.
 # Duoshuo
 duoshuo_shortname: your duoshuo id
 # Disqus
-# disqus_shortname: your disqus id
+disqus_shortname: your disqus id
 ```
 
 **Use disques comments when use that both**
