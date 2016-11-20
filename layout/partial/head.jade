@@ -13,6 +13,8 @@ link(rel="canonical", href=url_for(url.replace(/index\.html/,'')))
 link(rel="stylesheet", href=url_for("fonts/iconfont/iconfont.css"))
 //- theme style
 link(rel="stylesheet", href=url_for("css/style.css"))
+//- hint.css
+link(rel="stylesheet", href=url_for("css/hint.min.css"))
 
 include ../mixins/analytics
 if theme.baidu_analytics && !env.debug
