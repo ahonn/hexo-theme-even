@@ -23,6 +23,8 @@ $ cd even/
 $ cp _config.yml.sample _config.yml
 ```
 
+**Please make sure installed `hexo-renderer-jade` and `hexo-renderer-scss`**
+
 Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
 
 ```

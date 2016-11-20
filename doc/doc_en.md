@@ -1,12 +1,16 @@
 ## Document
 
-### Directory
+### CONTENTS
 - [Config](#Config)
+  + [Set theme color](#Set_theme_color)
+  + [Set article anchor](#Set_article_anchor)
   + [Set the home page article number](#Set_the_home_page_article_number)
-  + [Set the archive page number](#Set_the_archive_page_number)
+  + [Set the archive page article number](#Set_the_archive_page_article_number)
+  + [Set the tags page article number](#Set_the_tags_page_article_number)
   + [Add categories page](#Add_categories_page)
   + [Add tags page](#Add_tags_page)
   + [Add about page](#Add_about_page)
+  + [Add custom page](#Add_custom_page)
   + [Open/close the article directory sidebar](#Open/close_the_article_directory_sidebar)
   + [Modify the home page article preview location](#Modify_the_home_page_article_preview_location)
   + [Modify the site icon](#Modify_the_site_icon)
@@ -20,9 +24,54 @@ Site config: `yourblog/_config.yml`
 
 Theme config: `yourblog/themes/even/_config.yml`
 
-**In order to update do not change the existing `_config.yml` file in theme, the theme of the configuration file named `_config.yml.sample`. Use the theme for the first time will need to create the `_config.yml` file and copy the contents of the `_config.yml.sample` in the `_config.yml`.**
-
 ### Config
+
+#### Set theme color
+right now, you can custom the theme color!
+
+The theme have five thme color:
+- Default: #c05b4d
+- Mint Green: #16982B
+- Cobalt Blue: #0047AB
+- Hot Pink: #FF69B4
+- Dark Violet: #9932CC
+
+Modify the `theme.color` item in the theme config could be change theme color
+```
+# theme color
+# Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
+theme:
+  color: Default  # Default Theme Color
+```
+
+##### custom youself theme color
+Modify `$theme-color-map` in `source/css/_global.scss`:
+
+```
+$theme-color-map: (
+  'Default': #c05b4d #f8f5ec,
+  'Mint Green': #16982B #f5f5f5,
+  'Cobalt Blue': #0047AB #f0f2f5,
+  'Hot Pink': #FF69B4 #f8f5f5,
+  'Dark Violet': #9932CC #f5f4fa
+) !default;
+```
+
+Just like:
+
+```
+'Color name': [theme color] [code block backgroup color]
+```
+
+Change `theme.color` item to your color name
+
+#### Set article anchor
+The defualt anchor is `§`, can change it in thmem config:
+
+```
+theme:
+  anchor: "§"  # "#" OR "", etc
+```
 
 #### Set the home page article number
 Modify `per_page` items of site config:
@@ -33,16 +82,34 @@ per_page: 10    # home page article number
 pagination_dir: page
 ```
 
-#### Set the archive page number
+#### Set the archive page article number
+Install `hexo-generator-archive` in your website:
+```
+npm install hexo-generator-archive --save
+```
+
 Add `archive_generator` items in site config:
 
 ```
-# Generator-archive (your should install hexo-generator-archive)
+# Generator-archive
 archive_generator:
   per_page: 20  # archive page number, close if it is 0
   yearly: false
   monthly: false
   daily: false
+```
+
+#### Set the tags page article number
+Install `hexo-generator-tag` in your website:
+```
+npm install hexo-generator-tag --save
+```
+
+Add `tag_generator` items in site config：
+```
+# Generator-tag
+tag_generator:
+  per_page: 10 # tags page number, close if it is 0
 ```
 
 #### Add categories page 
@@ -117,12 +184,36 @@ menu:
   About: /about/   # Add About 
 ```
 
-#### Open/close the article directory sidebar
+#### Add custom page
+- Create page
+Run `hexo new page xxxx`
+
+- Set the page layout
+Add in `source/xxxx/index.md`
+
+```
+---
+title: xxxx
+layout: page # use page layout   
+---
+```
+
+- Modify menu
+Modify `Menu` items in theme config:
+
+```
+menu:
+  Home: /
+  Archives: /archives/
+  xxxx: /xxxx/   # make sure eq title
+
+
+#### Open/close the article contents sidebar
 
 Modify `sidebar` items in theme config(true: open, false: close)
 
 ```
-# article directory sidebar
+# article contents sidebar
 sidebar: true
 ```
 
@@ -154,12 +245,14 @@ Modify `social` items in theme config, display when the value not null
 ```
 # Social links
 social:
-  email: mailto:ahonn95@outlook.com
-  github: https://github.com/ahonn
-  # twitter: your twitter
-  # facebook: your facebook
-  weibo: http://weibo.com/ahonn
-  zhihu: https://www.zhihu.com/people/ahonn
+  email: your@email.com
+  stack-overflow:
+  twitter:
+  facebook:
+  github: 
+  weibo: 
+  zhihu: 
+  rss: /atom.xml
 ```
 
 ### Third party service
@@ -174,10 +267,10 @@ Modify `baidu_analytics` items to use baidu analytics in theme config, the value
 Modify `google_analytics` items to use google analytics in theme config, the value is your google analytics id
 
 ```
-# Baidu Analytics
-baidu_analytics: your baidu analytics id
-# Google Analytics
-google_analytics: your google analytics id
+## Baidu Analytics
+baidu_analytics: Your Baidu Analytics ID
+## Google Analytics
+google_analytics: Your Google Analytics ID
 ```
 
 #### Add comments

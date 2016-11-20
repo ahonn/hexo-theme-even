@@ -28,11 +28,11 @@
 
 #### 修改博客主题色
 Even 主题自带以上 5 种主题色，分别是：
-- Default: <span style="background-color: #c05b4d;">#c05b4d</span>
-- Mint Green: <span style="background-color: #16982B;">#16982B</span>
-- Cobalt Blue: <span style="background-color: #0047AB;">#0047AB</span>
-- Hot Pink: <span style="background-color: #FF69B4;">#FF69B4</span>
-- Dark Violet: <span style="background-color: #9932CC;">#9932CC</span>
+- Default: #c05b4d
+- Mint Green: #16982B
+- Cobalt Blue: #0047AB
+- Hot Pink: #FF69B4
+- Dark Violet: #9932CC
 
 修改主题配置文件中的 `theme.color` 项选择主题色：
 
@@ -55,7 +55,7 @@ $theme-color-map: (
 ) !default;
 ```
 
-键即为配置文件中的 `theme.color` 的值，第一个颜色为全局的主题颜色，第二个颜色为代码块的背景颜色（可根据主题颜色计算）。
+键即为配置文件中的 `theme.color` 的值，第一个颜色为全局的主题颜色，第二个颜色为代码块的背景颜色。
 
 添加后，修改主题配置文件中的 `theme.color` 项选择自定义的主题色即可。
 
@@ -64,7 +64,7 @@ $theme-color-map: (
 
 ```
 theme:
-  headerlink: "§"  # 可修改为 "#" 或者 "" 等
+  anchor: "§"  # 可修改为 "#" 或者 "" 等
 ```
 
 #### 设置首页文章数
@@ -208,7 +208,7 @@ menu:
   Home: /
   Archives: /archives/
   About: /about/ 
-  xxxx: /xxxx/  # 确保与 source/xxxx/index.md 文件中的 title 一直
+  xxxx: /xxxx/  # 确保与 source/xxxx/index.md 文件中的 title 一致
 ```
 
 #### 开启/关闭文章侧栏目录
@@ -216,7 +216,7 @@ menu:
 修改主题配置文件中的 `sidebar` 项，true 为开启，false 为关闭
 
 ```
-# article directory sidebar
+# article contents sidebar
 sidebar: true
 ```
 
@@ -247,12 +247,14 @@ since: 2013  # 添加 since 项
 ```
 # Social links
 social:
-  email: mailto:ahonn95@outlook.com
-  github: https://github.com/ahonn
-  # twitter: your twitter
-  # facebook: your facebook
-  weibo: http://weibo.com/ahonn
-  zhihu: https://www.zhihu.com/people/ahonn
+  email: your@email.com
+  stack-overflow:
+  twitter:
+  facebook:
+  github: 
+  weibo: 
+  zhihu: 
+  rss: /atom.xml
 ```
 
 ### 第三方服务
@@ -267,10 +269,11 @@ social:
 
 修改主题配置文件中的 `google_analytics` 项为你的 ID
 ```
-# Baidu Analytics
-baidu_analytics: 9e0cbea7d3319c6c94c71dfb93c151b8
-# Google Analytics
-google_analytics: UA-74273646-1
+# Analytics
+## Baidu Analytics
+baidu_analytics: Your Baidu Analytics ID
+## Google Analytics
+google_analytics: Your Google Analytics ID
 ```
 
 #### 添加评论服务
@@ -284,10 +287,11 @@ google_analytics: UA-74273646-1
 修改主题配置文件中的 `disqus_shortname` 项为你的 ID
 
 ```
-# Duoshuo
-duoshuo_shortname: ahonn
-# Disqus
-# disqus_shortname: ahonn
+# Comments
+## Duoshuo
+duoshuo_shortname: Your duoshuo ID
+## Disqus
+disqus_shortname: Your disqus ID
 ```
 
 **同时启用时默认使用 Disqus**
