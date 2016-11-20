@@ -24,7 +24,7 @@ $post-sidebar-list-style: square;
   .post .post-sidebar {
     width: $post-sidebar-width;
     position: absolute;
-    padding: 10px;
+    padding: 10px 15px;
     margin-left: $global-body-width - 20px;
     font-size: $post-sidebar-font-size;
     font-family: $global-serif-font-family;
@@ -34,17 +34,13 @@ $post-sidebar-list-style: square;
     word-wrap: break-word;
 
     .heading {
-      margin: 5px 10px;
+      margin: 5px 0;
       font-size: 18px;
       font-weight: 500;
       text-transform: uppercase;
     }
 
     ol {
-      list-style: none;
-    }
-
-    > ol {
       list-style: $post-sidebar-list-style;
 
       a.active {
