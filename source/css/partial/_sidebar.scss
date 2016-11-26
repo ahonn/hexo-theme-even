@@ -34,17 +34,13 @@ $post-sidebar-list-style: square;
     word-wrap: break-word;
 
     .heading {
-      margin: 5px 10px;
+      margin: 5px 0;
       font-size: 18px;
       font-weight: 500;
       text-transform: uppercase;
     }
 
     ol {
-      list-style: none;
-    }
-
-    > ol {
       list-style: $post-sidebar-list-style;
 
       a.active {
@@ -54,7 +50,7 @@ $post-sidebar-list-style: square;
 
     .toc {
       margin: 7px 0;
-      padding-left: 15px;
+      padding-left: 18px;
 
       .toc-child {
         padding-left: 15px;

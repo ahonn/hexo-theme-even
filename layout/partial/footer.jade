@@ -2,8 +2,9 @@
 if theme.social && (is_home() || is_post() || page.layout == 'about')
   div.social
     for link, name in theme.social
-      - var href = name != "email" ? url_for(link) : ('mailto:' + link)
-      a.iconfont(class="icon-#{name}" href=href title=name)
+      if link
+        - var href = name != "email" ? url_for(link) : ('mailto:' + link)
+        a.iconfont(class="icon-#{name}" href=href title=name)
 
 //- Copyright
 if page.layout != 'tags' && page.layout != 'categories'

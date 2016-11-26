@@ -1,28 +1,74 @@
 ## Document
 
-### Directory
-- [Config](#Config)
-  + [Set the home page article number](#Set_the_home_page_article_number)
-  + [Set the archive page number](#Set_the_archive_page_number)
-  + [Add categories page](#Add_categories_page)
-  + [Add tags page](#Add_tags_page)
-  + [Add about page](#Add_about_page)
-  + [Open/close the article directory sidebar](#Open/close_the_article_directory_sidebar)
-  + [Modify the home page article preview location](#Modify_the_home_page_article_preview_location)
-  + [Modify the site icon](#Modify_the_site_icon)
-  + [Modify the site set up time](#Modify_the_site_set_up_time)
-  + [Modify the social links](#Modify_the_social_links)
-- [Third party service](#Third_party_service)
-  + [Add analytics](#Add_analytics)
-  + [Add comments](#Add_comments)
+### CONTENTS
+- [Config](#config)
+  + [Set theme color](#set-theme-color)
+  + [Set article anchor](#set-article-anchor)
+  + [Set the home page article number](#set-the-home-page-article-number)
+  + [Set the archive page article number](#set-the-archive-page-article-number)
+  + [Set the tags page article number](#set-the-tags-page-article-number)
+  + [Add categories page](#add-categories-page)
+  + [Add tags page](#add-tags-page)
+  + [Add about page](#add-about-page)
+  + [Add custom page](#add-custom-page)
+  + [Open/close the article directory sidebar](#open/close-the-article-directory-sidebar)
+  + [Modify the home page article preview location](#modify-the-home-page-article-preview-location)
+  + [Modify the site icon](#modify-the-site-icon)
+  + [Modify the site set up time](#modify-the-site-set-up-time)
+  + [Modify the social links](#modify-the-social-links)
+- [Third party service](#third-party-service)
+  + [Add analytics](#add-analytics)
+  + [Add comments](#add-comments)
 
 Site config: `yourblog/_config.yml`
 
 Theme config: `yourblog/themes/even/_config.yml`
 
-**In order to update do not change the existing `_config.yml` file in theme, the theme of the configuration file named `_config.yml.sample`. Use the theme for the first time will need to create the `_config.yml` file and copy the contents of the `_config.yml.sample` in the `_config.yml`.**
-
 ### Config
+
+#### Set theme color
+right now, you can custom the theme color!
+
+The theme have five thme color:
+- Default: #c05b4d
+- Mint Green: #16982B
+- Cobalt Blue: #0047AB
+- Hot Pink: #FF69B4
+- Dark Violet: #9932CC
+
+Modify the `theme.color` item in the theme config could be change theme color
+```
+# theme color
+# Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
+theme:
+  color: Default  # Default Theme Color
+```
+
+##### custom youself theme color
+Modify `$theme-color-map` in `source/css/_global.scss`:
+```
+$theme-color-map: (
+  'Default': #c05b4d #f8f5ec,
+  'Mint Green': #16982B #f5f5f5,
+  'Cobalt Blue': #0047AB #f0f2f5,
+  'Hot Pink': #FF69B4 #f8f5f5,
+  'Dark Violet': #9932CC #f5f4fa
+) !default;
+```
+
+Just like:
+```
+'Color name': [theme color] [code block backgroup color]
+```
+
+Change `theme.color` item to your color name
+
+#### Set article anchor
+The defualt anchor is `§`, can change it in thmem config:
+```
+theme:
+  anchor: "§"  # "#" OR "", etc
+```
 
 #### Set the home page article number
 Modify `per_page` items of site config:
@@ -33,16 +79,33 @@ per_page: 10    # home page article number
 pagination_dir: page
 ```
 
-#### Set the archive page number
-Add `archive_generator` items in site config:
-
+#### Set the archive page article number
+Install `hexo-generator-archive` in your website:
 ```
-# Generator-archive (your should install hexo-generator-archive)
+npm install hexo-generator-archive --save
+```
+
+Add `archive_generator` items in site config:
+```
+# Generator-archive
 archive_generator:
   per_page: 20  # archive page number, close if it is 0
   yearly: false
   monthly: false
   daily: false
+```
+
+#### Set the tags page article number
+Install `hexo-generator-tag` in your website:
+```
+npm install hexo-generator-tag --save
+```
+
+Add `tag_generator` items in site config：
+```
+# Generator-tag
+tag_generator:
+  per_page: 10 # tags page number, close if it is 0
 ```
 
 #### Add categories page 
@@ -51,7 +114,6 @@ Run `hexo new page categories`
 
 - Set the page layout
 Add in `source/categories/index.md`
-
 ```
 ---
 title: categories
@@ -61,7 +123,6 @@ layout: categories
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
@@ -75,7 +136,6 @@ Run `hexo new page tags`
 
 - Set the page layout
 Add in `source/tags/index.md`
-
 ```
 ---
 title: tag
@@ -85,7 +145,6 @@ layout: tags
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
@@ -99,7 +158,6 @@ Run `hexo new page about`
 
 - Set the page layout
 Add in `source/about/index.md`
-
 ```
 ---
 title: about
@@ -109,7 +167,6 @@ layout: about
 
 - Modify menu
 Modify `Menu` items in theme config:
-
 ```
 menu:
   Home: /
@@ -117,12 +174,35 @@ menu:
   About: /about/   # Add About 
 ```
 
-#### Open/close the article directory sidebar
+#### Add custom page
+- Create page
+Run `hexo new page xxxx`
+
+- Set the page layout
+Add in `source/xxxx/index.md`
+```
+---
+title: xxxx
+layout: page # use page layout   
+---
+```
+
+- Modify menu
+Modify `Menu` items in theme config:
+```
+menu:
+  Home: /
+  Archives: /archives/
+  xxxx: /xxxx/   # make sure eq title
+```
+
+
+#### Open/close the article contents sidebar
 
 Modify `sidebar` items in theme config(true: open, false: close)
 
 ```
-# article directory sidebar
+# article contents sidebar
 sidebar: true
 ```
 
@@ -154,12 +234,14 @@ Modify `social` items in theme config, display when the value not null
 ```
 # Social links
 social:
-  email: mailto:ahonn95@outlook.com
-  github: https://github.com/ahonn
-  # twitter: your twitter
-  # facebook: your facebook
-  weibo: http://weibo.com/ahonn
-  zhihu: https://www.zhihu.com/people/ahonn
+  email: your@email.com
+  stack-overflow:
+  twitter:
+  facebook:
+  github: 
+  weibo: 
+  zhihu: 
+  rss: /atom.xml
 ```
 
 ### Third party service
@@ -169,15 +251,15 @@ social:
 #####  Baidu analytics
 Modify `baidu_analytics` items to use baidu analytics in theme config, the value is your baidu analytics id
 
-
 ##### Google analytics
 Modify `google_analytics` items to use google analytics in theme config, the value is your google analytics id
 
-```
-# Baidu Analytics
-baidu_analytics: your baidu analytics id
-# Google Analytics
-google_analytics: your google analytics id
+``` 
+# Analytics
+## Baidu Analytics
+baidu_analytics: Your Baidu Analytics ID
+## Google Analytics
+google_analytics: Your Google Analytics ID
 ```
 
 #### Add comments
@@ -191,10 +273,11 @@ Modify `duoshuo_shortname` items, value is your duoshuo id.
 Modify `disqus_shortname` items, value is your disqus id.
 
 ```
-# Duoshuo
-duoshuo_shortname: your duoshuo id
-# Disqus
-# disqus_shortname: your disqus id
+# Comments
+## Duoshuo
+duoshuo_shortname: Your duoshuo ID
+## Disqus
+disqus_shortname: Your disqus ID
 ```
 
 **Use disques comments when use that both**

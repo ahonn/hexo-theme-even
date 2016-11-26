@@ -2,9 +2,6 @@
 menu:
   Home: /
   Archives: /archives/
-  Categories: /categories/
-  Tags: /tags/
-  About: /about/
 
 # site icon
 favicon: /favicon.ico
@@ -13,14 +10,14 @@ favicon: /favicon.ico
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
   color: Default
-  headerlink: "§"
+  anchor: "§"
 
 # comments
 comments:
   post: true
   about: true
 
-# article directory sidebar
+# article contents sidebar
 sidebar: true
 
 # Analytics
@@ -38,10 +35,10 @@ disqus_shortname: Your disqus ID
 # Social links
 social:
   email: your@email.com
-  # stack-overflow:
-  # twitter:
-  # facebook:
+  stack-overflow:
+  twitter:
+  facebook:
   github: 
-  # weibo: 
-  # zhihu: 
+  weibo: 
+  zhihu: 
   rss: /atom.xml

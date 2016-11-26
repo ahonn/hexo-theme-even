@@ -14,9 +14,9 @@ $post-title-link-border: 2px solid $global-theme-color !default;
 
 // Heading before content
 // @type String
-$content-headerlink-content: "§" !default;
-@if str-length(hexo-theme-config('theme.headerlink')) == 1 {
-  $content-headerlink-content: quote(hexo-theme-config('theme.headerlink'));
+$content-anchor-content: "§" !default;
+@if str-length(hexo-theme-config('theme.anchor')) == 1 {
+  $content-anchor-content: quote(hexo-theme-config('theme.anchor'));
 }
 
 // Border bottom of '<a>'
@@ -87,7 +87,7 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
         }
 
         &::before {
-          content: $content-headerlink-content;
+          content: $content-anchor-content;
           margin-right: 5px;
           font-size: 1.1em;
         }
