@@ -1,0 +1,5 @@
+#!/bin/sh
+cp _config.sample.yml _config.yml
+cp source/css/_custom.sample.scss source/css/_custom.scss 
+cd ..
+npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed hexo-generator-sitemap hexo-browsersync
