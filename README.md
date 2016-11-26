@@ -13,17 +13,10 @@ Check out Even theme in live : [demo](http://www.ahonn.me)
 
 ## Installation
 ```
-$ hexo init blog
-$ cd blog
-$ npm install
-$ npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed hexo-generator-sitemap hexo-browsersync
 $ cd themes/
-$ git clone https://github.com/ahonn/hexo-theme-even even
-$ cd even/
-$ cp _config.yml.sample _config.yml
+$ git clone https://github.com/ahonn/hexo-theme-even even && cd even
+$ bin/init
 ```
-
-**Please make sure installed `hexo-renderer-jade` and `hexo-renderer-scss`**
 
 Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
 
