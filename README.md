@@ -15,7 +15,7 @@ Check out Even theme in live : [demo](http://www.ahonn.me)
 ```
 $ cd themes/
 $ git clone https://github.com/ahonn/hexo-theme-even even && cd even
-$ bin/init
+$ bin/install
 ```
 
 Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
