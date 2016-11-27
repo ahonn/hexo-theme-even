@@ -10,7 +10,7 @@ $header-height: 60px !default;
 
 // Padding of the header.
 // @type List
-$header-padding: 20px 100px !default;
+$header-padding: 20px 80px !default;
 
 // Font size of the logo.
 // @type Number
@@ -49,15 +49,19 @@ $navbar-active-border: 2px solid $global-theme-color !default;
     height: $header-height;
     padding: $header-padding;
 
-    .logo {
+    .logo-wrapper {
       float: left;
-      font-size: $logo-font-size;
-      font-family: $logo-font-family;
+      
+      .logo {
+        font-size: $logo-font-size;
+        font-family: $logo-font-family;
+      }
     }
 
     .nav {
       float: right;
       margin-top: 0;
+      padding-left: 0;
       font-family: $global-serif-font-family;
 
       .nav-link {

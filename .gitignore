@@ -1,5 +1,5 @@
 .DS_Store
 _config.yml
-*/_custom.scss
+**/*/_custom.scss
 /node_modules
 *.log
