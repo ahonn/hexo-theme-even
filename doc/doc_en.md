@@ -44,32 +44,6 @@ theme:
   color: Default  # Default Theme Color
 ```
 
-##### custom youself theme color
-Modify `$theme-color-map` in `source/css/_global.scss`:
-```
-$theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
-  'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
-  'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
-) !default;
-```
-
-Just like:
-```
-'Color name': [theme color] [code block backgroup color]
-```
-
-Change `theme.color` item to your color name
-
-#### Set article anchor
-The defualt anchor is `§`, can change it in thmem config:
-```
-theme:
-  anchor: "§"  # "#" OR "", etc
-```
-
 #### Set the home page article number
 Modify `per_page` items of site config:
 ```

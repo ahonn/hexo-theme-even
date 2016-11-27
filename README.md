@@ -14,7 +14,8 @@ Check out Even theme in live : [demo](http://www.ahonn.me)
 ## Installation
 ```
 $ cd themes/
-$ git clone https://github.com/ahonn/hexo-theme-even even && cd even
+$ git clone https://github.com/ahonn/hexo-theme-even even
+$ cd even/
 $ bin/install
 ```
 

@@ -50,13 +50,10 @@ $navbar-active-border: 2px solid $global-theme-color !default;
     height: $header-height;
     padding: $header-padding;
 
-    .logo-wrapper {
+    .logo {
       float: left;
-      
-      .logo {
-        font-size: $logo-font-size;
-        font-family: $logo-font-family;
-      }
+      font-size: $logo-font-size;
+      font-family: $logo-font-family;
     }
 
     .nav {
