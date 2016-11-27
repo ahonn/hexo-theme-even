@@ -30,7 +30,7 @@ theme: even
 
 ## Change Log
 
-[CHANGELOG](./CHANGELOG)
+[CHANGELOG](./CHANGELOG.md)
 
 ## Contact
 Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
