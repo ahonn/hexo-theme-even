@@ -28,5 +28,9 @@ Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
 theme: even
 ```
 
+## Change Log
+
+[CHANGELOG](./CHANGELOG)
+
 ## Contact
 Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
