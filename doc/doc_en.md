@@ -3,7 +3,6 @@
 ### CONTENTS
 - [Config](#config)
   + [Set theme color](#set-theme-color)
-  + [Set article anchor](#set-article-anchor)
   + [Set the home page article number](#set-the-home-page-article-number)
   + [Set the archive page article number](#set-the-archive-page-article-number)
   + [Set the tags page article number](#set-the-tags-page-article-number)
