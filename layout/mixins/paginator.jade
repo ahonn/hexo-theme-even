@@ -9,12 +9,13 @@ mixin paginator(layout)
     
   .paginator
     if page.prev || prev
-      a.prev(href=url_for(prev))
+      a.prev(href=url_for(prev) class='hint--top-right hint--error hint--rounded' aria-label=page.prev.title)
+        
         i.iconfont.icon-left
         span 
           != __('prev')
     if page.next || next
-      a.next(href=url_for(next))
+      a.next(href=url_for(next) class='hint--top-left hint--error hint--rounded' aria-label=page.next.title)
         span
           != __('next')
         i.iconfont.icon-right
