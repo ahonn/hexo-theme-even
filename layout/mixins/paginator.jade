@@ -1,20 +1,25 @@
 //- paginator
-mixin paginator(layout)
-  if layout == 'home' || layout == 'archive'
-    - var prev = page.prev_link
-    - var next = page.next_link
-  else if layout == 'post'
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    
+mixin paginator()
+  - var prev_link, next_link, prev_title, next_title;
+  if is_home() || is_archive()
+    - prev_link = page.prev_link;
+    - next_link = page.next_link;
+  else if is_post()
+    if page.prev
+      - prev_link = page.prev.path;
+      - prev_title = page.prev.title;
+    if page.next
+      - next_link = page.next.path;
+      - next_title = page.next.title;
+  
   .paginator
-    if page.prev || prev
-      a.prev(href=url_for(prev))
+    if prev_link
+      a.prev#prev(href=url_for(prev_link) data-title=prev_title)
         i.iconfont.icon-left
-        span 
+        span
           != __('prev')
-    if page.next || next
-      a.next(href=url_for(next))
+    if next_link
+      a.next#next(href=url_for(next_link) data-title=next_title)
         span
           != __('next')
         i.iconfont.icon-right
