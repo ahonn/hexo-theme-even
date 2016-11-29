@@ -91,12 +91,16 @@ $(function() {
       var beforeText = elt.text() 
       el
         .on("mouseover", function () {
-          elt.text(text)
-          elt.css({ "font-size": "18px" })
+          if ($("html").width() >= 768) {
+            elt.text(text)
+            elt.css({ "font-size": "18px" })
+          }
         })
         .on("mouseout", function () {
-          elt.text(beforeText)
-          elt.css({ "font-size": "20px" })
+          if ($("html").width() >= 768) {
+            elt.text(beforeText)
+            elt.css({ "font-size": "20px" })
+          }
         })
     }
 
