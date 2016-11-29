@@ -117,6 +117,5 @@ $(function() {
         hoverPaginator($next, nextText, nextTitle)
       }
     }
-        
   })()
 })
