@@ -1,5 +1,5 @@
 extends partial/layout
-
+include mixins/comment
 include mixins/container
 
 block title
@@ -7,3 +7,7 @@ block title
 
 block container
   +page()
+
+block comment
+  if theme.comments.post
+    +comment()
