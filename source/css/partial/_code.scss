@@ -76,7 +76,7 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
       right: 0;
       left: 0;
       padding: 2px 7px;
-      font-size: 12px;
+      font-size: $code-font-size;
       font-weight: bold;
       color: $global-medium-gray;
       background: darken($code-background, 3%);
@@ -85,12 +85,10 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
 
     @include code-type-signs;
 
-    .code pre {
-      margin: 0;
-      padding: 30px 10px 10px;
-
-      .line {
-        height: 19px;
+    .code {    
+      pre {
+        margin: 0;
+        padding: 30px 10px 10px;
       }
     }
 
@@ -102,6 +100,12 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
         margin: 0;
         padding: 30px 7px 10px;
       }
+    }
+
+    .line {
+      // Fix code block null line height and
+      // Synchronous gutter and code line highly.
+      height: round($code-font-size * 1.5);
     }
 
     table, tr, td {
