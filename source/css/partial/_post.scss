@@ -127,18 +127,23 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
         list-style: $content-list-style decimal;
       }
 
-      > table {
+      .table-responsive {
         width: 100%;
-        max-width: 100%;
         margin-bottom: 20px;
-        border-spacing: 0;
-        box-shadow: 2px 2px 3px rgba(0,0,0,.125);
+        overflow: auto;
         border: 3px double $content-table-border-color;
 
-        th, td {
-          padding: 5px 15px;
-          background-color: $content-table-bg;
-          border: 1px double $content-table-border-color;
+        table {
+          width: 100%;
+          max-width: 100%;
+          border-spacing: 0;
+          box-shadow: 2px 2px 3px rgba(0,0,0,.125);
+          
+          th, td {
+            padding: 5px 15px;
+            background-color: $content-table-bg;
+            border: 1px double $content-table-border-color;
+          }
         }
       }
     }

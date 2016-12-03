@@ -2,7 +2,7 @@
 
 $(function() {
   // Back to top
-  (function () {
+  ;(function () {
     var $back2top = $("#back2top")
 
     $(window).scroll(function () {
@@ -86,6 +86,7 @@ $(function() {
     }
   })()
 
+  // Paginator hover 
   ;(function () {
     function hoverPaginator(el, elt, text) {
       var beforeText = elt.text() 
@@ -121,5 +122,11 @@ $(function() {
         hoverPaginator($next, nextText, nextTitle)
       }
     }
+  })()
+
+  // Table responsive
+  ;(function () {
+    var tables = $('.post-content > table')
+    tables.wrap('<div class="table-responsive">')
   })()
 })
