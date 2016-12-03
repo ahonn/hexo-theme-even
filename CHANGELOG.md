@@ -1,3 +1,6 @@
+## 2016-12-03
+- 修复自定义代码字体大小时，代码块的显示错误 [#71](https://github.com/ahonn/hexo-theme-even/issues/71)
+
 ## 2016-11-29
 - 添加修改文章锚点的配置项 `$content-anchor-content` 到样式自定义文件模板 `_costom.sample.scss`
 - 修复文章上/下一页按钮鼠标上移时移动端的显示错误
