@@ -34,7 +34,7 @@ $content-list-style: inside !default;
 
 // border color of '<table>'
 // @type Color
-$content-table-border-color: lighten($global-theme-color, 30%) !default;
+$content-table-border-color: darken($global-deputy-color, 3%) !default;
 
 // background color of '<table>'
 // @type Color
@@ -45,7 +45,6 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
   .post {
     padding-top: 1em;
     padding-bottom: 2em;
-    // position: relative;
 
     .post-title {
       margin: 0px;
@@ -129,6 +128,8 @@ $content-table-bg: lighten(#f8f5ec, 30%) !default;
       }
 
       > table {
+        width: 100%;
+        max-width: 100%;
         margin-bottom: 20px;
         border-spacing: 0;
         box-shadow: 2px 2px 3px rgba(0,0,0,.125);

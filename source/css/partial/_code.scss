@@ -20,7 +20,6 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 // @type Color
 $code-background: $global-deputy-color !default;
 
-
 // Color of code highlight, solarized
 // @type Map
 $code-highlight-color: (
@@ -47,7 +46,6 @@ $code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
     }
   }
 }
-
 
 @mixin even-code {
   code, pre {
