@@ -1,13 +1,12 @@
-//- social
-if theme.social && (is_home() || is_post() || page.layout == 'about')
-  div.social
+if page.layout != 'tags' && page.layout != 'categories'
+  //- social
+  if theme.social
     for link, name in theme.social
       if link
         - var href = name != "email" ? url_for(link) : ('mailto:' + link)
         a.iconfont(class="icon-#{name}" href=href title=name)
 
-//- Copyright
-if page.layout != 'tags' && page.layout != 'categories'
+  //- Copyright
   .copyright
     - var currentDate = new Date()
     - var year = currentDate.getFullYear()
@@ -29,7 +28,7 @@ if page.layout != 'tags' && page.layout != 'categories'
         i.iconfont.icon-heart
       span.author
         != config.author
-  
+    
 //- Back to top
 #back2top
   i.iconfont.icon-up
