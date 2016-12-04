@@ -1,10 +1,11 @@
 if page.layout != 'tags' && page.layout != 'categories'
   //- social
   if theme.social
-    for link, name in theme.social
-      if link
-        - var href = name != "email" ? url_for(link) : ('mailto:' + link)
-        a.iconfont(class="icon-#{name}" href=href title=name)
+    .social
+      for link, name in theme.social
+        if link
+          - var href = name != "email" ? url_for(link) : ('mailto:' + link)
+          a.iconfont(class="icon-#{name}" href=href title=name)
 
   //- Copyright
   .copyright
