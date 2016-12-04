@@ -1,4 +1,7 @@
 ## 2016-12-03
+- 修复文章内表格列数过多溢出的样式问题，添加表格自适应 [#72](https://github.com/ahonn/hexo-theme-even/issues/72)
+
+## 2016-12-02
 - 修复自定义代码字体大小时，代码块的显示错误 [#71](https://github.com/ahonn/hexo-theme-even/issues/71)
 
 ## 2016-11-29
