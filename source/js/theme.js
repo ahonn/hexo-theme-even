@@ -127,6 +127,8 @@ $(function() {
   // Table responsive
   ;(function () {
     var tables = $('.post-content > table')
-    tables.wrap('<div class="table-responsive">')
+    if (tables.length) {
+      tables.wrap('<div class="table-responsive">')
+    }
   })()
 })
