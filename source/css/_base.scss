@@ -1,0 +1,54 @@
+@import '_common/normalize';
+
+html {
+  font-size: $global-font-size;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $global-font-family;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: $global-lineheight;
+  color: $global-font-color;
+  background: $global-background;
+  scroll-behavior: smooth;
+  border-top: 3px solid $theme-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  color: $global-font-color;
+  text-decoration: none;
+}
+
+@each $header, $size in $global-headings {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: $global-body-width;
+}
+
+@include max-screen() {
+  .container {
+    // margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.content-wrapper {
+  padding: $global-container-padding;
+}

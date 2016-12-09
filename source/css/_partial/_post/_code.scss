@@ -1,0 +1,127 @@
+code, pre {
+  padding: 7px;
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+  background: $code-background;
+}
+
+code {
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: $code-color;
+}
+
+.highlight {
+  margin: 1em 0;
+  border-radius: 5px;
+  overflow-x: auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+  table {
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: 2px 7px;
+      font-size: $code-font-size;
+      font-weight: bold;
+      color: $gray;
+      background: darken($code-background, 3%);
+      content: 'CODE';
+    }
+  }
+
+  @each $sign in $code-type-list {
+    &.#{$sign} > ::after {
+      content: to-upper-case($sign);
+    }
+  }
+
+  .code {    
+    pre {
+      margin: 0;
+      padding: 30px 10px 10px;
+    }
+  }
+
+  .gutter {
+    width: 10px;
+    color: $gray;
+
+    pre {
+      margin: 0;
+      padding: 30px 7px 10px;
+    }
+  }
+
+  .line {
+    // Fix code block null line height and
+    // Synchronous gutter and code line highly.
+    height: round($code-font-size * 1.5);
+  }
+
+  table, tr, td {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .code {
+    .comment,
+    .quote {
+      color: map-get($code-highlight-color, comment);
+    }
+
+    .keyword,
+    .selector-tag,
+    .addition {
+      color: map-get($code-highlight-color, keyword);
+    }
+
+    .number,
+    .string,
+    .meta .meta-string,
+    .literal,
+    .doctag,
+    .regexp {
+      color: map-get($code-highlight-color, number);
+    }
+
+    .title,
+    .section,
+    .name,
+    .selector-id,
+    .selector-class {
+      color: map-get($code-highlight-color, title);
+    }
+
+    .attribute,
+    .attr,
+    .variable,
+    .template-variable,
+    .class .title,
+    .type {
+      color: map-get($code-highlight-color, attribute);
+    }
+
+    .symbol,
+    .bullet,
+    .subst,
+    .meta,
+    .meta .keyword,
+    .selector-attr,
+    .selector-pseudo,
+    .link {
+      color: map-get($code-highlight-color, symbol);
+    }
+
+    .built_in,
+    .deletion {
+      color: map-get($code-highlight-color, built_in);
+    }
+  }
+}

@@ -1,0 +1,64 @@
+# ===========================================
+# Site Information Settings
+# ===========================================
+
+# Site creation time
+since: 2015
+
+# Custom your favicon.ico in `site/source`
+favicon: /favicon.ico
+
+# Set feed link (false | default | your feed link)
+# false: disable
+# default: use `atom.xml`, generator for `hexo-generator-feed`
+rss: default
+
+# ===========================================
+# Menu Settings
+# ===========================================
+menu:
+  Home: /
+  Archives: /archives/
+  Tags: /tags
+  # Categories: /categories
+  About: /about
+
+# ===========================================
+# Theme Settings
+# ===========================================
+# theme styling
+# color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
+theme:
+  color: Default
+
+# ===========================================
+# Social links Settings
+# ===========================================
+social:
+  email: ahonn95@outlook.com
+  stack-overflow:
+  twitter:
+  facebook:
+  github: https://github.com/ahonn 
+  weibo: 
+  zhihu: https://www.zhihu.com/people/ahonn/activities
+
+# ===========================================
+# Third Party Services Settings
+# ===========================================
+
+# Baidu Analytics
+baidu_analytics: b54ec1817ee20d83af77a0859c4dda5d
+# Google Analytics
+google_analytics: UA-74273646-1
+
+# Duoshuo
+duoshuo_shortname: ahonn
+# Disqus
+disqus_shortname: ahonn
+
+
+# ===========================================
+# Version
+# ===========================================
+version: 2.0.0

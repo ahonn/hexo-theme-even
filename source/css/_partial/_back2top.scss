@@ -1,0 +1,18 @@
+// ==============================
+// Back to top
+// =============================
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+  opacity: 0;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+
+  &:hover {
+    transform: translateY(-5px); 
+  }
+}

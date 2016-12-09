@@ -1,12 +1,33 @@
-Archives: Archives
-Home: Home
-Tags: Tags
-Categories: Categories
-About: About
-prev: Prev
-next: Next
-prev_post: Prev
-next_post: Next
-more: Read more..
-toc: Contents
-total: Total Of %s
+menu: 
+  home: Home
+  archives: Archives
+  tags: Tags
+  categories: Categories
+  about: About
+
+footer:
+  powered: "Powered by %s"
+  theme: Theme
+
+posts:
+  prev: Prev
+  next: Next
+  prev_post: Prev
+  next_post: Next
+  readmore: Read more..
+
+counter:
+  archives:
+    zero: No Posts.
+    one: 1 Post.
+    other: "%d Posts In Total."
+
+  tagcloud:
+    zero: No tags
+    one: 1 Tag In Total
+    other: "%d Tags In Total"
+
+  categories:
+    zero: No Categories
+    one: 1 Category In Total
+    other: "%d Categories In Total"

@@ -1,53 +1,15 @@
-/**
- * Even theme for Hexo by Ahonn
- * Version 1.0.0
- * https://github.com/ahonn/hexo-theme-even
- */
+@import "variables";
 
-// Normalize.css
-@import 'normalize';
+@import "_common/utils";
+@import "_common/animation";
 
-// Custom theme style
-@import 'custom';
-
-// Global variables and styles
-@import 'global';
-
-// Partial of the theme
-@import 'partial/header';
-@import 'partial/footer';
-@import 'partial/post';
-@import 'partial/code';
-@import 'partial/sidebar';
-@import 'partial/paginator';
-@import 'partial/iconfont'; 
-
-// Layout style
-@import 'partial/home';
-@import 'partial/archive';
-@import 'partial/categories';
-@import 'partial/tags';
-
-@import 'partial/media';
-
-
-///
-// include even theme style
-///
-
-@include even-global-styles;
-
-@include even-header;
-@include even-footer;
-@include even-post;
-@include even-sidebar;
-@include even-code;
-@include even-paginator;
-@include even-iconfont;
-
-@include even-home;
-@include even-archive;
-@include even-tags;
-@include even-categories;
-
-@include even-media;
+@import "base";
+@import "_partial/header";
+@import "_partial/post";
+@import "_partial/pagination";
+@import "_partial/footer";
+@import "_partial/archive";
+@import "_partial/tags";
+@import "_partial/categories";
+@import "_partial/iconfont";
+@import "_partial/back2top";

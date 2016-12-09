@@ -1,13 +1,12 @@
 {
-  "name": "Even",
+  "name": "hexo-theme-even",
   "version": "1.0.0",
   "description": "A super simple theme for Hexo",
   "main": "index.js",
   "keywords": [
-    "Hexo",
-    "Even",
-    "Jade",
-    "Sass"
+    "responsive",
+    "simple",
+    "light"
   ],
   "author": "ahonn",
   "license": "MIT",
@@ -18,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/ahonn/hexo-theme-even/issues"
   },
-  "homepage": "https://github.com/ahonn/hexo-theme-even#readme"
+  "homepage": "https://github.com/ahonn/hexo-theme-even#readme",
+  "devDependencies": {}
 }

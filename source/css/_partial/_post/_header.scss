@@ -1,0 +1,20 @@
+.post-header {
+  .post-title {
+    margin: 0;
+    font-size: $post-title-font-size;
+    font-weight: $post-title-font-weight;
+    font-family: $global-serif-font-family;
+  }
+
+  .post-link {
+    @include underline-from-center;
+  }
+
+  .post-meta {
+    margin-top: $post-meta-margin-top;
+
+    .post-time {
+      color: $post-time-font-color;
+    }
+  }
+}

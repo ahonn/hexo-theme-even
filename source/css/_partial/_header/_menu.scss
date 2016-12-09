@@ -1,0 +1,32 @@
+.site-nav {
+  float: right;
+
+  .menu {
+    padding-left: 0;
+    font-family: $global-serif-font-family;
+
+    .menu-item {
+      display: inline-block;
+      margin: $menu-item-margin;
+      @include underline-from-center;
+    }
+
+    .menu-item-link {
+      font-size: $menu-link-font-size;
+    }
+  }
+}
+
+@include max-screen() {
+  .site-nav {
+    float: none;
+
+    .menu {
+      margin: 0;
+
+      .menu-item {
+        margin: $menu-item-mobile-margin;
+      }
+    }
+  }
+}

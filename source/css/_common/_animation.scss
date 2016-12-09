@@ -1,0 +1,33 @@
+@mixin underline-from-center() {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 2px;
+    bottom: 0;
+    left: 51%;
+    right: 51%;
+    background: $theme-color;
+    transition-duration: 0.2s;
+    transition-property: right, left;
+    transition-timing-function: ease-out;
+  }
+
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    &:before {
+      right: 0;
+      left: 0;
+    }
+  }
+}

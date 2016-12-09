@@ -1,7 +1,0 @@
-//- Categories
-mixin categories()
-  article.categories
-    div.total
-      if site.categories.length != 0
-        p!= _p('total', site.categories.length)
-    != list_categories({style: null, separator: ' ', depth: '-1'})

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ connfig.language }}">
+  <head>
+    {% include '_partial/head.swig' %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header">
+        {%- include '_partial/header.swig' %}
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            {% block content %}{% endblock %}
+          </div>
+          {% include '_partial/comments.swig' %}
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+        {%- include '_partial/footer.swig' %}
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    {% include '_script/comments.swig' %}
+  </body>
+</html>
