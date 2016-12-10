@@ -30,5 +30,8 @@
     </div>
 
     {% include '_script/comments.swig' %}
+
+    {% include '_script/libs.swig' %}
+    {% include '_script/theme.swig' %}
   </body>
 </html>

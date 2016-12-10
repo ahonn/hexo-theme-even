@@ -14,6 +14,7 @@ posts:
   next: Next
   prev_post: Prev
   next_post: Next
+  toc: Contents
   readmore: Read more..
 
 counter:
