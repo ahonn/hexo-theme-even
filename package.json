@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ahonn/hexo-theme-even/issues"
   },
-  "homepage": "https://github.com/ahonn/hexo-theme-even#readme"
+  "homepage": "https://github.com/ahonn/hexo-theme-even#readme",
+  "devDependencies": {
+    "eslint": "^3.12.0"
+  }
 }
