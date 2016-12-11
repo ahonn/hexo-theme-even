@@ -13,6 +13,15 @@
           </a>
         </li>
       {% endfor %}
+      {% if theme.search %}
+        <li class="menu-search">
+          <form>
+            <i class="fa fa-search" id="open-search"></i>
+            <input type="text" class="search-input" />
+            <i class="fa fa-times" id="close-search"></i>
+          </form>
+        </li>
+      {% endif %}
     </ul>
   {% endif %}
 </nav>

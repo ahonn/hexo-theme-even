@@ -23,6 +23,9 @@ menu:
   # Categories: /categories
   About: /about
 
+# menu search option
+search: true
+
 # ===========================================
 # Theme Settings
 # ===========================================

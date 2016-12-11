@@ -2,6 +2,19 @@
   "use strict";
 
   var Even = {
+    registerSearch: function () {
+      var $menuSearch = $('.menu-search'),
+          $openSearch = $('#open-search'),
+          $closeSearch = $('#close-search');
+
+      $openSearch.click(function () {
+        $menuSearch.addClass('expanded');
+      });
+      $closeSearch.click(function () {
+        $menuSearch.removeClass('expanded');
+      })
+    },
+
     registerBackToTop: function () {
       var $backToTop = $('#back-to-top');
 
@@ -18,7 +31,7 @@
       });
     },
 
-    tocBlockFollow: function () {
+    _tocBlockFollow: function () {
       var SPACING = 20;
 
       var $toc = $('.post-toc'),
@@ -57,7 +70,7 @@
       }
     },
 
-    tocLinkJump: function () {
+    _tocLinkJump: function () {
       var HEADERFIX = 30;
 
       var $toclink = $('.toc-link'),
@@ -85,8 +98,8 @@
     },
 
     registerPostToc: function () {
-      this.tocBlockFollow();
-      this.tocLinkJump();
+      this._tocBlockFollow();
+      this._tocLinkJump();
     },
 
     registerMobileNavbar: function () {

@@ -1,9 +1,9 @@
 {%
   set js_libs = [
-    'jquery.js'
+    'jquery/jquery-3.1.1.min.js'
   ]
 %}
 
 {% for lib in js_libs %}
-  <script type="text/javascript" src="{{ url_for('js/lib') }}/{{ lib }}?v={{ theme.version }}"></script>
+  <script type="text/javascript" src="{{ url_for('lib') }}/{{ lib }}"></script>
 {% endfor %}

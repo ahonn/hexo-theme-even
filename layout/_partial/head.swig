@@ -39,8 +39,11 @@
 {# Canonical, good for google search engine #}
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 
+{# Font awesome #}
+<link rel="stylesheet" type="text/css" href="{{ url_for('lib/font-awesome/css/font-awesome.min.css') }}" />
+
 {# Theme styling #}
-<link href="{{ url_for('css/style.css') }}?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 
 {# Analytics #}
 {% if not env.debug %}
