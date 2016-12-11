@@ -16,3 +16,25 @@
     </ul>
   {% endif %}
 </nav>
+
+<div class="mobile-navbar">
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="{{ url_for('.') }}" class="logo">{{ config.title }}</a>
+    </div>
+
+    <div class="mobile-header-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    {% for name, path in theme.menu %}
+      {% set itemName = name.toLowerCase() %}
+      <a class="mobile-menu-item" href="{{ url_for(path) }}">
+        {{ __('menu.' + itemName) }}
+      </a>
+    {% endfor %}
+  </nav>
+</div>

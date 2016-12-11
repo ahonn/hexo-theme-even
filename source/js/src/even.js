@@ -76,9 +76,9 @@
               nextTop = isLastOne ? Infinity : headerlinkTop[i+1] - HEADERFIX;
               
           if (currentTop < scrollTop && scrollTop <= nextTop) {
-            $($toclink[i]).addClass("active")
+            $($toclink[i]).addClass('active')
           } else {
-            $($toclink[i]).removeClass("active")
+            $($toclink[i]).removeClass('active')
           }
         }
       });
@@ -87,8 +87,31 @@
     registerPostToc: function () {
       this.tocBlockFollow();
       this.tocLinkJump();
-    }
+    },
 
+    registerMobileNavbar: function () {
+      var $header = $('#header');
+
+      $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+
+        var mobileNav = $('.mobile-navbar');
+        if (scrollTop > $header.height()) {
+          mobileNav.fadeIn();
+        } else {
+          mobileNav.fadeOut();
+        }
+      }); 
+      
+      $('.mobile-header-icon').click(function () {
+        if ($(this).hasClass('icon-click')) {
+          $(this).removeClass('icon-click').addClass('icon-out');
+        } else {
+          $(this).removeClass('icon-out').addClass('icon-click');
+        }
+        $('.mobile-menu').slideToggle(250);
+      });
+    },
 
   };
 

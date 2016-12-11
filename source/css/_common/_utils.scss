@@ -10,6 +10,12 @@
   }
 }
 
+@mixin min-screen() {
+   @media screen and (min-width: $global-body-width) {
+     @content;
+   }
+}
+
 @mixin max-screen() {
    @media screen and (max-width: $global-body-width) {
      @content;
