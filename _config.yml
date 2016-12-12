@@ -11,7 +11,7 @@ favicon: /favicon.ico
 # Set feed link (false | default | your feed link)
 # false: disable
 # default: use `atom.xml`, generator for `hexo-generator-feed`
-rss: default
+rss: false
 
 # ===========================================
 # Menu Settings
@@ -23,8 +23,8 @@ menu:
   # Categories: /categories
   # About: /about
 
-# menu search option
-search: true
+# site search option
+search: false
 
 # ===========================================
 # Theme Settings

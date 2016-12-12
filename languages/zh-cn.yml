@@ -1,0 +1,34 @@
+menu: 
+  home: 首页
+  archives: 归档
+  tags: 标签
+  categories: 分类
+  about: 关于
+
+footer:
+  powered: "由 %s 强力驱动"
+  theme: 主题
+
+posts:
+  prev: 上一页
+  next: 下一页
+  prev_post: 上一篇
+  next_post: 下一篇
+  toc: 文章目录
+  readmore: 阅读更多
+
+counter:
+  archives:
+    zero: 暂无日志
+    one: 目前共计 1 篇日志
+    other: "目前共计 %d 篇日志"
+
+  tagcloud:
+    zero: 暂无标签
+    one: 目前共计 1 个标签
+    other: "目前共计 %d 个标签"
+
+  categories:
+    zero:  暂无分类
+    one: 目前共计 1 个分类
+    other: "目前共计 %d 个分类"
