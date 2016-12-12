@@ -21,7 +21,7 @@ theme: even
 ```
 
 ## 文档 Document
-[hexo-theme-even wiki](https://github.com/ahonn/hexo-theme-even/wiki)
+[wiki](https://github.com/ahonn/hexo-theme-even/wiki)
 
 ## 联系我 Contact
 Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
