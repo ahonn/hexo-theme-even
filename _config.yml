@@ -22,8 +22,6 @@ menu:
   # Tags: /tags
   # Categories: /categories
   # About: /about
-  ### Custon link ###
-  Github: https://github.com/ahonn/hexo-theme-even
 
 # menu search option
 search: true
