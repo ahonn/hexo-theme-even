@@ -5,13 +5,13 @@
 .menu-search {
   display: inline-block;
   position: absolute;
-  top: -2px;
+  top: 50%;
   right: -2px;
   width: 1em;
   height: 20px;
-  padding-top: 3px;
   background: $white;
   overflow: hidden;
+  transform: translateY(-50%);
   transition-duration: 0.2s;
   transition-property: width;
   transition-timing-function: ease-out;
@@ -26,7 +26,9 @@
   &.expanded {
     right: -10px;
     width: 100%;
-    padding: 4px 6px 6px 8px;
+    padding: 5px 6px 5px 8px;
+    margin: 0;
+    line-height: 20px;
     border: 1px solid $light-gray;
     border-radius: 50px;
   }

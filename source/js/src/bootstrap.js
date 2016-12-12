@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  Even.registerSearch();
-  Even.registerBackToTop();
-  Even.registerPostToc();
-  Even.registerMobileNavbar();
+  Even.mobileNavbar.register();
+  Even.search.register();
+  Even.postToc.register();
+  Even.backToTop.register();
 })

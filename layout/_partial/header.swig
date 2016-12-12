@@ -17,7 +17,7 @@
         <li class="menu-search">
           <form>
             <i class="fa fa-search" id="open-search"></i>
-            <input type="text" class="search-input" />
+            <input type="text" class="search-input" id="search-input" />
             <i class="fa fa-times" id="close-search"></i>
           </form>
         </li>
