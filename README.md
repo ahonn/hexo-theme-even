@@ -1,25 +1,17 @@
 # hexo-theme-even
 
-A super simple theme for Hexo 
+> A super simple theme for Hexo 
 
+[在线预览 Demo](http://www.ahonn.me)
 ![even](http://ww4.sinaimg.cn/large/006tNbRwjw1f6l0ryrho2j31kw0yb7a6.jpg)
 
-## Demo
-Check out Even theme in live : [demo](http://www.ahonn.me)
-
-## Document
-- [中文文档](/doc/doc_zh.md)
-- [Document](/doc/doc_en.md)
-
-## Installation
+## 使用
 ```
-$ cd themes/
-$ git clone https://github.com/ahonn/hexo-theme-even even
-$ cd even/
-$ bin/install
+$ npm install install hexo-renderer-scss --save
+$ git clone https://github.com/ahonn/hexo-theme-even theme/even
 ```
 
-Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
+修改配置文件中的 `theme` 字段为 `even`: 
 
 ```
 # Extensions
@@ -28,9 +20,9 @@ Then update your blog's `_config.yml`(yourblog/_config.yml_) to use the theme.
 theme: even
 ```
 
-## Change Log
+## 使用文档
 
-[CHANGELOG](./CHANGELOG.md)
+// TODO
 
-## Contact
+## 联系我
 Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
