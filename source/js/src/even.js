@@ -5,7 +5,6 @@
 
   Even.search = {
     _searchData: null,
-
     _contentCache: null,
 
     _toggleSearch: function () {
@@ -206,28 +205,37 @@
 
 
   Even.mobileNavbar = {
-    register: function () {
+    _navbarScroll: function () {
       var $header = $('#header');
 
       $(window).scroll(function () {
         var scrollTop = $(window).scrollTop();
 
-        var mobileNav = $('.mobile-navbar');
+        var $mobileNav = $('.mobile-navbar');
         if (scrollTop > $header.height()) {
-          mobileNav.fadeIn();
+          $mobileNav.fadeIn();
         } else {
-          mobileNav.fadeOut();
+          $mobileNav.fadeOut();
         }
       }); 
-      
-      $('.mobile-header-icon').click(function () {
+    },
+
+    _toggleNavbarMenu: function () {
+      var toggleIcon = function () {
         if ($(this).hasClass('icon-click')) {
           $(this).removeClass('icon-click').addClass('icon-out');
         } else {
           $(this).removeClass('icon-out').addClass('icon-click');
         }
-        $('.mobile-menu').slideToggle(250);
-      });
+        $('.mobile-menu').slideToggle(200);
+      };
+
+      $('.mobile-header-icon').click(toggleIcon);
+    },
+
+    register: function () {
+      this._navbarScroll();
+      this._toggleNavbarMenu();
     }
   };
 
