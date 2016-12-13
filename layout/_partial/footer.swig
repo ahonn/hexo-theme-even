@@ -10,12 +10,12 @@
       {% endif %}
     {% endfor %}
     
-    {% if theme.rss === 'default' and config.feed and config.feed.path %}
+    {% if config.feed and config.feed.path and theme.rss === 'default' %}
       <a href="{{ url_for(config.feed.path) }}" class="iconfont icon-rss" title="rss"></a>
+    {% elif theme.rss === 'default' %}
+      <a href="{{ url_for('atom.xml') }}" class="iconfont icon-rss" title="rss"></a>
     {% elif theme.rss %}
       <a href="{{ url_for(theme.rss) }}" class="iconfont icon-rss" title="rss"></a>
-    {% else %}
-      <a href="{{ url_for('atom.xml') }}" class="iconfont icon-rss" title="rss"></a>
     {% endif %}
   </div>
 {% endif %}
