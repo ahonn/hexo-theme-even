@@ -38,7 +38,7 @@
             that._searchData = $('entry', xmlResponse).map(function () {
               return {
                 title: $('title', this).text(),
-                content: $("content",this).text().split('<a id="more"></a>')[0],
+                content: $("content",this).text(),
                 url: $( "url" , this).text()
               };
             }).get();
@@ -50,7 +50,7 @@
     _filterSearchData: function (keywords) {
       var keywordsRe = new RegExp(keywords, 'i');
       return this._searchData.filter(function (item) {
-        return keywordsRe.test(item.title);
+        return keywordsRe.test(item.title) || keywordsRe.test(item.content);
       });
     },
 
@@ -61,7 +61,7 @@
           searchContent += '<article class="post">';
           searchContent += '<header class="post-header"><h1 class="post-title"><a class="post-link" href="'
                             + item.url + '">' + item.title +'</a></h1></header>';
-          searchContent += '<div class="post-content">' + item.content 
+          searchContent += '<div class="post-content">' + item.content.split('<a id="more"></a>')[0]
                             + '<div class="read-more"><a href="' + item.url 
                             + '" class="read-more-link">Read more..</a></div></div>';
           searchContent += '</article>';
