@@ -11,7 +11,7 @@ favicon: /favicon.ico
 # Set feed link (false | default | your feed link)
 # false: disable
 # default: use `atom.xml`, generator for `hexo-generator-feed`
-rss: default
+rss: false
 
 # ===========================================
 # Menu Settings
@@ -19,12 +19,15 @@ rss: default
 menu:
   Home: /
   Archives: /archives/
-  Tags: /tags
+  # Tags: /tags
   # Categories: /categories
-  About: /about
+  # About: /about
 
 # site search option
-search: true
+search: false
+
+# Fancybox
+fancybox: true
 
 # ===========================================
 # Theme Settings
@@ -38,27 +41,27 @@ theme:
 # Social links Settings
 # ===========================================
 social:
-  email: ahonn95@outlook.com
+  email: your@email.com
   stack-overflow:
   twitter:
   facebook:
-  github: https://github.com/ahonn 
+  github: 
   weibo: 
-  zhihu: https://www.zhihu.com/people/ahonn/activities
+  zhihu: 
 
 # ===========================================
 # Third Party Services Settings
 # ===========================================
 
 # Baidu Analytics
-baidu_analytics: b54ec1817ee20d83af77a0859c4dda5d
+baidu_analytics: 
 # Google Analytics
-google_analytics: UA-74273646-1
+google_analytics: 
 
 # Duoshuo
-duoshuo_shortname: ahonn
+duoshuo_shortname: 
 # Disqus
-disqus_shortname: ahonn
+disqus_shortname: 
 
 
 # ===========================================
