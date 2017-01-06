@@ -201,9 +201,26 @@ $code-highlight-color: (
 ) !default;
 
 // Code type list.
-$code-type-list: ("html", "js", "bash", "css", "scss","diff", "java", "xml",
-                 "python", "json", "swift", "ruby", "perl", "php", "c", "java",
-                 "cpp", "scheme") !default;
+$code-type-list: (
+  html: "HTML",
+  js: "JavaScript",
+  bash: "Bash",
+  css: "CSS",
+  scss: "Scss",
+  java: "Java",
+  xml: "XML",
+  python: "Python",
+  json: "JSON",
+  swift: "Swift",
+  ruby: "Ruby",
+  php: "PHP",
+  c: "C",
+  cpp: "C++",
+  scheme: "Scheme",
+  objectivec: "Objective-C",
+  yml: "YAML",
+  stylus: "Stylus"
+) !default;
 
 // Color of the code background.
 $code-background: $deputy-color !default;
