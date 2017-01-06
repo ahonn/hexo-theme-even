@@ -30,13 +30,13 @@ code {
       font-weight: bold;
       color: $gray;
       background: darken($code-background, 3%);
-      content: 'CODE';
+      content: 'Code';
     }
   }
 
-  @each $sign in $code-type-list {
+  @each $sign, $text in $code-type-list {
     &.#{$sign} > ::after {
-      content: to-upper-case($sign);
+      content: $text;
     }
   }
 
