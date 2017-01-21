@@ -53,3 +53,20 @@ a {
 .content-wrapper {
   padding: $global-container-padding;
 }
+
+// make video fluid:
+// https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+// class video-container is the wrapper used by hexo youtube tag plugin
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
