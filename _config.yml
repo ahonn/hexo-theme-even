@@ -17,17 +17,17 @@ rss: default
 # Menu Settings
 # ===========================================
 menu:
-  Home: /
+  # Home: /
   Archives: /archives/
   Tags: /tags
   # Categories: /categories
   About: /about
 
 # site search option
-search: true
+search: false
 
 # Fancybox
-fancybox: true
+fancybox: false
 
 # ===========================================
 # Theme Settings
