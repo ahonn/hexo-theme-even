@@ -77,8 +77,8 @@
 
 @include max-screen() {
   .archive {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
 
     .archive-title .archive-name {
       font-size: $archive-name-font-size - 4px;
