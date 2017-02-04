@@ -23,12 +23,6 @@ menu:
   # Categories: /categories
   # About: /about
 
-# site search option
-search: false
-
-# Fancybox
-fancybox: true
-
 # ===========================================
 # Theme Settings
 # ===========================================
@@ -36,6 +30,10 @@ fancybox: true
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
   color: Default
+  toc: true
+  search: true
+  navbar: false 
+  fancybox: false
 
 # ===========================================
 # Social links Settings

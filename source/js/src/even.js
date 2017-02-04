@@ -6,6 +6,11 @@
   Even.search = {
     _searchData: null,
     _contentCache: null,
+    _searchPath: '',
+
+    setPath: function (path) {
+      this._searchPath = path;
+    },
 
     _toggleSearch: function () {
       var $menuSearch = $('.menu-search'),
@@ -27,12 +32,10 @@
     },
 
     _fetchSearchData: function () {
-      var searchPath = '/search.xml';
-      
       if (!this._searchData) {
         var that = this;
         $.ajax({
-          url: searchPath,
+          url: that._searchPath,
           dataType: 'xml',
           success: function (xmlResponse) {
             that._searchData = $('entry', xmlResponse).map(function () {
@@ -130,7 +133,7 @@
   };
 
 
-  Even.postToc = {
+  Even.toc = {
     _tocBlockFollow: function () {
       var SPACING = 20;
 
@@ -204,7 +207,7 @@
   };
 
 
-  Even.mobileNavbar = {
+  Even.navbar = {
     _navbarScroll: function () {
       var $header = $('#header');
 
