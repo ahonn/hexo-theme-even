@@ -17,7 +17,7 @@
           </a>
         </li>
       {% endfor %}
-      {% if theme.search %}
+      {% if theme.theme.search %}
         <li class="menu-search">
           <form>
             <i class="iconfont icon-search" id="open-search"></i>

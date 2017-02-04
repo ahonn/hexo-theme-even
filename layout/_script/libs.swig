@@ -1,4 +1,4 @@
-{% if theme.fancybox %}
+{% if theme.theme.fancybox %}
   {% set fancybox_js = 'fancybox/jquery.fancybox.pack.js' %}
 {% endif %}
 

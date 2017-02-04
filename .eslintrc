@@ -10,7 +10,8 @@
   },
   "globals": {
     "$": true,
-    "Even": true
+    "Even": true,
+    "themeConfig": true
   },
   "extends": "eslint:recommended"
 }
