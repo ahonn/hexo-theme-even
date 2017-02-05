@@ -46,7 +46,7 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 
 {# Fancybox styling #}
-{% if theme.fancybox %}
+{% if theme.theme.fancybox %}
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
 {% endif %}
 
