@@ -16,6 +16,12 @@ posts:
   next_post: Next
   toc: Contents
   readmore: Read more..
+  reward: 'Reward'
+
+copyright:
+  author: 'Author'
+  link: 'Link'
+  origin: 'Origin'
 
 counter:
   archives:

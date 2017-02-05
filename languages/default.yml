@@ -16,6 +16,12 @@ posts:
   next_post: Next
   toc: Contents
   readmore: Read more..
+  reward: '赞赏支持'
+
+copyright:
+  author: '作者'
+  link: '链接'
+  origin: '来源'
 
 counter:
   archives:

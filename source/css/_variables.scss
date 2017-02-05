@@ -134,7 +134,7 @@ $post-time-font-color: $dark-gray !default;
 $post-readMore-border-bottom: 1px solid $theme-color !default;
 
 // Margin top of the post footer.
-$post-footer-margin-top: 40px !default;
+$post-footer-margin-top: 20px !default;
 
 // Border top of post footer.
 $post-footer-border-top: 1px solid $light-gray !default;
@@ -178,6 +178,7 @@ $content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
 // Border color of the table.
 $content-table-border-color: darken($deputy-color, 3%) !default;
 
+$content-margin-bottom: 30px !default;
 
 // ========== Code ========== //
 // Color of the code.
