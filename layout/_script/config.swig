@@ -4,7 +4,7 @@
   var themeConfig = {
     search: {
       enable: {{themeConfig.search}},
-      path: "{{searchPath}}",
+      path: "{{url_for(searchPath)}}",
     },
     navbar: {
       enable: {{themeConfig.navbar}}
