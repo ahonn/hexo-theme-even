@@ -17,6 +17,11 @@ posts:
   toc: 文章目录
   readmore: 阅读更多
 
+copyright:
+  author: '作者'
+  link: '链接'
+  origin: '来源'
+
 counter:
   archives:
     zero: 暂无日志

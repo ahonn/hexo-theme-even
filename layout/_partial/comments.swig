@@ -1,4 +1,4 @@
-{% if page.comments %}
+{% if page.comments and not is_home() %}
   <div class="comments" id="comments">
     {% if theme.disqus_shortname %}
       <div id="disqus_thread">

@@ -17,6 +17,11 @@ posts:
   toc: Contents
   readmore: Read more..
 
+copyright:
+  author: '作者'
+  link: '链接'
+  origin: '来源'
+
 counter:
   archives:
     zero: No Posts
