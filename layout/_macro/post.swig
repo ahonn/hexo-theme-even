@@ -27,6 +27,7 @@
 
     <div class="post-content">
       {% if is_home() %}
+        {% set excerpt = "" %}
         {% if post.description %}
           {% set excerpt = post.description %}
         {% elif post.excerpt %}
