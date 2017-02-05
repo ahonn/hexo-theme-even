@@ -17,6 +17,11 @@ posts:
   toc: Contents
   readmore: Read more..
 
+copyright:
+  author: 'Author'
+  link: 'Link'
+  origin: 'Origin'
+
 counter:
   archives:
     zero: No Posts

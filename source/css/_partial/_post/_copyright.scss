@@ -1,0 +1,17 @@
+.post-copyright {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px dashed $light-gray;
+
+  .copyright-item {
+    margin: 5px 0;
+    
+    &.lincese {
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
