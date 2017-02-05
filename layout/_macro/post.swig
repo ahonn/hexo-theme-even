@@ -42,7 +42,9 @@
     </div>
 
     {# Post Copyright #}
-    {% include "../_partial/_post/copyright.swig" %}
+    {% if not is_home() %}
+      {% include "../_partial/_post/copyright.swig" %}
+    {% endif %}
 
     {% if post.tags and post.tags.length and not is_home() %}
       <footer class="post-footer">
