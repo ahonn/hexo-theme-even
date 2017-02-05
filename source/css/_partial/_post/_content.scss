@@ -3,6 +3,8 @@
 // ==============================
 
 .post-content {
+  margin-bottom: $content-margin-bottom;
+
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: 400;
