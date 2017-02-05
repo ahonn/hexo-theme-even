@@ -32,8 +32,8 @@ theme:
   color: Default
   toc: true
   search: true
-  navbar: false 
-  fancybox: false
+  navbar: true 
+  fancybox: true
 
 # ===========================================
 # Social links Settings
