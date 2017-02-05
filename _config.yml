@@ -32,8 +32,8 @@ menu:
 theme:
   color: Default
   toc: true
-  search: true
-  navbar: false 
+  search: false
+  navbar: true 
   fancybox: false
 
 # ===========================================
