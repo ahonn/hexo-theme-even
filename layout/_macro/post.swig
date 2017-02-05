@@ -41,9 +41,12 @@
       {% endif %}
     </div>
 
-    {# Post Copyright #}
     {% if not is_home() %}
+      {# Post Copyright #}
       {% include "../_partial/_post/copyright.swig" %}
+
+      {# Reward #}
+      {% include "../_partial/_post/reward.swig" %}
     {% endif %}
 
     {% if post.tags and post.tags.length and not is_home() %}
