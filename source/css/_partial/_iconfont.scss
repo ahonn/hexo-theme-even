@@ -23,7 +23,7 @@
 .icon-linkedin:before {
   content: "\e60d";
   position: relative;
-  top: -2px;
+  top: -4px;
 }
 .icon-twitter:before {
   content: "\e600";
@@ -65,6 +65,8 @@
   position: relative;
   top: -2px;
 }
+
+/* Generic Icon */
 .icon-heart:before {
   content: "\e608"; 
 }
