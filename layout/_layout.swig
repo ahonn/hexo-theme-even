@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ connfig.language }}">
+<html lang="{{ config.language }}">
   <head>
     {% include '_partial/head.swig' %}
     <title>{% block title %}{% endblock %}</title>
