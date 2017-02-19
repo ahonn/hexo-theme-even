@@ -19,6 +19,26 @@ body {
   border-top: 3px solid $theme-color;
 }
 
+::selection {
+  background: $theme-color, 10%;
+  color: #fff; 
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: lighten($theme-color, 10%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(211, 211, 211, 0.4);
+  border-radius: 5px;
+}
+
 img {
   max-width: 100%;
   height: auto;
