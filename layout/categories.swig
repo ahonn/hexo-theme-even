@@ -8,7 +8,7 @@
       {{ _p('counter.categories', site.categories.length) }}
     </div>
     <div class="categories-tags">
-      {{ list_categories({style: null, separator: ' ', depth: '-1'}) }}
+      {{ list_categories({style: null, separator: ' ', depth: '0'}) }}
     </div>
   </div>
 {% endblock %}
