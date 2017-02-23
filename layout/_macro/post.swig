@@ -23,7 +23,7 @@
       {% if is_home() %}
         {% set excerpt = "" %}
         {% if post.description %}
-          {% set excerpt = post.description %}
+          {% set excerpt = '<p>' + post.description + '</p>' %}
         {% elif post.excerpt %}
           {% set excerpt = post.excerpt %}
         {% endif %}
