@@ -6,7 +6,8 @@
   </head>
 
   <body>
-    <div class="container">
+    {%- include '_partial/slideout.swig' %}
+    <div class="container" id="mobile-panel">
       <header id="header" class="header">
         {%- include '_partial/header.swig' %}
       </header>

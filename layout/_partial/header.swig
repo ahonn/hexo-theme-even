@@ -2,7 +2,7 @@
   <a href="{{ url_for('.') }}" class="logo">{{ config.title }}</a>
 </div>
 
-<nav class="site-nav">
+<nav class="site-navbar">
   {% if theme.menu %}
     <ul id="menu" class="menu">
       {% for name, path in theme.menu %}
@@ -29,29 +29,3 @@
     </ul>
   {% endif %}
 </nav>
-
-<div class="mobile-navbar">
-  <div class="mobile-header">
-    <div class="mobile-header-logo">
-      <a href="{{ url_for('.') }}" class="logo">{{ config.title }}</a>
-    </div>
-
-    <div class="mobile-header-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <nav class="mobile-menu">
-    {% for name, path in theme.menu %}
-      <a class="mobile-menu-item" href="{{ url_for(path) }}">
-        {% set itemName = 'menu.' + name.toLowerCase() %}
-        {% if itemName.startsWith('menu') %}
-          {{ name }}
-        {% else %}
-          {{ __(itemName) }}
-        {% endif %}
-      </a>
-    {% endfor %}
-  </nav>
-</div>

@@ -1,0 +1,75 @@
+// ==============================
+// Mobile Navbar
+// ==============================
+
+.mobile-navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $mobile-navbar-height;
+  background: $white;
+  box-shadow: 0px 2px 2px $gray;
+  text-align: center;
+  transition: transform 300ms ease;
+  z-index: 99;
+
+  &.fixed-open {
+    transform: translate3d(150px, 0px, 0px);
+  }
+
+  .mobile-navbar-logo {
+    display: inline-block;
+    margin-right: 40px;
+
+    .logo {
+      font-size: 24px;
+      line-height: $mobile-navbar-height + 5;
+      font-family: $logo-font-family;
+    }
+  }
+
+  .mobile-navbar-icon {
+    color: $theme-color;
+    height: $mobile-navbar-height;
+    width: $mobile-navbar-height;
+    font-size: 24px;
+    text-align: center;
+    float: left;
+    position: relative;
+    transition: background 0.5s;
+
+    @include mobile-menu-icon();
+  }
+}
+
+.mobile-menu {
+  background-color: $deputy-color;
+  background-image: linear-gradient(145deg, $deputy-color, $white);
+
+  .mobile-menu-list {
+    position: relative;
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+
+    .mobile-menu-item {
+      padding: 10px 20px;
+    }
+
+    a {
+      font-family: $global-serif-font-family;
+      
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+@include max-screen() {
+  .mobile-navbar {
+    display: block;
+  }
+}
