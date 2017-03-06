@@ -1,19 +1,10 @@
-{% set searchPath = config.search.path || 'search.xml' %}
 {% set themeConfig = theme.theme %}
-<script type="text/javascript">
-  var themeConfig = {
-    search: {
-      enable: {{themeConfig.search}},
-      path: "{{url_for(searchPath)}}",
-    },
-    navbar: {
-      enable: {{themeConfig.navbar}}
-    },
-    fancybox: {
-      enable: {{themeConfig.fancybox}}
-    },
-    toc: {
-      enable: {{themeConfig.toc}}
-    },
-  };
+{% set searchPath = config.search.path || 'search.xml' %}
+{% set searchConfig = themeConfig.search ? searchPath : '' %}
+<script>
+  var CONFIG = {
+    search: {{searchConfig}},
+    fancybox: {{themeConfig.fancybox}},
+    toc: {{themeConfig.toc}},
+  }
 </script>

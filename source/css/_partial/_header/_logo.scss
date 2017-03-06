@@ -13,6 +13,6 @@
 
 @include max-screen() {
   .logo-wrapper {
-    float: none;
+    display: none;
   }
 }

@@ -2,7 +2,7 @@
 // Menu
 // =============================
 
-.site-nav {
+.site-navbar {
   float: right;
 
   .menu {
@@ -31,19 +31,7 @@
 }
 
 @include max-screen() {
-  .site-nav {
-    float: none;
-
-    .menu {
-      margin: 0;
-
-      .menu-search {
-        display: none;
-      }
-
-      .menu-item {
-        margin: $menu-item-mobile-margin;
-      }
-    }
+  .site-navbar {
+    display: none;
   }
 }
