@@ -72,7 +72,7 @@ a {
 @include max-screen() {
   .container {
     width: 100%;
-    box-shadow: -1px 0px 5px $gray;
+    box-shadow: -1px -5px 5px $gray;
   }
 }
 

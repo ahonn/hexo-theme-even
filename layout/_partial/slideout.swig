@@ -1,8 +1,7 @@
 <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-navbar-logo">
+  <div class="mobile-header-logo">
     <a href="{{ url_for('.') }}" class="logo">{{ config.title }}</a>
   </div>
-
   <div class="mobile-navbar-icon">
     <span></span>
     <span></span>
