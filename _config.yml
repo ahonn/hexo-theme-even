@@ -33,7 +33,6 @@ theme:
   color: Default
   toc: true
   search: false
-  navbar: true 
   fancybox: false
 
 copyright:
