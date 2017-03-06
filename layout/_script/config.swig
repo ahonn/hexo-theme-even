@@ -1,9 +1,9 @@
 {% set themeConfig = theme.theme %}
 {% set searchPath = config.search.path || 'search.xml' %}
-{% set searchConfig = themeConfig.search ? searchPath : '' %}
 <script>
   var CONFIG = {
-    search: {{searchConfig}},
+    search: {{themeConfig.search}},
+    searchPath: "{{url_for(searchPath)}}",
     fancybox: {{themeConfig.fancybox}},
     toc: {{themeConfig.toc}},
   }

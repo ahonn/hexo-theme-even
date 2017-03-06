@@ -16,16 +16,16 @@
   z-index: 99;
 
   &.fixed-open {
-    transform: translate3d(150px, 0px, 0px);
+    transform: translate3d(180px, 0px, 0px);
   }
 
-  .mobile-navbar-logo {
+  .mobile-header-logo {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 50px;
 
     .logo {
-      font-size: 24px;
-      line-height: $mobile-navbar-height + 5;
+      font-size: 22px;
+      line-height: $mobile-navbar-height;
       font-family: $logo-font-family;
     }
   }
@@ -45,20 +45,22 @@
 }
 
 .mobile-menu {
-  background-color: $deputy-color;
-  background-image: linear-gradient(145deg, $deputy-color, $white);
+  background-color: rgba($deputy-color, 0.5);
 
   .mobile-menu-list {
     position: relative;
     list-style: none;
     margin-top: 50px;
     padding: 0;
+    border-top: 1px solid $deputy-color;
 
     .mobile-menu-item {
-      padding: 10px 20px;
+      padding: 10px 30px;
+      border-bottom: 1px solid $deputy-color;
     }
 
     a {
+      font-size: 18px;
       font-family: $global-serif-font-family;
       
       &:hover {
