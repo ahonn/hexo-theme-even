@@ -32,7 +32,6 @@ theme:
   color: Default
   toc: true
   search: true
-  navbar: true 
   fancybox: true
 
 copyright:
