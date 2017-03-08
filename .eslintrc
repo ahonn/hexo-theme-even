@@ -11,7 +11,8 @@
   "globals": {
     "$": true,
     "Even": true,
-    "themeConfig": true
+    "themeConfig": true,
+    "Slideout": true
   },
   "extends": "eslint:recommended"
 }
