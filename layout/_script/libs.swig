@@ -5,6 +5,7 @@
 {%
   set js_libs = {
     jquery: 'jquery/jquery-3.1.1.min.js',
+    slideout: 'slideout/slideout.js',
     fancybox: fancybox_js
   }
 %}
