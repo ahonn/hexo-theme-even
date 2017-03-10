@@ -97,11 +97,11 @@
         var isLastOne = i + 1 === $toclink.length,
             currentTop = headerlinkTop[i] - HEADERFIX,
             nextTop = isLastOne ? Infinity : headerlinkTop[i+1] - HEADERFIX;
-            
+
         if (currentTop < scrollTop && scrollTop <= nextTop) {
-          $($toclink[i]).addClass('active')
+          $($toclink[i]).addClass('active');
         } else {
-          $($toclink[i]).removeClass('active')
+          $($toclink[i]).removeClass('active');
         }
       }
     });
@@ -111,7 +111,7 @@
     if ($.fancybox){
       $('.post').each(function () {
         $(this).find('img').each(function () {
-          $(this).wrap('<a class="fancybox" href="' + this.src + '" title="' + this.alt + '"></a>')
+          $(this).wrap('<a class="fancybox" href="' + this.src + '" title="' + this.alt + '"></a>');
         });
       });
 
