@@ -11,17 +11,18 @@ favicon: /favicon.ico
 # Set feed link (false | default | your feed link)
 # false: disable
 # default: use `atom.xml`, generator for `hexo-generator-feed`
-rss: false
+rss: default
 
 # ===========================================
 # Menu Settings
 # ===========================================
 menu:
-  Home: /
+  # Home: /
   Archives: /archives/
-  # Tags: /tags
+  Tags: /tags
   # Categories: /categories
-  # About: /about
+  Github: https://github.com/ahonn
+  About: /about
 
 # ===========================================
 # Theme Settings
@@ -31,8 +32,8 @@ menu:
 theme:
   color: Default
   toc: true
-  search: true
-  fancybox: true
+  search: false
+  fancybox: false
 
 copyright:
   enable: true
@@ -40,7 +41,7 @@ copyright:
   license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
 reward:
-  enable: false
+  enable: true
   qrCode: 
     wechat: /image/reward/wechat.png
     alipay: /image/reward/alipay.png
@@ -49,15 +50,15 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: ahonn95@outlook.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: 
-  weibo: 
-  zhihu: 
+  github: https://github.com/ahonn
+  weibo:
+  zhihu: https://www.zhihu.com/people/ahonn/activities
   pocket:
 
 # ===========================================
@@ -65,15 +66,14 @@ social:
 # ===========================================
 
 # Baidu Analytics
-baidu_analytics: 
+baidu_analytics: 8466adbc25665cf7ee1a15e4fcb73643
 # Google Analytics
-google_analytics: 
+google_analytics: UA-74273646-1
 
 # Duoshuo
-duoshuo_shortname: 
+duoshuo_shortname: ahonn
 # Disqus
-disqus_shortname: 
-
+disqus_shortname: ahonn
 
 # ===========================================
 # Version
