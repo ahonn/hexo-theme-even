@@ -8,11 +8,11 @@
       {% for name, path in theme.menu %}
         <li class="menu-item">
           <a class="menu-item-link" href="{{ url_for(path) }}">
-            {% set itemName = 'menu.' + name.toLowerCase() %}
+            {% set itemName = __('menu.' + name.toLowerCase()) %}
             {% if itemName.startsWith('menu') %}
               {{ name }}
             {% else %}
-              {{ __(itemName) }}
+              {{ itemName }}
             {% endif %}
           </a>
         </li>
