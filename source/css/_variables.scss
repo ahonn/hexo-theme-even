@@ -218,7 +218,9 @@ $code-type-list: (
   scheme: "Scheme",
   objectivec: "Objective-C",
   yml: "YAML",
-  stylus: "Stylus"
+  stylus: "Stylus",
+  sql: "SQL",
+  http: "HTTP"
 ) !default;
 
 // Color of the code background.
