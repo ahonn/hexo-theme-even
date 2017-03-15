@@ -34,14 +34,18 @@
       slideout.toggle();
     });
 
-    slideout.on('beforeopen', function() {
+    slideout.on('beforeopen', function () {
       $mobileNav.addClass('fixed-open');
       $mobileNavIcon.addClass('icon-click').removeClass('icon-out');
     });
 
-    slideout.on('beforeclose', function() {
+    slideout.on('beforeclose', function () {
       $mobileNav.removeClass('fixed-open');
       $mobileNavIcon.addClass('icon-out').removeClass('icon-click');
+    });
+
+    $('#mobile-panel').on('touchend', function () {
+      slideout.isOpen() && $mobileNavIcon.click();
     });
   };
 
