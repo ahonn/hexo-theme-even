@@ -19,7 +19,7 @@ code {
 
   table {
     position: relative;
-    
+
     &::after {
       position: absolute;
       top: 0;
@@ -40,7 +40,7 @@ code {
     }
   }
 
-  .code {    
+  .code {
     pre {
       margin: 0;
       padding: 30px 10px 10px;
