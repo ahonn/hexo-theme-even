@@ -49,17 +49,17 @@
       {% include "../_partial/_post/reward.swig" %}
     {% endif %}
 
-    {% if post.tags and post.tags.length and not is_home() %}
-      <footer class="post-footer">
+    <footer class="post-footer">
+      {% if post.tags and post.tags.length and not is_home() %}
         <div class="post-tags">
           {% for tag in post.tags %}
             <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
           {% endfor %}
         </div>
+      {% endif %}
+      {# Post Pagination #}
+      {% include "../_partial/pagination.swig" %}
+    </footer>
 
-        {# Post Pagination #}
-        {% include "../_partial/pagination.swig" %}
-      </footer>
-    {% endif %}
   </article>
 {% endmacro %}
