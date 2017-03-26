@@ -1,4 +1,4 @@
-{% if theme.duoshuo_shortname and not theme.disqus_shortname %}
+{% if theme.duoshuo_shortname %}
   {% set duoshuo_shortname = theme.duoshuo_shortname %}
 
   <script type="text/javascript">
