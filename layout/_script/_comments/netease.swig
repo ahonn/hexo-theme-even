@@ -3,7 +3,7 @@
     var cloudTieConfig = {
       url: document.location.href, 
       sourceId: "",
-      productKey: "8c89124062934daf963154d81c305348",
+      productKey: "{{theme.netease_key}}",
       target: "cloud-tie-wrapper"
     };
   </script>
