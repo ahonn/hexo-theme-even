@@ -73,9 +73,9 @@ google_analytics: UA-74273646-1
 # Duoshuo
 # duoshuo_shortname: ahonn
 # Disqus
-# disqus_shortname: ahonn
+disqus_shortname: ahonn
 # netease
-netease_key: 8c89124062934daf963154d81c305348
+# netease_key: 8c89124062934daf963154d81c305348
 
 # ===========================================
 # Version
