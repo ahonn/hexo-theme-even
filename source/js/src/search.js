@@ -59,7 +59,7 @@
     function _generateSearchContent(searchResult) {
       var resultTemplate = $('#search-result').html();
       var noResultTemplate = $('#no-search-result').html();
-    
+
       var searchContent = '';
       if (searchResult.length > 0) {
         searchResult.map(function (post) {
@@ -72,8 +72,8 @@
       } else {
         searchContent = noResultTemplate;
       }
-      
-      searchContent = '<div id="content" class="content" ><section class="search-result posts">' 
+
+      searchContent = '<div id="content" class="content" ><section class="search-result posts">'
                       + searchContent + '</section></div>';
       return searchContent;
     }
