@@ -17,12 +17,11 @@ rss: default
 # Menu Settings
 # ===========================================
 menu:
-  # Home: /
+  Home: /
   Archives: /archives/
-  Tags: /tags
+  # Tags: /tags
   # Categories: /categories
-  Github: https://github.com/ahonn
-  About: /about
+  # About: /about
 
 # ===========================================
 # Theme Settings
@@ -42,7 +41,7 @@ copyright:
 
 reward:
   enable: true
-  qrCode: 
+  qrCode:
     wechat: /image/reward/wechat.png
     alipay: /image/reward/alipay.png
 
@@ -50,15 +49,15 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: ahonn95@outlook.com
+  email: your@email.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: https://github.com/ahonn
+  github:
   weibo:
-  zhihu: https://www.zhihu.com/people/ahonn/activities
+  zhihu:
   pocket:
 
 # ===========================================
@@ -66,16 +65,16 @@ social:
 # ===========================================
 
 # Baidu Analytics
-baidu_analytics: 8466adbc25665cf7ee1a15e4fcb73643
+baidu_analytics:
 # Google Analytics
-google_analytics: UA-74273646-1
+google_analytics:
 
 # Duoshuo
-# duoshuo_shortname: ahonn
+# duoshuo_shortname:
 # Disqus
-disqus_shortname: ahonn
+disqus_shortname:
 # netease
-# netease_key: 8c89124062934daf963154d81c305348
+# netease_key:
 
 # ===========================================
 # Version
