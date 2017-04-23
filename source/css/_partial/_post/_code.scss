@@ -16,6 +16,7 @@ code {
   border-radius: 5px;
   overflow-x: auto;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  position: relative;
 
   table {
     position: relative;
@@ -28,15 +29,52 @@ code {
       padding: 2px 7px;
       font-size: $code-font-size;
       font-weight: bold;
-      color: $gray;
+      color: darken($gray, 10%);
       background: darken($code-background, 3%);
       content: 'Code';
     }
   }
 
   @each $sign, $text in $code-type-list {
-    &.#{$sign} > ::after {
+    &.#{$sign} > table::after {
       content: $text;
+    }
+
+    &.#{$sign} > figcaption > span::after {
+      content: ' · ' + $text;
+    }
+
+    &.#{$sign} figcaption + table {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 2px 7px;
+    font-size: $code-font-size;
+    font-weight: bold;
+    color: darken($gray, 10%);
+    background: darken($code-background, 3%);
+    z-index: 20;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    & > a {
+      position: absolute;
+      right: 0;
+      display: inline-box;
+      margin-right: 7px;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: none;
+        border: 0;
+      }
     }
   }
 
