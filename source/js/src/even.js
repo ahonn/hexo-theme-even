@@ -15,7 +15,7 @@
     });
 
     $backToTop.click(function () {
-      $('body').animate({ scrollTop: 0 });
+      $('body,html').animate({ scrollTop: 0 });
     });
   };
 
