@@ -77,7 +77,7 @@ $global-headings: (
 // Padding of the site header.
 $header-padding: 20px 20px !default;
 
-// Font family: Chancery 
+// Font family: Chancery
 @font-face {
   font-family: 'Chancery';
   src: url('../fonts/chancery/apple-chancery-webfont.eot');
@@ -220,7 +220,8 @@ $code-type-list: (
   yml: "YAML",
   stylus: "Stylus",
   sql: "SQL",
-  http: "HTTP"
+  http: "HTTP",
+  go: "Go"
 ) !default;
 
 // Color of the code background.
@@ -239,7 +240,7 @@ $pagination-font-size: 20px !default;
 // Margin top of the footer.
 $footer-margin-top: 2em !default;
 
-// Margin left of the social link. 
+// Margin left of the social link.
 $social-link-margin-left: 10px !default;
 
 // Font size of the social icon.
