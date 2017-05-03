@@ -2,7 +2,7 @@
 
 > A super simple theme for Hexo
 
-[在线预览 Demo](http://ahonn.github.io)
+[在线预览 Demo](http://ahonn.github.io/hexo-theme-even/)
 ![even](http://ww2.sinaimg.cn/large/006tNc79gw1faoa9tm7gnj312v0or421.jpg)
 
 ## 特性 Feature
