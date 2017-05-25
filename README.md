@@ -30,10 +30,16 @@ theme: even
 更多主题设置，查看 [document](https://github.com/ahonn/hexo-theme-even/wiki)
 
 ## 捐赠 Donation
-微信支付: 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1ffxg6ldfkzj30b40b2780.jpg)
+<style>
+  .qrcode {
+    display: "inline-block";
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+  }
+</style>
 
-支付宝支付:
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1ffxg7pwtnfj30cq0cqtbg.jpg)
+左：微信支付；右：支付宝
 
-
+<img src="https://ws3.sinaimg.cn/large/006tKfTcgy1ffxg6ldfkzj30b40b2780.jpg" class="qrcode" alt="微信支付">
+<img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffxg7pwtnfj30cq0cqtbg.jpg" class="qrcode" alt="支付宝">
