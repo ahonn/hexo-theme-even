@@ -27,8 +27,13 @@ $ git clone https://github.com/ahonn/hexo-theme-even themes/even
 theme: even
 ```
 
-## 文档 Document
-[wiki](https://github.com/ahonn/hexo-theme-even/wiki)
+更多主题设置，查看 [document](https://github.com/ahonn/hexo-theme-even/wiki)
 
-## 联系我 Contact
-Email: [ahonn95@outlook.com](mailto:ahonn95@outlook.com)
+## 捐赠 Donation
+微信支付: 
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1ffxg6ldfkzj30b40b2780.jpg)
+
+支付宝支付:
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1ffxg7pwtnfj30cq0cqtbg.jpg)
+
+
