@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 96542 */
-  src: url('//at.alicdn.com/t/font_n3xm3lv282jfw29.eot');
-  src: url('//at.alicdn.com/t/font_n3xm3lv282jfw29.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_n3xm3lv282jfw29.woff') format('woff'),
-  url('//at.alicdn.com/t/font_n3xm3lv282jfw29.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_n3xm3lv282jfw29.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_sqx2jdmy212it3xr.eot');
+  src: url('//at.alicdn.com/t/font_sqx2jdmy212it3xr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_sqx2jdmy212it3xr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_sqx2jdmy212it3xr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_sqx2jdmy212it3xr.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -20,6 +20,12 @@
   cursor: pointer;
 }
 
+.icon-tumblr:before {
+  content: "\e69f";
+  font-size: .85em;
+  position: relative;
+  top: -4px;
+}
 .icon-linkedin:before {
   content: "\e60d";
   position: relative;
