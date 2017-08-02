@@ -11,7 +11,6 @@
         </div>
       {% elif page.archive %}
         <div class="archive-title">
-          <h2 class="archive-name"> All </h2>
           <span class="archive-post-counter">
             {{ _p("counter.archives", site.posts.length) }}
           </span>
