@@ -51,8 +51,13 @@
   }
 
   img {
-    display: inline-block;
-    max-width: 100%;
+    display: block;
+    max-width: 98%;
+    margin: 0 auto;
+    border: 1px solid #ebeef2;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    padding: 10px;
   }
 
   > table {
