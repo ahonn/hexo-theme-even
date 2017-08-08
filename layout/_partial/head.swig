@@ -29,9 +29,6 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
 {% endif %}
 
-{# Theme Configuration #}
-{% include "../_script/config.swig" %}
-
 {# Analytics #}
 {% if not env.debug %}
   {% include "../_script/analytics.swig" %}

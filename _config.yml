@@ -31,8 +31,7 @@ menu:
 theme:
   color: Default
   toc: true
-  search: true
-  fancybox: false
+  fancybox: true
 
 copyright:
   enable: false
