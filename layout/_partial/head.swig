@@ -18,9 +18,6 @@
 {# Canonical, good for google search engine #}
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 
-{# Open Graph #}
-{{ open_graph() }}
-
 {# Theme styling #}
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 

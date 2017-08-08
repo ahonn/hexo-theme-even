@@ -18,6 +18,8 @@
 {# Website keywords #}
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
+{% elif config.keywords %}
+  <meta name="keywords" content="{{ config.keywords }}" />
 {% elif page.tags and page.tags.length %}
-  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }}, {% endfor %}{{ config.title }}" />
 {% endif %}
