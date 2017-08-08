@@ -30,8 +30,8 @@ menu:
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
   color: Default
-  toc: true
-  fancybox: true
+  toc: false
+  fancybox: false
 
 copyright:
   enable: false
