@@ -1,6 +1,6 @@
 {% extends "_layout.swig" %}
 
-{% block title %} {{ __('menu.tags') }} · {{ config.title }} {% endblock %}
+{% block title %} {{ __('menu.tags') }} - {{ config.title }} {% endblock %}
 
 {% block content %}
   <div class="tag-cloud">

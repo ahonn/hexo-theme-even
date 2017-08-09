@@ -64,12 +64,12 @@ $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 2em,
-  h2: 1.5em,
-  h3: 1.2em,
-  h4: 1em,
-  h5: 0.8em,
-  h6: 0.6em
+  h1: 26px,
+  h2: 24px,
+  h3: 20px,
+  h4: 16px,
+  h5: 14px,
+  h6: 14px
 ) !default;
 
 
@@ -113,7 +113,7 @@ $mobile-navbar-height: 50px !default;
 $post-list-margin-bottom: 20px !default;
 
 // Padding of the post.
-$post-padding: 1em 0 2em !default;
+$post-padding: 1.5em 0 !default;
 
 // Border top of the post + post.
 $post-border: 1px solid $light-gray !default;
@@ -129,6 +129,9 @@ $post-meta-margin-top: 5px !default;
 
 // Font color of the post time.
 $post-time-font-color: $dark-gray !default;
+
+// Font color of the post category
+$post-category-font-color: $dark-gray !default;
 
 // Border bottom of the read more link when hover it.
 $post-readMore-border-bottom: 1px solid $theme-color !default;
@@ -164,7 +167,7 @@ $post-toc-list-style: square !default;
 
 // ========== Content ========== //
 // Headings anchor.
-$content-headings-anchor: "§" !default;
+$content-headings-anchor: "" !default;
 
 // Border bottom of the link when hover it.
 $content-link-border: 1px solid $theme-color !default;

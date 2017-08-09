@@ -17,15 +17,6 @@
           </a>
         </li>
       {% endfor %}
-      {% if theme.theme.search %}
-        <li class="menu-search">
-          <form>
-            <i class="iconfont icon-search" id="open-search"></i>
-            <input type="text" class="search-input" id="search-input" />
-            <i class="iconfont icon-close" id="close-search"></i>
-          </form>
-        </li>
-      {% endif %}
     </ul>
   {% endif %}
 </nav>

@@ -18,9 +18,6 @@
 {# Canonical, good for google search engine #}
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 
-{# Open Graph #}
-{{ open_graph() }}
-
 {# Theme styling #}
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 
@@ -29,10 +26,8 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
 {% endif %}
 
-{# Theme Configuration #}
-{% include "../_script/config.swig" %}
-
-{# Analytics #}
+{# Analytics and push #}
 {% if not env.debug %}
   {% include "../_script/analytics.swig" %}
+  {% include "../_script/push.swig" %}
 {% endif %}

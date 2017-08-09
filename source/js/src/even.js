@@ -55,8 +55,8 @@
         $footer = $('.post-footer');
 
     if ($toc.length) {
-      var minScrollTop = $toc.offset().top - SPACING,
-          maxScrollTop = $footer.offset().top - $toc.height() - SPACING;
+      var minScrollTop = $toc.offset().top - SPACING;
+      var maxScrollTop = $footer.offset().top - $toc.height() - SPACING;
 
       var tocState = {
         start: {

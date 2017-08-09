@@ -1,4 +1,6 @@
 .post-header {
+  margin-bottom: 20px;
+
   .post-title {
     margin: 0;
     font-size: $post-title-font-size;
@@ -11,10 +13,27 @@
   }
 
   .post-meta {
-    margin-top: $post-meta-margin-top;
-
     .post-time {
+      font-size: 15px;
       color: $post-time-font-color;
+    }
+
+    .post-category {
+      display: inline;
+      font-size: 14px;
+      color: $post-category-font-color;
+
+      &::before {
+        content: '·';
+      }
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
     }
   }
 }
