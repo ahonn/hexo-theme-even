@@ -3,7 +3,7 @@
 
 {% block title %}
   {% if page.archive %}
-    {{ __('menu.archives') }} · {{ config.title }}
+    {{ __('menu.archives') }} - {{ config.title }}
   {% elif page.tag %}
     {{ page.tag }} · {{ config.title }}
   {% elif page.category %}
