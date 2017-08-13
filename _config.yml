@@ -74,6 +74,9 @@ google_analytics:
 # Google Verification
 google_verification:
 
+# Disqus
+disqus_shortname:
+
 # ===========================================
 # Version
 # ===========================================
