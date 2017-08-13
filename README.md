@@ -6,15 +6,17 @@ A super simple theme for Hexo
 [![GitHub issues](https://img.shields.io/github/issues/ahonn/hexo-theme-even.svg)](https://github.com/ahonn/hexo-theme-even/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
 
-![even-screenshots](http://ww2.sinaimg.cn/large/006tNc79gw1faoa9tm7gnj312v0or421.jpg)
-
 ## Demo
 [在线预览 Demo](http://ahonn.github.io/)
+
 ## Feature
 - 自定义样式
 - 支持 Fancybox
 - 版权信息，自定义许可协议
 - 文章打赏，添加二维码
+
+## Screenshots
+![even-screenshots](http://ww2.sinaimg.cn/large/006tNc79gw1faoa9tm7gnj312v0or421.jpg)
 
 ## Installation
 ```
@@ -31,5 +33,5 @@ $ git clone https://github.com/ahonn/hexo-theme-even themes/even
 theme: even
 ```
 
-更多主题设置，查看 [document](https://github.com/ahonn/hexo-theme-even/wiki)
+更多主题设置，查看 [Document](https://github.com/ahonn/hexo-theme-even/wiki)
 
