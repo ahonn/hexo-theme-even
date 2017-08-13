@@ -78,9 +78,9 @@
 
         if (scrollTop < minScrollTop) {
           $toc.css(tocState.start);
-        } else if (scrollTop > maxScrollTop) {
+        } /* else if (scrollTop > maxScrollTop) {
           $toc.css(tocState.end);
-        } else {
+        } */ else {
           $toc.css(tocState.process);
         }
       })
