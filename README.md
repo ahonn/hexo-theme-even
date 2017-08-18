@@ -16,7 +16,7 @@ A super simple theme for Hexo
 - 文章打赏，添加二维码
 
 ## Screenshots
-![even-screenshots](http://ww2.sinaimg.cn/large/006tNc79gw1faoa9tm7gnj312v0or421.jpg)
+![even-screenshots](http://ouv0frko5.bkt.clouddn.com/eerqv.jpg)
 
 ## Installation
 ```
