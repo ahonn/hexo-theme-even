@@ -42,8 +42,8 @@ copyright:
 reward:
   enable: false
   qrCode:
-    wechat: /images/reward/wechat.png
-    alipay: /images/reward/alipay.png
+    wechat: 
+    alipay:
 
 # ===========================================
 # Social links Settings
@@ -58,6 +58,7 @@ social:
   github: https://github.com/ahonn
   weibo:
   zhihu: https://www.zhihu.com/people/ahonn/activities
+  douban:
   pocket:
   tumblr:
 
