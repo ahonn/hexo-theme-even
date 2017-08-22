@@ -78,6 +78,11 @@ google_verification:
 # Disqus
 disqus_shortname:
 
+#Changyan
+changyan:
+  appid:
+  appkey:
+
 # ===========================================
 # Version
 # ===========================================
