@@ -10,14 +10,14 @@
   }
 }
 
-@mixin min-screen() {
-   @media screen and (min-width: $global-body-width) {
+@mixin min-screen($min-width: $global-body-width) {
+   @media screen and (min-width: $min-width) {
      @content;
    }
 }
 
-@mixin max-screen() {
-   @media screen and (max-width: $global-body-width) {
+@mixin max-screen($max-width: $global-body-width) {
+   @media screen and (max-width: $max-width) {
      @content;
    }
 }
