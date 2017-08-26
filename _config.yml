@@ -79,6 +79,11 @@ google_verification: j5dWC85DkoAfUR50W00ewfii3X9ouH55HnyBP6oZxGE
 # Disqus
 disqus_shortname: ahonn
 
+#Changyan
+changyan:
+  appid:
+  appkey:
+
 # ===========================================
 # Version
 # ===========================================
