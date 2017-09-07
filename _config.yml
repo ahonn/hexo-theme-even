@@ -41,7 +41,7 @@ copyright:
 reward:
   enable: false
   qrCode:
-    wechat: 
+    wechat:
     alipay:
 
 # ===========================================
@@ -60,15 +60,16 @@ social:
   douban:
   pocket:
   tumblr:
+  instagram:
 
 # ===========================================
 # Third Party Services Settings
 # ===========================================
 
 # Baidu Analytics
-baidu_analytics: 
+baidu_analytics:
 # Baidu Verification
-baidu_verification: 
+baidu_verification:
 
 # Google Analytics
 google_analytics:
