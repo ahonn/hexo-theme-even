@@ -1,4 +1,4 @@
-menu: 
+menu:
   home: Home
   archives: Archives
   tags: Tags
@@ -21,7 +21,7 @@ posts:
 copyright:
   author: 'Author'
   link: 'Link'
-  origin: 'Origin'
+  license: 'License'
 
 counter:
   archives:
