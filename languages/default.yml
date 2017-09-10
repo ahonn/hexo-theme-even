@@ -1,4 +1,4 @@
-menu: 
+menu:
   home: 首页
   archives: 归档
   tags: 标签
@@ -19,9 +19,9 @@ posts:
   reward: '赞赏支持'
 
 copyright:
-  author: '作者'
-  link: '链接'
-  origin: '来源'
+  author: '原文作者'
+  link: '原文链接'
+  license: '许可协议'
 
 counter:
   archives:

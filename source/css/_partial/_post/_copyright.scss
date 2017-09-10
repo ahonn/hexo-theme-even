@@ -5,13 +5,9 @@
 
   .copyright-item {
     margin: 5px 0;
-    
-    &.lincese {
-      font-weight: bold;
-    }
 
     a {
-      text-decoration: underline;
+      color: $theme-color;
     }
   }
 }
