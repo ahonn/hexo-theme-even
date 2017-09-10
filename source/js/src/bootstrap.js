@@ -3,4 +3,5 @@ $(document).ready(function () {
   Even.mobileNavbar();
   Even.toc();
   Even.fancybox();
+  Even.visits();
 });

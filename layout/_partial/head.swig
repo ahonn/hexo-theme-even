@@ -31,3 +31,7 @@
   {% include "../_script/analytics.swig" %}
   {% include "../_script/push.swig" %}
 {% endif %}
+
+{# LeanCloud Counter #}
+{% include "../_script/counter.swig"%}
+
