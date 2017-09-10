@@ -66,6 +66,11 @@ social:
 # Third Party Services Settings
 # ===========================================
 
+# LeanCloud
+leancloud:
+  app_id:
+  app_key:
+
 # Baidu Analytics
 baidu_analytics:
 # Baidu Verification
