@@ -126,5 +126,76 @@
     }
   };
 
+  Even.visits = function () {
+    var $visits = $('.post-visits');
+
+    function updateVisits(dom, time) {
+      var text = dom.text() + ' ' + time;
+      dom.text(text);
+    }
+
+    function addCounter(Counter) {
+      var query = new AV.Query(Counter);
+
+      var url = $visits.data('url').trim();
+      var title = $visits.data('title').trim();
+
+      query.equalTo('url', url);
+      query.find().then(function (results) {
+        if (results.length > 0) {
+          var counter = results[0];
+          counter.save(null, {
+            fetchWhenSave: true
+          }).then(function (counter) {
+            counter.increment('time', 1);
+            return counter.save();
+          }).then(function (counter) {
+            updateVisits($visits, counter.get('time'));
+          });
+        } else {
+          var newcounter = new Counter();
+          newcounter.set('title', title);
+          newcounter.set('url', url);
+          newcounter.set('time', 1);
+
+          newcounter.save().then(function (counter) {
+            updateVisits($visits, newcounter.get('time'));
+          });
+        }
+      }, function (error) {
+        console.log('Error:' + error.code + " " + error.message);
+      });
+    }
+
+    function showTime(Counter) {
+      $visits.each(function () {
+        var $this = $(this);
+        var query = new AV.Query(Counter);
+        var url = $this.data('url').trim();
+
+        query.equalTo('url', url);
+        query.find().then(function (results) {
+          if (results.length === 0) {
+            updateVisits($this, 0);
+          } else {
+            var counter = results[0];
+            updateVisits($this, counter.get('time'));
+          }
+        }, function (error) {
+          console.log('Error:' + error.code + " " + error.message);
+        });
+      })
+    }
+
+    if (typeof AV === 'object') {
+      var Counter = AV.Object.extend('Counter');
+      if ($visits.length === 1) {
+        addCounter(Counter);
+      } else {
+        showTime(Counter);
+      }
+    }
+  }
+
   window.Even = Even;
 })(window);

@@ -20,6 +20,13 @@
             {% endfor %}
           </div>
         {% endif %}
+        {% if theme.leancloud.app_id and theme.leancloud.app_key %}
+        <div class="post-visits"
+             data-url="{{ url_for(post.path) }}"
+             data-title="{{ post.title }}">
+            {{ __('posts.visits') }}
+          </div>
+        {% endif %}
       </div>
     </header>
 
