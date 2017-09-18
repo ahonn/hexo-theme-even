@@ -30,7 +30,7 @@
           </div>
         {% endif %}
       {% endif %}
-      
+
       <div class="archive-post">
         <span class="archive-post-time">
           {% if page.archive %}
