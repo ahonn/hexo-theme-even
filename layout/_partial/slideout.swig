@@ -14,11 +14,11 @@
     {% for name, path in theme.menu %}
       <a href="{{ url_for(path) }}">
         <li class="mobile-menu-item">
-          {% set itemName = 'menu.' + name.toLowerCase() %}
+          {% set itemName = __('menu.' + name.toLowerCase()) %}
           {% if itemName.startsWith('menu') %}
             {{ name }}
           {% else %}
-            {{ __(itemName) }}
+            {{ itemName }}
           {% endif %}
         </li>
       </a>
