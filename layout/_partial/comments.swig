@@ -7,6 +7,8 @@
           <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
       </div>
+    {% elseif theme.valine.appid and theme.valine.appkey %}
+      <div id="vcomments"></div>
     {% endif %}
   </div>
 {% endif %}
