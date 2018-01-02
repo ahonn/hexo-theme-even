@@ -96,3 +96,13 @@ a {
 	width: 100%;
 	height: 100%;
 }
+ul.search-result-list {
+  padding-left: 10px;
+}
+a.search-result-title {
+  font-weight: bold;
+}
+em.search-keyword {
+  border-bottom: 1px dashed red;
+  font-weight: bold;
+}
