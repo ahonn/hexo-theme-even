@@ -8,6 +8,7 @@ A super simple theme for Hexo(在作者基础上增加了一些小功能)
 
 ## Demo
 [原作者在线预览 Demo](http://ahonn.github.io/)
+
 [现有版本](http://blog.flywinky.top)
 
 ## Feature
