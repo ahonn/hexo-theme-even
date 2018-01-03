@@ -22,6 +22,7 @@ menu:
   # Tags: /tags
   # Categories: /categories
   # About: /about
+  # 站内搜索: /search
 
 # ===========================================
 # Theme Settings
@@ -88,6 +89,9 @@ disqus_shortname:
 changyan:
   appid:
   appkey:
+
+#LiveRe
+livere_datauid:
 
 # ===========================================
 # Version
