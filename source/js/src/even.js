@@ -198,4 +198,15 @@
   }
 
   window.Even = Even;
+
+  $(function () {
+	$(document).pjax('a', 'body', {fragment: 'body'});
+	$(document).on('pjax:send', function() {
+		NProgress.start();
+	})
+	$(document).on('pjax:complete', function() {
+		NProgress.done();
+	})
+  })
+
 })(window);

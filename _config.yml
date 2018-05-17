@@ -32,6 +32,7 @@ theme:
   color: Default
   toc: false
   fancybox: false
+  pjax: true
 
 copyright:
   enable: true

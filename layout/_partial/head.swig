@@ -26,6 +26,11 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
 {% endif %}
 
+{# Nprogress styling #}
+{% if theme.theme.pjax %}
+  <link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+{% endif %}
+
 {# Analytics and push #}
 {% if not env.debug %}
   {% include "../_script/analytics.swig" %}
