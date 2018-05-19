@@ -3,7 +3,7 @@
 # ===========================================
 
 # Site creation time
-since: 2015
+since: 2016
 
 # Custom your favicon.ico in `site/source`
 favicon: /favicon.ico
@@ -19,9 +19,9 @@ rss: default
 menu:
   Home: /
   Archives: /archives/
-  # Tags: /tags
-  # Categories: /categories
-  # About: /about
+  Tags: /tags
+  Categories: /categories
+  About: /about
 
 # ===========================================
 # Theme Settings
@@ -29,33 +29,33 @@ menu:
 # theme styling
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
-  color: Default
-  toc: false
-  fancybox: false
+  eolor: Default
+  #color: #4fc08d
+  toc: true
+  fancybox: true
   pjax: true
-
 copyright:
   enable: true
   # https://creativecommons.org/
   license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
 
 reward:
-  enable: false
+  enable: true
   qrCode:
-    wechat:
-    alipay:
+    wechat: /image/reward/wechat.png
+    alipay: /image/reward/alipay.png
 
 # ===========================================
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: 1052642137@qq.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github:
+  github: https://github.com/wencaizhang
   weibo:
   zhihu:
   douban:
