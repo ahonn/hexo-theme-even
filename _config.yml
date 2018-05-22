@@ -29,7 +29,7 @@ menu:
 # theme styling
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
-  eolor: Default
+  color: Cobalt Blue
   #color: #4fc08d
   toc: true
   fancybox: true
@@ -73,7 +73,7 @@ leancloud:
   app_key:
 
 # Baidu Analytics
-baidu_analytics:
+baidu_analytics: 9d7b477440baab780c19bb539bbbcf94
 # Baidu Verification
 baidu_verification:
 
