@@ -1,9 +1,13 @@
 (function (window) {
   'use strict';
 
-  var Even = {};
+var Even = {
+  responsiveTable: function () {
+    var tables = $('.post-content > table')
+    tables.wrap('<div class="table-responsive">')
+  },
 
-  Even.backToTop = function () {
+  backToTop: function () {
     var $backToTop = $('#back-to-top');
 
     $(window).scroll(function () {
@@ -17,9 +21,9 @@
     $backToTop.click(function () {
       $('body,html').animate({ scrollTop: 0 });
     });
-  };
+  },
 
-  Even.mobileNavbar = function () {
+  mobileNavbar: function () {
     var $mobileNav = $('#mobile-navbar');
     var $mobileNavIcon = $('.mobile-navbar-icon');
     var slideout = new Slideout({
@@ -47,9 +51,9 @@
     $('#mobile-panel').on('touchend', function () {
       slideout.isOpen() && $mobileNavIcon.click();
     });
-  };
+  },
 
-  Even.toc = function () {
+  toc: function () {
     var SPACING = 20;
     var $toc = $('.post-toc'),
         $footer = $('.post-footer');
@@ -109,9 +113,9 @@
         }
       }
     });
-  };
+  },
 
-  Even.fancybox = function () {
+  fancybox: function () {
     if ($.fancybox){
       $('.post').each(function () {
         $(this).find('img').each(function () {
@@ -124,9 +128,9 @@
         closeEffect	: 'elastic'
       });
     }
-  };
+  },
 
-  Even.visits = function () {
+  visits: function () {
     var $visits = $('.post-visits');
 
     function updateVisits(dom, time) {
@@ -158,11 +162,12 @@
           newcounter.set('url', url);
           newcounter.set('time', 1);
 
-          newcounter.save().then(function (counter) {
+          newcounter.save().then(function () {
             updateVisits($visits, newcounter.get('time'));
           });
         }
       }, function (error) {
+        // eslint-disable-next-line
         console.log('Error:' + error.code + " " + error.message);
       });
     }
@@ -182,6 +187,7 @@
             updateVisits($this, counter.get('time'));
           }
         }, function (error) {
+        // eslint-disable-next-line
           console.log('Error:' + error.code + " " + error.message);
         });
       })
@@ -196,6 +202,7 @@
       }
     }
   }
+}
 
   window.Even = Even;
 })(window);
