@@ -24,7 +24,7 @@
         <div class="post-visits"
              data-url="{{ url_for(post.path) }}"
              data-title="{{ post.title }}">
-            {{ __('posts.visits') }}
+            {{ __('posts.visits') }} 0
           </div>
         {% endif %}
       </div>

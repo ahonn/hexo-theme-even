@@ -150,8 +150,8 @@
     }
 
     function updateVisits(dom, time) {
-      var text = dom.text() + ' ' + time;
-      dom.text(text).css('visibility', 'visible');
+      var readText = dom.text().replace(/(\d+)/i, time)
+      dom.text(readText);
     }
 
     function addCounter(Counter) {
