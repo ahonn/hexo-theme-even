@@ -19,7 +19,7 @@ body {
   border-top: 3px solid $theme-color;
 
   &.hide-top {
-    border-top: none;
+    border-top: 3px solid transparent;
   }
 }
 
