@@ -6,7 +6,7 @@
 since: 2015
 
 # Custom your favicon.ico in `site/source`
-favicon: /images/favicon.ico
+favicon: /favicon.ico
 
 # Set feed link (false | default | your feed link)
 # false: disable
@@ -21,8 +21,7 @@ menu:
   # Archives: /archives/
   # Tags: /tags
   # Categories: /categories
-  # Github: https://github.com/ahonn
-  About: /about
+  # About: /about
 
 # ===========================================
 # Theme Settings
@@ -50,7 +49,7 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: ahonn95@outlook.com
+  email: your@email.com
   stack-overflow:
   twitter:
   facebook:
@@ -58,7 +57,7 @@ social:
   google:
   github: https://github.com/ahonn
   weibo:
-  zhihu: https://www.zhihu.com/people/ahonn/activities
+  zhihu:
   douban:
   pocket:
   tumblr:
@@ -70,21 +69,21 @@ social:
 
 # LeanCloud
 leancloud:
-  app_id: yQb0X4LzhGQewvhzfS4Pwbbe-gzGzoHsz
-  app_key: 7r9WpoHmf3Q2YwE8IKjEfY7w
+  app_id:
+  app_key:
 
 # Baidu Analytics
-baidu_analytics: 0a275bcf7d954b807e1db498d8e5b192
+baidu_analytics:
 # Baidu Verification
-baidu_verification: 0a275bcf7d954b807e1db498d8e5b192
+baidu_verification:
 
 # Google Analytics
-google_analytics: UA-74273646-1
+google_analytics:
 # Google Verification
-google_verification: j5dWC85DkoAfUR50W00ewfii3X9ouH55HnyBP6oZxGE
+google_verification:
 
 # Disqus
-disqus_shortname: ahonn
+disqus_shortname:
 
 #Changyan
 changyan:
