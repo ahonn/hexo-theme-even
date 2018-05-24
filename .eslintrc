@@ -10,6 +10,7 @@
   },
   "globals": {
     "$": true,
+    "AV": true,
     "Even": true,
     "themeConfig": true,
     "Slideout": true

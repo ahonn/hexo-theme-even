@@ -19,14 +19,14 @@ A super simple theme for Hexo
 ![even-screenshots](http://ouv0frko5.bkt.clouddn.com/blog/6n2zu.png)
 
 ## Installation
-```
+```bash
 $ npm install hexo-renderer-scss --save
 $ git clone https://github.com/ahonn/hexo-theme-even themes/even
 ```
 
 修改配置文件中的 `theme` 字段为 `even`:
 
-```
+```yaml
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
@@ -34,4 +34,3 @@ theme: even
 ```
 
 更多主题设置，查看 [Document](https://github.com/ahonn/hexo-theme-even/wiki)
-

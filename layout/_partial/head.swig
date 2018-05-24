@@ -28,7 +28,7 @@
 
 {# Nprogress styling #}
 {% if theme.theme.pjax %}
-  <link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('lib/nprogress/nprogress.min.css') }}" />
 {% endif %}
 
 {# Analytics and push #}

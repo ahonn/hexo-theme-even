@@ -2,11 +2,18 @@
   {% set fancybox_js = 'fancybox/jquery.fancybox.pack.js' %}
 {% endif %}
 
+{% if theme.theme.pjax %}
+  {% set pjax_js = 'pjax/jquery.pjax.min.js' %}
+  {% set nprogress_js = 'nprogress/nprogress.min.js' %}
+{% endif %}
+
 {%
   set js_libs = {
-    jquery: 'jquery/jquery-3.1.1.min.js',
+    jquery: 'jquery/jquery.min.js',
     slideout: 'slideout/slideout.js',
-    fancybox: fancybox_js
+    fancybox: fancybox_js,
+    pjax: pjax_js,
+    nprogress: nprogress_js,
   }
 %}
 
@@ -15,8 +22,3 @@
     <script type="text/javascript" src="{{ url_for('lib') }}/{{ lib }}"></script>
   {% endif %}
 {% endfor %}
-
-{% if theme.theme.pjax %}
-  <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
-  <script src="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-{% endif %}

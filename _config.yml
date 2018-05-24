@@ -3,7 +3,7 @@
 # ===========================================
 
 # Site creation time
-since: 2016
+since: 2015
 
 # Custom your favicon.ico in `site/source`
 favicon: /favicon.ico
@@ -29,11 +29,11 @@ menu:
 # theme styling
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
-  color: Cobalt Blue
-  #color: #4fc08d
-  toc: true
-  fancybox: true
+  color: Default
+  toc: false
+  fancybox: false
   pjax: true
+
 copyright:
   enable: true
   # https://creativecommons.org/
