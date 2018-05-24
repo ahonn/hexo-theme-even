@@ -18,7 +18,7 @@ rss: default
 # ===========================================
 menu:
   Home: /
-  Archives: /archives/
+  # Archives: /archives/
   # Tags: /tags
   # Categories: /categories
   # Github: https://github.com/ahonn
@@ -97,4 +97,4 @@ livere_datauid:
 # ===========================================
 # Version
 # ===========================================
-version: 2.6.0
+version: 2.7.0
