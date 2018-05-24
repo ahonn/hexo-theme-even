@@ -207,9 +207,11 @@
       $(document).pjax('a', 'body', { fragment: 'body' });
       $(document).on('pjax:send', function () {
         NProgress.start();
+        $('body').addClass('hide-top');
       });
       $(document).on('pjax:complete', function () {
         NProgress.done();
+        $('body').removeClass('hide-top');
       });
     }
   }

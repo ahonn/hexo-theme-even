@@ -17,6 +17,10 @@ body {
   background: $global-background;
   scroll-behavior: smooth;
   border-top: 3px solid $theme-color;
+
+  &.hide-top {
+    border-top: none;
+  }
 }
 
 @include max-screen() {
@@ -27,12 +31,12 @@ body {
 
 ::selection {
   background: $theme-color;
-  color: #fff; 
+  color: #fff;
 }
 
 // ::-webkit-scrollbar {
 //   width: 8px;
-//   height: 6px; 
+//   height: 6px;
 // }
 
 // ::-webkit-scrollbar-thumb {
