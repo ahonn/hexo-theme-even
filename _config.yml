@@ -19,9 +19,9 @@ rss: default
 menu:
   Home: /
   Archives: /archives/
-  # Tags: /tags
-  # Categories: /categories
-  # About: /about
+  Tags: /tags
+  Categories: /categories
+  About: /about
 
 # ===========================================
 # Theme Settings
@@ -40,22 +40,22 @@ copyright:
   license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
 
 reward:
-  enable: false
+  enable: true
   qrCode:
-    wechat:
-    alipay:
+    wechat: /image/reward/wechat.png
+    alipay: /image/reward/alipay.png
 
 # ===========================================
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: 1052642137@qq.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github:
+  github: https://github.com/wencaizhang
   weibo:
   zhihu:
   douban:
@@ -73,7 +73,7 @@ leancloud:
   app_key:
 
 # Baidu Analytics
-baidu_analytics:
+baidu_analytics: 9d7b477440baab780c19bb539bbbcf94
 # Baidu Verification
 baidu_verification:
 
