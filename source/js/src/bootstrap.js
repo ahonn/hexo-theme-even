@@ -5,4 +5,5 @@ $(document).ready(function () {
   Even.toc();
   Even.fancybox();
   Even.visits();
+  Even.pjax();
 });
