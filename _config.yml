@@ -30,8 +30,8 @@ menu:
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
 theme:
   color: Default
-  toc: false
-  fancybox: false
+  toc: true
+  fancybox: true
   pjax: true
 
 copyright:
@@ -96,4 +96,4 @@ livere_datauid:
 # ===========================================
 # Version
 # ===========================================
-version: 2.7.0
+version: 2.8.0
