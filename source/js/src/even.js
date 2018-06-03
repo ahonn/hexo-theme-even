@@ -6,8 +6,8 @@
   }
 
   Even.prototype.setup = function() {
-    var theme = this.config.theme;
-    var leancloud = this.config.leancloud;
+    var theme = this.config;
+    var leancloud = theme.leancloud;
 
     this.navbar();
     if (theme.toc) {

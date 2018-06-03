@@ -19,12 +19,12 @@
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 
 {# Fancybox styling #}
-{% if theme.theme.fancybox %}
+{% if theme.fancybox %}
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
 {% endif %}
 
 {# Nprogress styling #}
-{% if theme.theme.pjax %}
+{% if theme.pjax %}
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/nprogress/nprogress.min.css') }}" />
 {% endif %}
 

@@ -1,8 +1,8 @@
-{% if theme.theme.fancybox %}
+{% if theme.fancybox %}
   {% set fancybox_js = 'fancybox/jquery.fancybox.pack.js' %}
 {% endif %}
 
-{% if theme.theme.pjax %}
+{% if theme.pjax %}
   {% set pjax_js = 'pjax/jquery.pjax.min.js' %}
   {% set nprogress_js = 'nprogress/nprogress.min.js' %}
 {% endif %}

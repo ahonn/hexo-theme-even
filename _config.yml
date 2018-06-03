@@ -26,13 +26,15 @@ menu:
 # ===========================================
 # Theme Settings
 # ===========================================
-# theme styling
 # color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-theme:
-  color: Default
-  toc: true
-  fancybox: true
-  pjax: true
+color: Default
+
+toc: true
+
+# jQuery fancybox
+fancybox: true
+
+pjax: true
 
 copyright:
   enable: true
