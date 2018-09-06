@@ -6,21 +6,20 @@
   }
 
   Even.prototype.setup = function() {
-    var theme = this.config;
-    var leancloud = theme.leancloud;
+    var leancloud = this.config.leancloud;
 
     this.navbar();
-    if (theme.toc) {
+    if (this.config.toc) {
       this.scrollToc();
       this.tocFollow();
     }
-    if (theme.fancybox) {
+    if (this.config.fancybox) {
       this.fancybox();
     }
     if (leancloud.app_id && leancloud.app_key) {
       this.recordReadings();
     }
-    if (theme.pjax) {
+    if (this.config.pjax) {
       this.pjax();
     }
     this.backToTop();
