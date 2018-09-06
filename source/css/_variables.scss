@@ -4,21 +4,21 @@
 
 // ========== Theme Color ========== //
 // Theme color config from `even/_config.yml`
-$theme-color-config: hexo-theme-config('theme.color');
+$theme-color-config: to-lower-case(hexo-theme-config('color'));
 
 // Default theme color map
 $theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
-  'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
-  'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+  'default': #c05b4d #f8f5ec,
+  'mint green': #16982B #f5f5f5,
+  'cobalt blue': #0047AB #f0f2f5,
+  'hot pink': #FF69B4 #f8f5f5,
+  'dark violet': #9932CC #f5f4fa
 );
 
 // Check theme color config.
 // if it does not exist, use default theme color.
 @if not(map-has-key($theme-color-map, $theme-color-config)) {
-  $theme-color-config: 'Default';
+  $theme-color-config: 'default';
 }
 $theme-color-list: map-get($theme-color-map, $theme-color-config);
 
@@ -27,7 +27,6 @@ $theme-color: nth($theme-color-list, 1) !default;
 
 // Deputy theme color of the site.
 $deputy-color: nth($theme-color-list, 2) !default;
-
 
 // ========== Color ========== //
 $black: #0a0a0a !default;
