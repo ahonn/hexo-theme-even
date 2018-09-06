@@ -1,4 +1,7 @@
 {% macro render() %}
+  {% set isArchivesPage = !!page.archive %}
+  {% set isArchivesMode = theme.mode.toLowerCase() == 'archives' %}
+
   <section id="archive" class="archive">
     {% if not page.prev %}
       {% if page.tag %}
@@ -9,7 +12,7 @@
         <div class="archive-title category">
           <h2 class="archive-name">{{ page.category }}</h2>
         </div>
-      {% elif page.archive %}
+      {% elif isArchivesPage %}
         <div class="archive-title">
           <span class="archive-post-counter">
             {{ _p("counter.archives", site.posts.length) }}
@@ -19,7 +22,7 @@
     {% endif %}
 
     {% for post in page.posts %}
-      {% if page.archive %}
+      {% if isArchivesPage or isArchivesMode %}
         {% set year %}
         {% set post.year = date(post.date, 'YYYY') %}
 
@@ -33,7 +36,7 @@
 
       <div class="archive-post">
         <span class="archive-post-time">
-          {% if page.archive %}
+          {% if isArchivesPage or isArchivesMode %}
             {{ date(post.date, 'MM-DD') }}
           {% else %}
             {{ date(post.date, 'YYYY-MM-DD') }}

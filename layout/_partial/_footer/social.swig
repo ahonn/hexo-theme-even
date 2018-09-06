@@ -9,7 +9,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    
+
     {% if config.feed and config.feed.path and theme.rss === 'default' %}
       <a href="{{ url_for(config.feed.path) }}" class="iconfont icon-rss" title="rss"></a>
     {% elif theme.rss === 'default' %}

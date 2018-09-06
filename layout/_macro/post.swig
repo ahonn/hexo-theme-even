@@ -14,18 +14,18 @@
           {{ full_date(post.date, 'YYYY-MM-DD') }}
         </span>
         {% if post.categories and post.categories.length %}
-          <div class="post-category">
+          <span class="post-category">
             {% for category in post.categories %}
               <a href="{{ url_for(category.path) }}">{{ category.name }}</a>
             {% endfor %}
-          </div>
+          </span>
         {% endif %}
         {% if theme.leancloud.app_id and theme.leancloud.app_key %}
-        <div class="post-visits"
+        <span class="post-visits"
              data-url="{{ url_for(post.path) }}"
              data-title="{{ post.title }}">
-            {{ __('posts.visits') }} 0
-          </div>
+          {{ __('posts.visits') }} 0
+        </span>
         {% endif %}
       </div>
     </header>
