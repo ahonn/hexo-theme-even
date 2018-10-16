@@ -40,6 +40,7 @@
 {# LeanCloud Counter #}
 {% include "../_script/counter.swig"%}
 
+{% set themeConfig = { leancloud: theme.leancloud, toc: theme.toc, fancybox: theme.fancybox, pjax: theme.pjax} %}
 <script>
-  window.config = {{ JSON.stringify(theme) }};
+  window.config = {{ JSON.stringify(themeConfig) }};
 </script>
