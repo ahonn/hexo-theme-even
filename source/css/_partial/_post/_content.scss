@@ -15,11 +15,13 @@
       border-bottom: 0;
     }
 
-    &::before {
-      content: $content-headings-anchor;
-      margin-right: 5px;
-      font-size: 1.1em;
-      color: $theme-color;
+    @if $content-headings-anchor != "" {
+      &::before {
+        content: $content-headings-anchor;
+        margin-right: 5px;
+        font-size: 1.1em;
+        color: $theme-color;
+      }
     }
   }
 
