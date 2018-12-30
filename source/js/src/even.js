@@ -9,6 +9,8 @@
     var leancloud = this.config.leancloud;
 
     this.navbar();
+    this.responsiveTable();
+
     if (this.config.toc) {
       this.scrollToc();
       this.tocFollow();
@@ -54,6 +56,11 @@
     $('#mobile-panel').on('touchend', function () {
       slideout.isOpen() && $navIcon.click();
     });
+  };
+
+  Even.prototype.responsiveTable = function () {
+    var tables = $('.post-content > table')
+    tables.wrap('<div class="table-responsive">')
   };
 
   Even.prototype.scrollToc = function () {

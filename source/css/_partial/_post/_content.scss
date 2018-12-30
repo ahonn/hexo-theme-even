@@ -62,21 +62,21 @@
     margin-bottom: 20px;
     overflow: auto;
     border: 3px double $content-table-border-color;
+  }
 
-    table {
-      width: 100%;
-      max-width: 100%;
-      border-spacing: 0;
-      box-shadow: 2px 2px 3px rgba(0,0,0,.125);
+  table {
+    width: 100%;
+    max-width: 100%;
+    border-spacing: 0;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.125);
 
-      thead {
-        background: $deputy-color;
-      }
+    thead {
+      background: $deputy-color;
+    }
 
-      th, td {
-        padding: 5px 15px;
-        border: 1px double $content-table-border-color;
-      }
+    th, td {
+      padding: 5px 15px;
+      border: 1px double $content-table-border-color;
     }
   }
 
