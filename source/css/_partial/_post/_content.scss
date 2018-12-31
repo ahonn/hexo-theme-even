@@ -41,6 +41,12 @@
   ul {
     padding-left: 0;
     list-style: inside;
+
+    li {
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+    }
   }
 
   blockquote {
