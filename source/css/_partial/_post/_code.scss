@@ -20,6 +20,7 @@ code {
 
   table {
     position: relative;
+    max-width: none;
 
     &::after {
       position: absolute;
