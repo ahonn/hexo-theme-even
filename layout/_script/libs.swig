@@ -7,13 +7,15 @@
   {%- set nprogress_js = 'nprogress/nprogress.min.js' -%}
 {%- endif -%}
 
-{%-   set js_libs = {
+{%-
+  set js_libs = {
     jquery: 'jquery/jquery.min.js',
     slideout: 'slideout/slideout.js',
     fancybox: fancybox_js,
     pjax: pjax_js,
     nprogress: nprogress_js,
-  } -%}
+  }
+-%}
 
 {%- for lib in js_libs -%}
   {%- if lib -%}
