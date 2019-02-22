@@ -1,11 +1,11 @@
-{% extends "_layout.swig" %}
+{%- extends "_layout.swig" -%}
 
-{% block title %} {{ page.title }} - {{ config.title }} {% endblock %}
+{%- block title -%} {{ page.title }} - {{ config.title }} {%- endblock -%}
 
-{% block content %}
+{%- block content -%}
   <article class="post">
     <div class="post-content">
       {{ page.content }}
     </div>
   </article>
-{% endblock %}
+{%- endblock -%}

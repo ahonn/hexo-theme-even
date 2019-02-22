@@ -11,17 +11,17 @@
 
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    {% for name, path in theme.menu %}
+    {%- for name, path in theme.menu -%}
       <a href="{{ url_for(path) }}">
         <li class="mobile-menu-item">
-          {% set itemName = __('menu.' + name.toLowerCase()) %}
-          {% if itemName.startsWith('menu') %}
+          {%- set itemName = __('menu.' + name.toLowerCase()) -%}
+          {%- if itemName.startsWith('menu') -%}
             {{ name }}
-          {% else %}
+          {%- else -%}
             {{ itemName }}
-          {% endif %}
+          {%- endif -%}
         </li>
       </a>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </nav>

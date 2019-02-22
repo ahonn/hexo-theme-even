@@ -1,5 +1,5 @@
-{# Post Copyright #}
-{% if theme.copyright.enable and page.copyright !== false %}
+{#- Post Copyright -#}
+{%- if theme.copyright.enable and page.copyright !== false -%}
   <div class="post-copyright">
     <p class="copyright-item">
       <span>{{ __('copyright.author') + ': ' }}</span>
@@ -11,8 +11,8 @@
     </p>
     <p class="copyright-item">
       <span>{{ __('copyright.license') + ': ' }}</span>
-      {% set license = page.license || theme.copyright.license %}
+      {%- set license = page.license || theme.copyright.license -%}
       {{ license }}
     </p>
   </div>
-{% endif %}
+{%- endif -%}

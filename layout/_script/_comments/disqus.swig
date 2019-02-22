@@ -1,4 +1,4 @@
-{% if theme.disqus_shortname %}
+{%- if theme.disqus_shortname -%}
   <script type="text/javascript">
     var disqus_config = function () {
         this.page.url = '{{ page.permalink }}';
@@ -14,4 +14,4 @@
     (d.head || d.body).appendChild(s);
     })();  
   </script>
-{% endif %}
+{%- endif -%}

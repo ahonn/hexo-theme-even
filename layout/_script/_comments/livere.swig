@@ -1,4 +1,4 @@
-{% if theme.livere_datauid %}
+{%- if theme.livere_datauid -%}
    <script type="text/javascript">
 	(function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
@@ -12,4 +12,4 @@
        e.parentNode.insertBefore(j, e);
    })(document, 'script');
   </script>
-{% endif %}
+{%- endif -%}

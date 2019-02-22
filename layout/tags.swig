@@ -1,8 +1,8 @@
-{% extends "_layout.swig" %}
+{%- extends "_layout.swig" -%}
 
-{% block title %} {{ __('menu.tags') }} - {{ config.title }} {% endblock %}
+{%- block title -%} {{ __('menu.tags') }} - {{ config.title }} {%- endblock -%}
 
-{% block content %}
+{%- block content -%}
   <div class="tag-cloud">
     <div class="tag-cloud-title">
       {{ _p('counter.tagcloud', site.tags.length) }}
@@ -11,4 +11,4 @@
       {{ tagcloud({min_font: 16, max_font: 28, amount: 100, orderby: 'count'}) }}
     </div>
   </div>
-{% endblock %}
+{%- endblock -%}

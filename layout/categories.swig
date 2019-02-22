@@ -1,8 +1,8 @@
-{% extends "_layout.swig" %}
+{%- extends "_layout.swig" -%}
 
-{% block title %} {{ __('menu.categories') }} - {{ config.title }} {% endblock %}
+{%- block title -%} {{ __('menu.categories') }} - {{ config.title }} {%- endblock -%}
 
-{% block content %}
+{%- block content -%}
   <div class="categories">
     <div class="categories-title">
       {{ _p('counter.categories', site.categories.length) }}
@@ -11,4 +11,4 @@
       {{ list_categories({style: null, separator: ' ', depth: '-1'}) }}
     </div>
   </div>
-{% endblock %}
+{%- endblock -%}
