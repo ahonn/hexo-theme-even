@@ -98,6 +98,14 @@ changyan:
 #LiveRe
 livere_datauid:
 
+# Valine comment https://valine.js.org
+valine:
+  appid:  # your leancloud appid
+  appkey:  # your leancloud appkey
+  notify: false # true/false:mail
+  avatar: mm # avatar style
+  placeholder: Be the first to comment. # comment box placeholder
+
 # ===========================================
 # Version
 # ===========================================
