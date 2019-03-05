@@ -235,7 +235,7 @@
     $(document).on('pjax:complete', function () {
       NProgress.done();
       $('body').removeClass('hide-top');
-      $.fancybox = this._fancybox;
+      $.fancybox = that._fancybox;
       that.setup();
     });
   };
