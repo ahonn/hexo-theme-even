@@ -1,4 +1,4 @@
-{% if theme.baidu_analytics %}
+{%- if theme.baidu_analytics -%}
   <script id="baidu_analytics">
     var _hmt = _hmt || [];
     (function() {
@@ -8,4 +8,4 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-{% endif %}
+{%- endif -%}

@@ -3,20 +3,20 @@
 </div>
 
 <nav class="site-navbar">
-  {% if theme.menu %}
+  {%- if theme.menu -%}
     <ul id="menu" class="menu">
-      {% for name, path in theme.menu %}
+      {%- for name, path in theme.menu -%}
         <li class="menu-item">
           <a class="menu-item-link" href="{{ url_for(path) }}">
-            {% set itemName = __('menu.' + name.toLowerCase()) %}
-            {% if itemName.startsWith('menu') %}
+            {%- set itemName = __('menu.' + name.toLowerCase()) -%}
+            {%- if itemName.startsWith('menu') -%}
               {{ name }}
-            {% else %}
+            {%- else -%}
               {{ itemName }}
-            {% endif %}
+            {%- endif -%}
           </a>
         </li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
-  {% endif %}
+  {%- endif -%}
 </nav>

@@ -1,16 +1,16 @@
-{% extends "_layout.swig" %}
-{% import '_macro/archive.swig' as archive_template %}
+{%- extends "_layout.swig" -%}
+{%- import '_macro/archive.swig' as archive_template -%}
 
-{% block title %}
-  {% if page.archive %}
+{%- block title -%}
+  {%- if page.archive -%}
     {{ __('menu.archives') }} - {{ config.title }}
-  {% elif page.tag %}
+  {%- elif page.tag -%}
     {{ page.tag }} · {{ config.title }}
-  {% elif page.category %}
+  {%- elif page.category -%}
     {{ page.category }} · {{ config.title }}
-  {% endif %}
-{% endblock %}
+  {%- endif -%}
+{%- endblock -%}
 
-{% block content %}
+{%- block content -%}
   {{ archive_template.render() }}
-{% endblock %}
+{%- endblock -%}

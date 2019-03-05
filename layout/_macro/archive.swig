@@ -1,46 +1,46 @@
-{% macro render() %}
-  {% set isArchivesPage = !!page.archive %}
-  {% set isArchivesMode = theme.mode.toLowerCase() == 'archives' %}
+{%- macro render() -%}
+  {%- set isArchivesPage = !!page.archive -%}
+  {%- set isArchivesMode = theme.mode.toLowerCase() == 'archives' -%}
 
   <section id="archive" class="archive">
-    {% if not page.prev %}
-      {% if page.tag %}
+    {%- if not page.prev -%}
+      {%- if page.tag -%}
         <div class="archive-title tag">
           <h2 class="archive-name">{{ page.tag }}</h2>
         </div>
-      {% elif page.category %}
+      {%- elif page.category -%}
         <div class="archive-title category">
           <h2 class="archive-name">{{ page.category }}</h2>
         </div>
-      {% elif isArchivesPage %}
+      {%- elif isArchivesPage -%}
         <div class="archive-title">
           <span class="archive-post-counter">
             {{ _p("counter.archives", site.posts.length) }}
           </span>
         </div>
-      {% endif %}
-    {% endif %}
+      {%- endif -%}
+    {%- endif -%}
 
-    {% for post in page.posts %}
-      {% if isArchivesPage or isArchivesMode %}
-        {% set year %}
-        {% set post.year = date(post.date, 'YYYY') %}
+    {%- for post in page.posts -%}
+      {%- if isArchivesPage or isArchivesMode -%}
+        {%- set year -%}
+        {%- set post.year = date(post.date, 'YYYY') -%}
 
-        {% if post.year !== year %}
-          {% set year = post.year %}
+        {%- if post.year !== year -%}
+          {%- set year = post.year -%}
           <div class="collection-title">
             <h2 class="archive-year">{{ year }}</h2>
           </div>
-        {% endif %}
-      {% endif %}
+        {%- endif -%}
+      {%- endif -%}
 
       <div class="archive-post">
         <span class="archive-post-time">
-          {% if isArchivesPage or isArchivesMode %}
+          {%- if isArchivesPage or isArchivesMode -%}
             {{ date(post.date, 'MM-DD') }}
-          {% else %}
+          {%- else -%}
             {{ date(post.date, 'YYYY-MM-DD') }}
-          {% endif %}
+          {%- endif -%}
         </span>
         <span class="archive-post-title">
           <a href="{{ url_for(post.path) }}" class="archive-post-link">
@@ -48,8 +48,8 @@
           </a>
         </span>
       </div>
-    {% endfor %}
+    {%- endfor -%}
   </section>
 
-  {% include '../_partial/pagination.swig' %}
-{% endmacro %}
+  {%- include '../_partial/pagination.swig' -%}
+{%- endmacro -%}

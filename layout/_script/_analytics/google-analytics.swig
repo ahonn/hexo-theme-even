@@ -1,4 +1,4 @@
-{% if theme.google_analytics %}
+{%- if theme.google_analytics -%}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme.google_analytics }}"></script>
 <script>
@@ -8,4 +8,4 @@
 
   gtag('config', '{{ theme.google_analytics }}');
 </script>
-{% endif %}
+{%- endif -%}
