@@ -78,4 +78,6 @@ theme: even
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  - type: git
+    repo: git@github.com:ahonn/hexo-theme-even.git
+    branch: demo
