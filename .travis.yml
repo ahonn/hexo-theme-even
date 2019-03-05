@@ -7,7 +7,7 @@ branches:
 
 before_install:
   - npm install -g hexo-cli
-  - git clone -b site https://github.com/ahonn/hexo-theme-even.git site
+  - git clone -b site https://github.com/ahonn/hexo-theme-even.git demo-source
   - cd site
   - git clone -b master https://github.com/ahonn/hexo-theme-even.git themes/even
 
