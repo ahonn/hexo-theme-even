@@ -1,0 +1,23 @@
+language: node_js
+node_js: stable
+
+branches:
+  only:
+    - master
+
+before_install:
+  - npm install -g hexo-cli
+  - git clone -b site https://github.com/ahonn/hexo-theme-even.git site
+  - cd site
+  - git clone -b master https://github.com/ahonn/hexo-theme-even.git themes/even
+
+install:
+  - npm install
+
+script:
+  - hexo generate
+
+after_success:
+  - git config --global user.name "ahonn"
+  - git config --global user.email "ahonn95@outlook.com"
+  - hexo deploy
