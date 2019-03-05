@@ -224,6 +224,7 @@
   Even.prototype.pjax = function () {
     if (location.hostname === 'localhost' || this.hasPjax) return;
     this.hasPjax = true;
+    this._fancybox = $.fancybox;
 
     var that = this;
     $(document).pjax('a', 'body', { fragment: 'body' });
@@ -234,6 +235,7 @@
     $(document).on('pjax:complete', function () {
       NProgress.done();
       $('body').removeClass('hide-top');
+      $.fancybox = this._fancybox;
       that.setup();
     });
   };
