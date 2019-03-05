@@ -80,4 +80,4 @@ theme: even
 deploy:
   - type: git
     repo: https://<token>@github.com/ahonn/hexo-theme-even.git
-    branch: demo
+    branch: gh-pages
