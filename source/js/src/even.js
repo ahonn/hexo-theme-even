@@ -225,6 +225,7 @@
     if (location.hostname === 'localhost' || this.hasPjax) return;
     this.hasPjax = true;
     this._fancybox = $.fancybox;
+    this._fancyboxProto = $.prototype.fancybox;
 
     var that = this;
     $(document).pjax('a', 'body', { fragment: 'body' });
@@ -236,6 +237,7 @@
       NProgress.done();
       $('body').removeClass('hide-top');
       $.fancybox = that._fancybox;
+      $.prototype.fancybox = that._fancyboxProto;
       that.setup();
     });
   };
