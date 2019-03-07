@@ -14,7 +14,7 @@ A super simple theme for Hexo
 - 支持 Fancybox
 - 版权信息，自定义许可协议
 - 文章打赏，添加二维码
-- 支持 LaTeX（使用 MathJax），默认开启
+- 支持 LaTeX（使用 MathJax），可在 _config.yml 中开启
 
 ## Screenshots
 ![even-screenshots](http://ouv0frko5.bkt.clouddn.com/blog/6n2zu.png)

@@ -40,7 +40,7 @@ fancybox: true
 pjax: true
 
 # LaTeX support (via MathJax)
-latex: true
+latex: false
 
 copyright:
   enable: true
