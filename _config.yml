@@ -39,6 +39,9 @@ fancybox: true
 
 pjax: true
 
+# LaTeX support (via MathJax)
+latex: true
+
 copyright:
   enable: true
   # https://creativecommons.org/
