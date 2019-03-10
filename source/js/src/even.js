@@ -198,7 +198,7 @@
         }
       }, function (error) {
         // eslint-disable-next-line
-        console.log('Error:' + error.code + " " + error.message);
+        console.log('Error:' + error.code + ' ' + error.message);
       });
     }
 
@@ -218,7 +218,7 @@
           }
         }, function (error) {
           // eslint-disable-next-line
-          console.log('Error:' + error.code + " " + error.message);
+          console.log('Error:' + error.code + ' ' + error.message);
         });
       })
     }
@@ -265,8 +265,8 @@
     var loopID = setInterval(function () {
       if(window.MathJax) {
         var jax = window.MathJax;
-        jax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }});
-        jax.Hub.Queue(["Typeset", jax.Hub, $(document.body)[0]]);
+        jax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] }});
+        jax.Hub.Queue(['Typeset', jax.Hub, $(document.body)[0]]);
         clearInterval(loopID);
       }
     }, 500);
