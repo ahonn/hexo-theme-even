@@ -7,7 +7,7 @@ A super simple theme for Hexo
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
 
 ## Demo
-[在线预览 Demo](http://ahonn.github.io/)
+[在线预览 Demo](http://ahonn.github.io/hexo-theme-even)
 
 ## Feature
 - 自定义样式
