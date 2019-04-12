@@ -109,11 +109,10 @@
     var $toclink = $('.toc-link'),
       $headerlink = $('.headerlink');
 
-    var headerlinkTop = $.map($headerlink, function (link) {
-      return $(link).offset().top;
-    });
-
     $(window).scroll(function () {
+      var headerlinkTop = $.map($headerlink, function (link) {
+        return $(link).offset().top;
+      });
       var scrollTop = $(window).scrollTop();
 
       for (var i = 0; i < $toclink.length; i++) {
