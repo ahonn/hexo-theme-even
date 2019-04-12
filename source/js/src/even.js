@@ -111,7 +111,7 @@
 
     $(window).scroll(function () {
       var headerlinkTop = $.map($headerlink, function (link) {
-        return $(link).offset().top;
+        return $(window).scrollTop() + $(link).offset().top;
       });
       var scrollTop = $(window).scrollTop();
 
