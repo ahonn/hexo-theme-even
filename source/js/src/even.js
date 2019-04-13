@@ -106,14 +106,15 @@
 
   Even.prototype.tocFollow = function () {
     var HEADERFIX = 30;
-    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+    var isFirefox = /firefox/i.test(navigator.userAgent);
+    var isEdge = /edge/i.test(navigator.userAgent);
     var $toclink = $('.toc-link'),
       $headerlink = $('.headerlink');
 
     $(window).scroll(function () {
       var scrollTop = $(window).scrollTop();
       var headerlinkTop = $.map($headerlink, function (link) {
-        if(isFirefox) {
+        if(isFirefox || isEdge) {
           return $(link).offset().top;
         }
         return scrollTop + $(link).offset().top;
