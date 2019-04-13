@@ -106,18 +106,17 @@
 
   Even.prototype.tocFollow = function () {
     var HEADERFIX = 30;
-    var isFirefox = /firefox/i.test(navigator.userAgent);
-    var isEdge = /edge/i.test(navigator.userAgent);
+    var isWebKit = /AppleWebKit/i.test(navigator.userAgent);
     var $toclink = $('.toc-link'),
       $headerlink = $('.headerlink');
 
     $(window).scroll(function () {
       var scrollTop = $(window).scrollTop();
       var headerlinkTop = $.map($headerlink, function (link) {
-        if(isFirefox || isEdge) {
-          return $(link).offset().top;
+        if(isWebKit) {
+          return scrollTop + $(link).offset().top;
         }
-        return scrollTop + $(link).offset().top;
+        return $(link).offset().top;
       });
 
       for (var i = 0; i < $toclink.length; i++) {
