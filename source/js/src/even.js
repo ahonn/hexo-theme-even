@@ -110,10 +110,10 @@
       $headerlink = $('.headerlink');
 
     $(window).scroll(function () {
-      var headerlinkTop = $.map($headerlink, function (link) {
-        return $(window).scrollTop() + $(link).offset().top;
-      });
       var scrollTop = $(window).scrollTop();
+      var headerlinkTop = $.map($headerlink, function (link) {
+        return scrollTop + $(link).offset().top;
+      });
 
       for (var i = 0; i < $toclink.length; i++) {
         var isLastOne = i + 1 === $toclink.length,
