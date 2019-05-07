@@ -19,9 +19,9 @@ rss: default
 menu:
   Home: /
   # Archives: /archives/
-  # Tags: /tags
-  # Categories: /categories
-  # About: /about
+  # Tags: /tags/
+  # Categories: /categories/
+  # About: /about/
 
 # ===========================================
 # Theme Settings
