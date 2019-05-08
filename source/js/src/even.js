@@ -106,18 +106,14 @@
 
   Even.prototype.tocFollow = function () {
     var HEADERFIX = 30;
-    var isWebKit = /AppleWebKit/i.test(navigator.userAgent);
     var $toclink = $('.toc-link'),
       $headerlink = $('.headerlink');
 
     $(window).scroll(function () {
-      var scrollTop = $(window).scrollTop();
       var headerlinkTop = $.map($headerlink, function (link) {
-        if(isWebKit) {
-          return scrollTop + $(link).offset().top;
-        }
         return $(link).offset().top;
       });
+      var scrollTop = $(window).scrollTop();
 
       for (var i = 0; i < $toclink.length; i++) {
         var isLastOne = i + 1 === $toclink.length,
