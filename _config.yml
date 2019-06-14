@@ -18,10 +18,10 @@ rss: default
 # ===========================================
 menu:
   Home: /
-  # Archives: /archives/
+  Archives: /archives/
   # Tags: /tags/
   # Categories: /categories/
-  # About: /about/
+  About: /about/
 
 # ===========================================
 # Theme Settings
@@ -57,15 +57,15 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: jing-sam@qq.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: https://github.com/ahonn
-  weibo:
-  zhihu:
+  github: https://github.com/jingsam
+  weibo: http://weibo.com/u/1902650267
+  zhihu: https://www.zhihu.com/people/jingsam
   douban:
   pocket:
   tumblr:
@@ -91,7 +91,7 @@ google_analytics:
 google_verification:
 
 # Disqus
-disqus_shortname:
+disqus_shortname: jingsam
 
 #Changyan
 changyan:
