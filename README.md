@@ -16,7 +16,7 @@ A super simple theme for Hexo
 - 文章打赏，添加二维码
 
 ## Screenshots
-![even-screenshots](http://ouv0frko5.bkt.clouddn.com/blog/6n2zu.png)
+![even-screenshots](https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/55iw9.png)
 
 ## Installation
 ```bash
