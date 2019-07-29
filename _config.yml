@@ -19,9 +19,9 @@ rss: default
 menu:
   Home: /
   # Archives: /archives/
-  # Tags: /tags
-  # Categories: /categories
-  # About: /about
+  # Tags: /tags/
+  # Categories: /categories/
+  # About: /about/
 
 # ===========================================
 # Theme Settings
@@ -38,6 +38,9 @@ toc: true
 fancybox: true
 
 pjax: true
+
+# LaTeX support (via MathJax)
+latex: false
 
 copyright:
   enable: true

@@ -28,6 +28,14 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/nprogress/nprogress.min.css') }}" />
 {%- endif -%}
 
+{#- MathJax (LaTeX) support -#}
+{%- if theme.latex -%}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+{%- endif -%}
+
 {#- Theme styling -#}
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 
@@ -40,7 +48,7 @@
 {#- LeanCloud Counter -#}
 {%- include "../_script/counter.swig"%}
 
-{%- set themeConfig = { leancloud: theme.leancloud, toc: theme.toc, fancybox: theme.fancybox, pjax: theme.pjax} -%}
+{%- set themeConfig = { leancloud: theme.leancloud, toc: theme.toc, fancybox: theme.fancybox, pjax: theme.pjax, latex: theme.latex } -%}
 <script>
   window.config = {{ JSON.stringify(themeConfig) }};
 </script>

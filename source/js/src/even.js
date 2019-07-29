@@ -24,6 +24,9 @@
     if (this.config.pjax) {
       this.pjax();
     }
+    if(this.config.latex) {
+      this.renderLaTeX();
+    }
     this.backToTop();
   };
 
@@ -106,11 +109,10 @@
     var $toclink = $('.toc-link'),
       $headerlink = $('.headerlink');
 
-    var headerlinkTop = $.map($headerlink, function (link) {
-      return $(link).offset().top;
-    });
-
     $(window).scroll(function () {
+      var headerlinkTop = $.map($headerlink, function (link) {
+        return $(link).offset().top;
+      });
       var scrollTop = $(window).scrollTop();
 
       for (var i = 0; i < $toclink.length; i++) {
@@ -195,7 +197,7 @@
         }
       }, function (error) {
         // eslint-disable-next-line
-        console.log('Error:' + error.code + " " + error.message);
+        console.log('Error:' + error.code + ' ' + error.message);
       });
     }
 
@@ -215,7 +217,7 @@
           }
         }, function (error) {
           // eslint-disable-next-line
-          console.log('Error:' + error.code + " " + error.message);
+          console.log('Error:' + error.code + ' ' + error.message);
         });
       })
     }
@@ -257,6 +259,17 @@
       $('body,html').animate({ scrollTop: 0 });
     });
   };
+
+  Even.prototype.renderLaTeX = function () {
+    var loopID = setInterval(function () {
+      if(window.MathJax) {
+        var jax = window.MathJax;
+        jax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] }});
+        jax.Hub.Queue(['Typeset', jax.Hub, $(document.body)[0]]);
+        clearInterval(loopID);
+      }
+    }, 500);
+  }
 
   var config = window.config;
   var even = new Even(config);

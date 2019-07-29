@@ -7,8 +7,8 @@ branches:
 
 before_install:
   - npm install -g hexo-cli
-  - git clone -b site https://github.com/ahonn/hexo-theme-even.git site
-  - cd site
+  - git clone -b demo-source https://github.com/ahonn/hexo-theme-even.git demo
+  - cd demo
   - git clone -b master https://github.com/ahonn/hexo-theme-even.git themes/even
 
 install:
@@ -20,4 +20,5 @@ script:
 after_success:
   - git config --global user.name "ahonn"
   - git config --global user.email "ahonn95@outlook.com"
+  - sed -i "s/<token>/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy

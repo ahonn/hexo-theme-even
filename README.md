@@ -7,13 +7,14 @@ A super simple theme for Hexo
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
 
 ## Demo
-[在线预览 Demo](http://ahonn.github.io/)
+[在线预览 Demo](http://ahonn.github.io/hexo-theme-even)
 
 ## Feature
 - 自定义样式
 - 支持 Fancybox
 - 版权信息，自定义许可协议
 - 文章打赏，添加二维码
+- 支持 LaTeX（使用 MathJax）
 
 ## Screenshots
 ![even-screenshots](https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/55iw9.png)
