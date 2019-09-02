@@ -23,6 +23,8 @@ A super simple theme for Hexo
 ```bash
 $ npm install hexo-renderer-scss --save
 $ git clone https://github.com/ahonn/hexo-theme-even themes/even
+$ cd themes/even
+$ cp _config.yml.example _config.yml
 ```
 
 修改配置文件中的 `theme` 字段为 `even`:
