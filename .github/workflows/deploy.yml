@@ -9,28 +9,27 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout branch
+        uses: actions/checkout@master
+        with:
+          ref: demo-source
       - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@master
         with:
           node-version: '10.x'
-      - name: prepare
+      - name: Prepare source
         run: |
-          git clone -b demo-source https://github.com/ahonn/hexo-theme-even.git demo
-          cd demo
           git clone -b master https://github.com/ahonn/hexo-theme-even.git themes/even
           cp themes/even/_config.yml.example themes/even/_config.yml
           npm install
-      - name: generate
+      - name: Run hexo generate
         run: |
-          cd demo
           npm i -g hexo-cli
           hexo generate
-      - name: deploy
+      - name: Run hexo deploy
         env:
           GH_DEPLOY_TOKEN: ${{secrets.GH_DEPLOY_TOKEN}}
         run: |
-          cd demo
           git config --global user.name 'ahonn'
           git config --global user.email 'ahonn95@outlook.com'
           sed -i "s/<token>/${GH_DEPLOY_TOKEN}/g" ./_config.yml
