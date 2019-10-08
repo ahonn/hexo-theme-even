@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/ahonn/hexo-theme-even#readme",
   "devDependencies": {
-    "eslint": "^3.12.0"
+    "eslint": "^6.5.1"
   }
 }
