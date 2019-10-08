@@ -1,23 +1,16 @@
 # hexo-theme-even
 A super simple theme for Hexo
 
-[![GitHub stars](https://img.shields.io/github/stars/ahonn/hexo-theme-even.svg)](https://github.com/ahonn/hexo-theme-even/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/ahonn/hexo-theme-even.svg)](https://github.com/ahonn/hexo-theme-even/network)
-[![GitHub issues](https://img.shields.io/github/issues/ahonn/hexo-theme-even.svg)](https://github.com/ahonn/hexo-theme-even/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
-
-## Demo
-[在线预览 Demo](http://ahonn.github.io/hexo-theme-even)
-
-## Feature
-- 自定义样式
-- 支持 Fancybox
-- 版权信息，自定义许可协议
-- 文章打赏，添加二维码
-- 支持 LaTeX（使用 MathJax）
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![GitHub stars](https://img.shields.io/github/stars/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/network)
+[![GitHub issues](https://img.shields.io/github/issues/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
 
 ## Screenshots
 ![even-screenshots](https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/55iw9.png)
+
+[🔯 Live Preview](https://ahonn.github.io/hexo-theme-even/)
 
 ## Installation
 ```bash
@@ -26,7 +19,7 @@ $ git clone https://github.com/ahonn/hexo-theme-even themes/even
 $ cp themes/even/_config.yml.example themes/even/_config.yml
 ```
 
-修改配置文件中的 `theme` 字段为 `even`:
+Modify `yoursite/_config.yml`:
 
 ```yaml
 # Extensions
@@ -35,4 +28,34 @@ $ cp themes/even/_config.yml.example themes/even/_config.yml
 theme: even
 ```
 
-更多主题设置，查看 [Document](https://github.com/ahonn/hexo-theme-even/wiki)
+For more options, check out the [document](https://github.com/ahonn/hexo-theme-even/wiki)
+
+## Update
+You can update to latest master branch by the following command:
+
+```base
+$ cd themes/even
+$ git pull
+```
+
+## Contributing
+Contribution is welcome, feel free to open an issue or pull request.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.ahonn.me"><img src="https://avatars3.githubusercontent.com/u/9718515?v=4" width="60px;" alt="Yuexun Jiang"/><br /><sub><b>Yuexun Jiang</b></sub></a><br /><a href="https://github.com/ahonn/hexo-theme-even/commits?author=ahonn" title="Code">💻</a> <a href="https://github.com/ahonn/hexo-theme-even/commits?author=ahonn" title="Documentation">📖</a> <a href="#design-ahonn" title="Design">🎨</a> <a href="#ideas-ahonn" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

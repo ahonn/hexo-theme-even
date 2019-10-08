@@ -1,0 +1,27 @@
+{
+  "projectName": "hexo-theme-even",
+  "projectOwner": "ahonn",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "ahonn",
+      "name": "Yuexun Jiang",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9718515?v=4",
+      "profile": "https://www.ahonn.me",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
