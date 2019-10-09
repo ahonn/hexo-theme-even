@@ -1,0 +1,41 @@
+menu:
+  home: 首頁
+  archives: 歸檔
+  tags: 標籤
+  categories: 分類
+  about: 關於
+
+footer:
+  powered: "由 %s 技術提供"
+  theme: 主題
+
+posts:
+  prev: 上一頁
+  next: 下一頁
+  prev_post: 上一篇
+  next_post: 下一篇
+  toc: 文章目錄
+  readmore: 閱讀更多
+  visits: '閱讀次數'
+  reward: '讚賞支持'
+
+copyright:
+  author: '原文作者'
+  link: '原文鏈結'
+  license: '授權'
+
+counter:
+  archives:
+    zero: 暫無文章
+    one: 目前總計 1 篇文章
+    other: "目前總計 %d 篇文章"
+
+  tagcloud:
+    zero: 暫無文章
+    one: 目前總計 1 個標籤
+    other: "目前總計 %d 個標籤"
+
+  categories:
+    zero:  暫無分類
+    one: 目前總計 1 個分類
+    other: "目前總計 %d 個分類"
