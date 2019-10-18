@@ -4,6 +4,7 @@ on:
   push:
    branches:
     - master
+    - demo-source
 
 jobs:
   build:
