@@ -21,9 +21,6 @@
     if (leancloud.app_id && leancloud.app_key) {
       this.recordReadings();
     }
-    if (this.config.pjax) {
-      this.pjax();
-    }
     if(this.config.latex) {
       this.renderLaTeX();
     }
@@ -221,27 +218,6 @@
         });
       })
     }
-  };
-
-  Even.prototype.pjax = function () {
-    if (location.hostname === 'localhost' || this.hasPjax) return;
-    this.hasPjax = true;
-    this._fancybox = $.fancybox;
-    this._fancyboxProto = $.prototype.fancybox;
-
-    var that = this;
-    $(document).pjax('a', 'body', { fragment: 'body' });
-    $(document).on('pjax:send', function () {
-      NProgress.start();
-      $('body').addClass('hide-top');
-    });
-    $(document).on('pjax:complete', function () {
-      NProgress.done();
-      $('body').removeClass('hide-top');
-      $.fancybox = that._fancybox;
-      $.prototype.fancybox = that._fancyboxProto;
-      that.setup();
-    });
   };
 
   Even.prototype.backToTop = function () {
