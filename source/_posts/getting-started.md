@@ -1,5 +1,5 @@
 ---
-title: Getting Start
+title: Getting Started
 tags:
   - Documents
 ---
