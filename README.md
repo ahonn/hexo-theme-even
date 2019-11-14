@@ -1,7 +1,7 @@
 # hexo-theme-even
 A super simple theme for Hexo
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![Financial Contributors on Open Collective](https://opencollective.com/hexo-theme-even/all/badge.svg?label=financial+contributors)](https://opencollective.com/hexo-theme-even) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 [![GitHub stars](https://img.shields.io/github/stars/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/network)
 [![GitHub issues](https://img.shields.io/github/issues/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/issues)
@@ -59,3 +59,33 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/ahonn/hexo-theme-even/graphs/contributors"><img src="https://opencollective.com/hexo-theme-even/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/hexo-theme-even/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/hexo-theme-even"><img src="https://opencollective.com/hexo-theme-even/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/hexo-theme-even/contribute)]
+
+<a href="https://opencollective.com/hexo-theme-even/organization/0/website"><img src="https://opencollective.com/hexo-theme-even/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/1/website"><img src="https://opencollective.com/hexo-theme-even/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/2/website"><img src="https://opencollective.com/hexo-theme-even/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/3/website"><img src="https://opencollective.com/hexo-theme-even/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/4/website"><img src="https://opencollective.com/hexo-theme-even/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/5/website"><img src="https://opencollective.com/hexo-theme-even/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/6/website"><img src="https://opencollective.com/hexo-theme-even/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/7/website"><img src="https://opencollective.com/hexo-theme-even/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/8/website"><img src="https://opencollective.com/hexo-theme-even/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/hexo-theme-even/organization/9/website"><img src="https://opencollective.com/hexo-theme-even/organization/9/avatar.svg"></a>
