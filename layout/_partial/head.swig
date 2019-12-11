@@ -23,11 +23,6 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
 {%- endif -%}
 
-{#- Nprogress styling -#}
-{%- if theme.pjax -%}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('lib/nprogress/nprogress.min.css') }}" />
-{%- endif -%}
-
 {#- MathJax (LaTeX) support -#}
 {%- if theme.latex -%}
   <script type="text/x-mathjax-config">

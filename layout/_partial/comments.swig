@@ -11,6 +11,8 @@
       <div id="lv-container" data-id="city" data-uid="{{ theme.livere_datauid }}">
         <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
       </div>  
+    {%- elif theme.gitalk.enable -%}
+      <div id="gitalk-container"></div>
     {%- endif -%}
   </div>
 {%- endif -%}

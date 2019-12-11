@@ -1,0 +1,37 @@
+name: deploy
+
+on:
+  push:
+   branches:
+    - master
+    - demo-source
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@master
+        with:
+          ref: demo-source
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@master
+        with:
+          node-version: '10.x'
+      - name: Prepare source
+        run: |
+          git clone -b master https://github.com/ahonn/hexo-theme-even.git themes/even
+          cp themes/even/_config.yml.example themes/even/_config.yml
+          npm install
+      - name: Run hexo generate
+        run: |
+          npm i -g hexo-cli
+          hexo generate
+      - name: Run hexo deploy
+        env:
+          GH_DEPLOY_TOKEN: ${{secrets.GH_DEPLOY_TOKEN}}
+        run: |
+          git config --global user.name 'ahonn'
+          git config --global user.email 'ahonn95@outlook.com'
+          sed -i "s/<token>/${GH_DEPLOY_TOKEN}/g" ./_config.yml
+          hexo deploy

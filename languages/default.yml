@@ -1,40 +1,41 @@
 menu:
-  home: 首页
-  archives: 归档
-  tags: 标签
-  categories: 分类
-  about: 关于
+  home: Home
+  archives: Archives
+  tags: Tags
+  categories: Categories
+  about: About
 
 footer:
-  powered: "由 %s 强力驱动"
-  theme: 主题
+  powered: "Powered by %s"
+  theme: Theme
 
 posts:
-  prev: 上一页
-  next: 下一页
-  prev_post: 上一篇
-  next_post: 下一篇
-  toc: 文章目录
-  readmore: 阅读更多
-  reward: '赞赏支持'
+  prev: Prev
+  next: Next
+  prev_post: Prev
+  next_post: Next
+  toc: Contents
+  readmore: Read more..
+  visits: Visits
+  reward: 'Reward'
 
 copyright:
-  author: '原文作者'
-  link: '原文链接'
-  license: '许可协议'
+  author: 'Author'
+  link: 'Link'
+  license: 'License'
 
 counter:
   archives:
-    zero: 暂无日志
-    one: 目前共计 1 篇日志
-    other: "目前共计 %d 篇日志"
+    zero: No Posts
+    one: 1 Post
+    other: "%d Posts In Total"
 
   tagcloud:
-    zero: 暂无标签
-    one: 目前共计 1 个标签
-    other: "目前共计 %d 个标签"
+    zero: No tags
+    one: 1 Tag In Total
+    other: "%d Tags In Total"
 
   categories:
-    zero:  暂无分类
-    one: 目前共计 1 个分类
-    other: "目前共计 %d 个分类"
+    zero: No Categories
+    one: 1 Category In Total
+    other: "%d Categories In Total"
