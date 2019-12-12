@@ -18,10 +18,10 @@ rss: default
 # ===========================================
 menu:
   Home: /
-  # Archives: /archives/
+  Archives: /archives/
   # Tags: /tags/
   # Categories: /categories/
-  # About: /about/
+  About: /about/
 
 # ===========================================
 # Theme Settings
@@ -38,7 +38,7 @@ toc: true
 fancybox: true
 
 # LaTeX support (via MathJax)
-latex: false
+latex: true
 
 copyright:
   enable: true
@@ -55,15 +55,15 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: jing-sam@qq.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: https://github.com/ahonn
-  weibo:
-  zhihu:
+  github: https://github.com/jingsam
+  weibo: http://weibo.com/u/1902650267
+  zhihu: https://www.zhihu.com/people/jingsam
   douban:
   pocket:
   tumblr:
@@ -89,7 +89,7 @@ google_analytics:
 google_verification:
 
 # Disqus
-disqus_shortname:
+disqus_shortname: 
 
 #Changyan
 changyan:
@@ -114,6 +114,14 @@ gitalk:
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
   language:
+
+# utterances
+utterances:
+  enable: true
+  repo: jingsam/jingsam.github.io
+  issueTerm: title
+  theme: github-light
+  label: utterances
 
 # ===========================================
 # Version

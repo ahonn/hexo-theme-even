@@ -13,6 +13,8 @@
       </div>  
     {%- elif theme.gitalk.enable -%}
       <div id="gitalk-container"></div>
+    {%- elif theme.utterances.enable -%}
+      <div id="utterances-container"></div>
     {%- endif -%}
   </div>
 {%- endif -%}
