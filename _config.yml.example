@@ -115,6 +115,16 @@ gitalk:
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
   language:
 
+# utterances
+# Docs: https://utteranc.es/
+# Tips: Make sure you have installed [utterances app](https://github.com/apps/utterances) in your repo
+utterances:
+  enable: false
+  repo: owner/repo # Repository
+  issueTerm: title  # Blog post ↔️ issue mapping: pathname | url | title | og:title
+  theme: github-light # Theme: github-light | github-dark | github-dark-orange | icy-dark | dark-blue | photon-dark
+  label: utterances # Issue label
+
 # ===========================================
 # Version
 # ===========================================
