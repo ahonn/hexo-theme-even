@@ -3,7 +3,7 @@
 // ==============================
 
 .header {
-  @include clearfix; 
+  @include clearfix;
   padding: $header-padding;
 
   @import '_header/logo';

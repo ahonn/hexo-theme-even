@@ -36,13 +36,12 @@
   @keyframes clickfirst {
     0% {
       transform: translateY(6px) rotate(0deg);
-      
     }
 
     100% {
       transform: translateY(0) rotate(45deg);
     }
-  }	
+  }
 
   @keyframes clickmid {
     0% {
@@ -63,7 +62,7 @@
       transform: translateY(0) rotate(-45deg);
     }
   }
-  
+
   @keyframes outfirst {
     0% {
       transform: translateY(0) rotate(-45deg);
@@ -72,7 +71,7 @@
     100% {
       transform: translateY(-6px) rotate(0deg);
     }
-  }	
+  }
 
   @keyframes outmid {
     0% {
@@ -101,7 +100,7 @@
     width: 20px;
     height: 1px;
     background-color: $theme-color;
-  
+
     &:nth-child(1) {
       transform: translateY(6px) rotate(0deg);
     }
