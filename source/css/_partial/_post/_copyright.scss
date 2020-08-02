@@ -5,6 +5,9 @@
 
   .copyright-item {
     margin: 5px 0;
+    word-break: normal;
+    white-space: pre-warp;
+    word-wrap: break-word;
 
     a {
       color: $theme-color;
