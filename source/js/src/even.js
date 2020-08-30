@@ -197,23 +197,27 @@
     }
 
     function showTime(Counter) {
+      let index = 0;
       $visits.each(function () {
         var $this = $(this);
-        var query = new AV.Query(Counter);
-        var url = $this.data('url').trim();
-
-        query.equalTo('url', url);
-        query.find().then(function (results) {
-          if (results.length === 0) {
-            updateVisits($this, 0);
-          } else {
-            var counter = results[0];
-            updateVisits($this, counter.get('time'));
-          }
-        }, function (error) {
-          // eslint-disable-next-line
-          console.log('Error:' + error.code + ' ' + error.message);
-        });
+        setTimeout(
+          function() {
+            var query = new AV.Query(Counter);
+            var url = $this.data('url').trim();
+    
+            query.equalTo('url', url);
+            query.find().then(function (results) {
+              if (results.length === 0) {
+                updateVisits($this, 0);
+              } else {
+                var counter = results[0];
+                updateVisits($this, counter.get('time'));
+              }
+            }, function (error) {
+              // eslint-disable-next-line
+              console.log('Error:' + error.code + ' ' + error.message);
+            });
+          }, 100*(index++));     
       })
     }
   };
