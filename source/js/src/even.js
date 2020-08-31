@@ -87,13 +87,17 @@
         } else {
           $toc.css(tocState.process);
           
-          if($('.toc-link.active').offset() != undefined && $('.toc-link.active').offset().top - document.documentElement.scrollTop > window.innerHeight*1/2){
-            $('.post-toc').offset({top:Math.min($footer.offset().top - $toc.height()- SPACING,window.innerHeight*1/2 + document.documentElement.scrollTop - ($('.toc-link.active').offset().top - $('.post-toc').offset().top))});
+          var maxTocTop = $footer.offset().top - $toc.height() - SPACING;
+          var tocCenterThreshold = document.documentElement.scrollTop + window.innerHeight / 2;
+          if ($(".toc-link.active").offset() != undefined && $(".toc-link.active").offset().top > tocCenterThreshold) {
+            var distanceBetween = $(".post-toc").offset().top - $(".toc-link.active").offset().top;
+            $(".post-toc").offset({
+                top: Math.min(maxTocTop, tocCenterThreshold + distanceBetween),
+            });
           }
-          if($footer.offset().top <$('.post-toc').offset().top + $toc.height() + SPACING){
-            $('.post-toc').offset({top:$footer.offset().top- $toc.height()-SPACING});
+          if (maxTocTop < $(".post-toc").offset().top) {
+            $(".post-toc").offset({ top: maxTocTop });
           }
-          //   $('.toc').offset({top:window.innerHeight/2 + document.documentElement.scrollTop - ($('.toc-link.active').offset().top - $('.toc').offset().top)});
         }
       })
     }
