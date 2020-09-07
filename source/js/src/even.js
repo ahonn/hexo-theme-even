@@ -87,16 +87,18 @@
         } else {
           $toc.css(tocState.process);
           
-          var maxTocTop = $footer.offset().top - $toc.height() - SPACING;
-          var tocCenterThreshold = document.documentElement.scrollTop + window.innerHeight / 2;
-          if ($(".toc-link.active").offset() != undefined && $(".toc-link.active").offset().top > tocCenterThreshold) {
-            var distanceBetween = $(".post-toc").offset().top - $(".toc-link.active").offset().top;
-            $(".post-toc").offset({
-                top: Math.min(maxTocTop, tocCenterThreshold + distanceBetween),
-            });
-          }
-          if (maxTocTop < $(".post-toc").offset().top) {
-            $(".post-toc").offset({ top: maxTocTop });
+          if($(".post-toc").css("display") != "none"){
+            var maxTocTop = $footer.offset().top - $toc.height() - SPACING;
+            var tocCenterThreshold = document.documentElement.scrollTop + window.innerHeight / 2;
+            if ($(".toc-link.active").offset() != undefined && $(".toc-link.active").offset().top > tocCenterThreshold) {
+              var distanceBetween = $(".post-toc").offset().top - $(".toc-link.active").offset().top;
+              $(".post-toc").offset({
+                  top: Math.min(maxTocTop, tocCenterThreshold + distanceBetween),
+              });
+            }
+            if (maxTocTop < $(".post-toc").offset().top) {
+              $(".post-toc").offset({ top: maxTocTop });
+            }
           }
         }
       })
