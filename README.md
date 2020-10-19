@@ -13,7 +13,7 @@ A super simple theme for Hexo
 
 ## Installation
 ```bash
-$ npm install hexo-renderer-scss --save
+$ npm install hexo-renderer-scss hexo-renderer-swig --save
 $ git clone https://github.com/ahonn/hexo-theme-even themes/even
 $ cp themes/even/_config.yml.example themes/even/_config.yml
 ```
