@@ -203,28 +203,25 @@
     }
 
     function showTime(Counter) {
-      let index = 0;
-      $visits.each(function () {
-        var $this = $(this);
-        setTimeout(
-          function() {
-            var query = new AV.Query(Counter);
-            var url = $this.data('url').trim();
-    
-            query.equalTo('url', url);
-            query.find().then(function (results) {
-              if (results.length === 0) {
-                updateVisits($this, 0);
-              } else {
-                var counter = results[0];
-                updateVisits($this, counter.get('time'));
-              }
-            }, function (error) {
-              // eslint-disable-next-line
-              console.log('Error:' + error.code + ' ' + error.message);
-            });
-          }, 100*(index++));     
-      })
+      const urls = [];
+      const counterDict = {};
+      $visits.each((i, item) => {
+        urls.push(decodeURI($(item).data('url').trim()));
+      });
+
+      var query = new AV.Query("Counter");
+      query.containedIn('url', urls);
+      query.find().then((rlt) => {
+        rlt.forEach((rlt) => {
+          counterDict[rlt.get('url')] = rlt.get('time');
+        });
+
+        $visits.each((i, item) => {
+          let title = decodeURI($(item).data('url').trim());
+          let count = counterDict[title] || 0
+          updateVisits($(item), count);
+        });
+      });
     }
   };
 
