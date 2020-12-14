@@ -13,6 +13,11 @@
         <span class="post-time">
           {{ full_date(post.date, 'YYYY-MM-DD') }}
         </span>
+        {%- if post.author -%}
+        <span class="post-author">
+          / {{ post.author }}
+        </span>
+        {%- endif -%}
         {%- if post.categories and post.categories.length -%}
           <span class="post-category">
             {%- for category in post.categories -%}
