@@ -15,6 +15,14 @@
       <div id="gitalk-container"></div>
     {%- elif theme.utterances.enable -%}
       <div id="utterances-container"></div>
+    {%- elif theme.cusdis.app_id -%}
+      <div id="cusdis_thread"
+        data-host="{{ theme.cusdis.host || 'https://cusdis.com' }}"
+        data-app-id="{{ theme.cusdis.app_id }}"
+        data-page-id="{{ page.path }}"
+        data-page-url="{{ page.permalink }}"
+        data-page-title="{{ page.title }}"
+      ></div>
     {%- endif -%}
   </div>
 {%- endif -%}
