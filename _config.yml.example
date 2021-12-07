@@ -83,6 +83,9 @@ baidu_analytics:
 # Baidu Verification
 baidu_verification:
 
+# Baidu push
+baidu_push:
+
 # Google Analytics
 google_analytics:
 # Google Verification
@@ -128,4 +131,4 @@ utterances:
 # ===========================================
 # Version
 # ===========================================
-version: 2.11.0
+version: 2.11.1
