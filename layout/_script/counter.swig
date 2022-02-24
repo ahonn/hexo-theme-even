@@ -1,10 +1,10 @@
 {%- if theme.leancloud.app_id and theme.leancloud.app_key -%}
-  <script src="//cdn1.lncld.net/static/js/3.1.1/av-min.js"></script>
+  <script src="//rawforcorvofeng.cn/leancloud-storage%404.12.2/dist/av-min.js"></script>
   <script id="leancloud">
     AV.init({
+      serverURL: "{{ theme.leancloud.serverURL}}",
       appId: "{{ theme.leancloud.app_id }}",
       appKey: "{{ theme.leancloud.app_key }}"
     });
   </script>
 {%- endif -%}
-
