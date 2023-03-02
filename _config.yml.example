@@ -77,6 +77,8 @@ social:
 leancloud:
   app_id:
   app_key:
+  server_url:
+  cdn:
 
 # Baidu Analytics
 baidu_analytics:
@@ -131,4 +133,4 @@ utterances:
 # ===========================================
 # Version
 # ===========================================
-version: 2.11.1
+version: 2.11.2
