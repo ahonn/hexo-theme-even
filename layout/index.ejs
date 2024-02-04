@@ -1,0 +1,11 @@
+<section id="posts" class="posts">
+  <% var mode = theme.mode.toLowerCase(); %>
+  <% if (mode == 'default') { %>
+  <% page.posts.each(function(post) { %>
+  <%- partial('_macro/post.ejs', {post: post}) %>
+  <% }); %>
+  <%- partial("_partial/pagination.ejs") %>
+  <% } else { %>
+  <%- partial('_macro/archive.ejs') %>
+  <% } %>
+</section>

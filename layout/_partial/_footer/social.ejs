@@ -1,0 +1,23 @@
+<% if (theme.social) { %>
+<div class="social-links">
+  <% for (var name in theme.social) { %>
+  <% var path = theme.social[name]; %>
+  <% if (path) { %>
+  <% if (name !== 'email') { %>
+  <a href="<%- url_for(path) %>" class="iconfont icon-<%- name %>" title="<%- name %>"></a>
+  <% } else { %>
+  <a href="mailto:<%- path %>" class="iconfont icon-<%- name %>" title="<%- name %>"></a>
+  <% } %>
+  <% } %>
+  <% } %>
+
+  <% if (config.feed && config.feed.path && theme.rss === 'default') { %>
+  <a href="<%- url_for(config.feed.path) %>" class="iconfont icon-rss" title="rss"></a>
+  <% } else if (theme.rss === 'default') { %>
+  <% var rss_link = config.feed.path || 'atom.xml'; %>
+  <a href="<%- url_for(rss_link) %>" class="iconfont icon-rss" title="rss"></a>
+  <% } else if (theme.rss) { %>
+  <a href="<%- url_for(theme.rss) %>" class="iconfont icon-rss" title="rss"></a>
+  <% } %>
+</div>
+<% } %>

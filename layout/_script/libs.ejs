@@ -1,0 +1,17 @@
+<% if (theme.fancybox) { %>
+<% var fancybox_js = 'fancybox/jquery.fancybox.pack.js' %>
+<% } %>
+
+<%
+var js_libs = {
+jquery: 'jquery/jquery.min.js',
+slideout: 'slideout/slideout.js',
+fancybox: fancybox_js,
+}
+%>
+
+<% for (var lib in js_libs) { %>
+<% if (lib) { %>
+<script type="text/javascript" src="<%- url_for('lib') %>/<%- lib %>"></script>
+<% } %>
+<% } %>
