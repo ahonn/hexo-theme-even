@@ -14,7 +14,7 @@
   <% if (config.feed && config.feed.path && theme.rss === 'default') { %>
   <a href="<%- url_for(config.feed.path) %>" class="iconfont icon-rss" title="rss"></a>
   <% } else if (theme.rss === 'default') { %>
-  <% var rss_link = config.feed.path || 'atom.xml'; %>
+  <% var rss_link = config.feed && config.feed.path || 'atom.xml'; %>
   <a href="<%- url_for(rss_link) %>" class="iconfont icon-rss" title="rss"></a>
   <% } else if (theme.rss) { %>
   <a href="<%- url_for(theme.rss) %>" class="iconfont icon-rss" title="rss"></a>
