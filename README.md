@@ -15,7 +15,7 @@ A super simple theme for Hexo
 
 ## Installation
 ```bash
-$ npm install hexo-renderer-ejs hexo-renderer-dartsass --save
+$ npm install hexo-renderer-ejs hexo-renderer-scss --save
 $ git clone https://github.com/ahonn/hexo-theme-even themes/even
 $ cp themes/even/_config.yml.example themes/even/_config.yml
 ```

@@ -20,7 +20,7 @@ jobs:
           node-version: '18.x'
       - name: Prepare source
         run: |
-          npm install hexo-renderer-ejs hexo-renderer-dartsass --save
+          npm install hexo-renderer-ejs hexo-renderer-scss --save
           git clone -b master https://github.com/ahonn/hexo-theme-even.git themes/even
           cp themes/even/_config.yml.example themes/even/_config.yml
           npm install
